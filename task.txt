@@ -1,0 +1,22 @@
+https://www.figma.com/design/Q1OkclwI7UT0JIfKvXyVhT/AD512---New-Web-Design---LittleStoryBox.com?node-id=8146-187&m=dev
+
+prototype link: 
+https://www.figma.com/proto/Q1OkclwI7UT0JIfKvXyVhT/AD512---New-Web-Design---LittleStoryBox.com?node-id=8295-14043&t=fXJSUg4hiXhBjdC5-0&scaling=scale-down-width&content-scaling=fixed&page-id=3318%3A850&starting-point-node-id=8146%3A165
+
+font family - 
+1. @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+2. Josephine Cosy Bold
+
+Team Member : Dhiraj,Rahul,Saakshi, Vijay(Developer)
+Project Lead: Vijay
+Reporting: Jeet sir
+
+Modules : Header,Footer,Home,Pop Up
+focus: site optimization,Load Time ,site responsive all device
+Focus/problem: all background images 
+
+Task/Member:
+Vijay:- Header, Footer, HomePage, Create Story(The brave Little Fox), Terms & Condition, Cookie Policy, Privacy Policy, Error, Get In Touch.
+Rahul:- Create Age, Create Character, Create World, Create Style, Create Voice, Dashboard.
+Saakshi:- Email Templates, Checkout, Payment Success, Payment Failed, Login, Register, Set Password.
+Dhiraj:- Catalogue, About Us, How it works, Pricing, Product View, Account Library.
