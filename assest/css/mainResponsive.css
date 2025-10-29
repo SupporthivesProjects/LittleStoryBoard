@@ -84,6 +84,7 @@
         height: 100px;
         z-index: -1;
     }
+    
     .mobile-nav-menu ul{
         display: flex;
         padding: 16px 24px;
@@ -93,6 +94,7 @@
         align-self: stretch;
         border-radius: 24px;
         background: rgba(78, 58, 109, 0.50);
+        list-style: none;
     }
     .header .mobile-nav-menu ul a{
         color: var(--Core-purple-body, #6A5681);
@@ -171,6 +173,42 @@
         height: 20px;
         z-index: -1;
     }
+    .header-white::after{
+       background: url(../media/white-cloude-mo.png) no-repeat !important;
+       width: 100%;
+       height: 20px;
+       top: 78px;
+    }
+}
+@media screen and (max-width: 600px) {
+    .pp-content h2{
+        color: var(--Core-purple-titles, #3B2C53);
+        text-align: center;
+        font-family: "Josephine Cosy Bold";
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 100%;
+        letter-spacing: -2px;
+        padding: 0px 27px;
+    }
+    .pp-content {
+        width: 942px;
+        max-width: 100%;
+        margin: auto;
+        margin-top: 64px;
+        margin-bottom: 40px;
+        padding: 0px 12px;
+    }
+    .pp-section::after {
+        display: none;
+    }
+    .pp-section {
+        margin-top: 19px;
+        background: var(--Core-Off-White, #FAFAFA);
+        padding-bottom: 0px;
+    }
+
 }
 @media screen and (max-width: 600px) {
     .footer-link h6 {
