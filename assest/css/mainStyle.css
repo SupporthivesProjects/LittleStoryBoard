@@ -8,12 +8,17 @@
     font-family: 'Josephine';
 }
 @font-face {
-  font-family: 'Josephine';
-  src: url(../font/Josephine.otf);
+  font-family: 'Josephine Cosy';
+  src: url(../font/JosephineCosy-Regular.ttf);
+  font-weight: 400;
 }
 @font-face {
-  font-family: 'Josephine Bold';
-  src: url(../font/Josephine.ttf);
+  font-family: "Josephine Bold";
+  src: url(../font/JosephineCosyBold.otf);
+}
+@font-face {
+  font-family: 'Josephine Cosy Bold';
+  src: url(../font/JosephineCosyBold.ttf);
 }
 
 @media (min-width: 576px){
@@ -63,12 +68,12 @@
   }
   @media only screen and (min-width: 1600px) and (max-width: 1920px){
     .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
-        max-width: 1440px;
+        max-width: 1540px;
     }
   }
   @media only screen and (min-width: 1921px) and (max-width: 2880px){
     .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
-      max-width: 1440px;
+      max-width: 1640px;
     } 
   }
 section{
@@ -113,6 +118,7 @@ header{
 }
 .navbar-expand-lg .navbar-nav {
     gap: 40px;
+    align-items: center;
 }
 
 .header .nav-link{
@@ -168,6 +174,54 @@ header{
     height: 47px;
     z-index: 1;
   }
+  .header-white::after {
+      content: "";
+      background: url(../media/white-cloude.png) no-repeat;
+  }
+/* ---------------------pp-------------------------------- */
+.pp-section p{
+    color: var(--Core-purple-body, #6A5681);
+    font-family: Quicksand;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 180%;
+    margin-bottom: 0px;
+}
+.pp-content{
+  width: 942px;
+  max-width: 100%;
+  margin: auto;
+  margin-top: 64px;
+  margin-bottom:100px;
+}
+.pp-content h2{
+  color: var(--Core-purple-titles, #3B2C53);
+  text-align: center;
+  font-family: "Josephine Cosy Bold";
+  font-size: 80px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%; /* 80px */
+  letter-spacing: -4px;
+  margin-bottom:32px
+}
+.pp-section{
+  margin-top: 80px;
+  background: var(--Core-Off-White, #FAFAFA);
+}
+.pp-section::after{
+  content: "";
+  background: url(../media/sectionclouds.png) no-repeat;
+  background-position: center center;
+  background-size: cover;
+  position: absolute;
+  left: 0px;
+  right:0px;
+  bottom: -1px;
+  width: 100%;
+  height: 144px;
+}
 
 /* -----------------------------footer---------------------- */
 .footer{
