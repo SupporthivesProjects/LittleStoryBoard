@@ -60,7 +60,7 @@
         padding-top: 127px !important;
     }
 
-        .text_box_even_w {
+    .text_box_even_w {
         display: flex;
         flex-direction: column;
         width: 100%;
@@ -173,11 +173,129 @@
     }
 
 
-    .btn-yello{
+    .btn-yello {
         margin-top: 8px;
         margin-left: auto;
         margin-right: auto;
     }
+
+    /* About Us */
+    .about_1 {
+        background-image: url("../media/ab_mob_1.png");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 580px;
+        padding-top: 80px;
+    }
+
+    .about_2 {
+        background-image: url("../media/ab_mob_2.png");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 793px;
+    }
+
+    .about_3 {
+        background-image: url("../media/ab_mob_3.png");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 723px;
+    }
+
+
+    .about_4 {
+        background-image: url("../media/ab_mob_4.png");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 723px;
+        margin-top: 0px;
+    }
+
+    .ab_mid_box {
+        margin-top: 127px !important;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        max-width: 327px;
+    }
+
+    .titt_smal {
+        color: var(--Core-purple-titles, #3B2C53);
+        font-family: "Josephine Cosy Bold";
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 120%;
+        letter-spacing: -1.6px;
+        max-width: 175px;
+        text-align: start;
+
+    }
+
+    .subit_abb {
+        color: var(--Core-purple-body, #6A5681);
+        font-family: "Quicksand";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 180%;
+        /* 28.8px */
+        margin-bottom: 0px;
+    }
+
+    .btn-yello_ab {
+        margin-left: 0px;
+    }
+
+    .ab_mid_box_1 {
+        margin-top: 85px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        max-width: 327px;
+    }
+
+    .titt_yellow {
+        color: var(--Core-yellow, #FFCE3C);
+        text-align: center;
+        font-family: "Josephine Cosy Bold";
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 120%;
+        letter-spacing: -1.6px;
+    }
+
+    .ab_mid_box_last {
+        margin-top: 160px;
+        max-width: 327px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 }
 
