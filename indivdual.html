@@ -110,7 +110,8 @@
       <div class="row">
         <div class="col-md-6 left_img">
           <div class="imgg_box">
-            <img src="./assest/media/img_prod.png" alt=""  style="border-radius: 8px;"  class="img-fluid d-lg-block d-md-block d-block">
+            <img src="./assest/media/img_prod.png" alt="" style="border-radius: 8px; max-width: 455px;"
+              class="ragon_img img-fluid d-lg-block d-md-block d-block">
             <!-- <img src="./imagevault-img/produc_img.png" alt="" class="img-fluid d-lg-none d-md-none d-block"> -->
           </div>
         </div>
@@ -156,7 +157,7 @@
           </div>
         </div>
       </div>
-      <div class="black_line">
+      <div class="black_line d-lg-block d-md-block d-none">
       </div>
     </div>
 
@@ -168,22 +169,57 @@
         <div class="modal-content forget_content2">
           <div class="modal-body paymet_failed_modal">
             <div class="mod_div">
-              <div class="mody_bx">
-                <img src="./imagevault-img/m_logoo.svg" alt="">
+
+              <!-- Header Section (Sky background) -->
+              <div class="mody_bx added_cart_header">
                 <div class="mod_heads">
-                  <h1 class="log_title">purchased successfully!</h1>
-                  <p class="mo_subb">Your download should begin shortly.
-                    3 credits consumed.</p>
+                  <h1 class="log_title">Added to cart</h1>
                 </div>
               </div>
-              <button class="btn btn_log">
-                close
-              </button>
+
+              <!-- Cart Items -->
+              <div class="cart_items">
+                <div class="item_box">
+                  <span class="remove_btn">✕</span>
+                  <p class="item_name">Gold Pack (500 Tokens)</p>
+                  <p class="item_price">$500</p>
+                </div>
+
+                <div class="item_box">
+                  <span class="remove_btn">✕</span>
+                  <p class="item_name">Custom (1,200 Tokens)</p>
+                  <p class="item_price">$500</p>
+                </div>
+              </div>
+
+              <!-- Totals Section -->
+              <div class="cart_summary">
+                <div class="summary_line">
+                  <span>Sub total</span>
+                  <span>$500</span>
+                </div>
+                <div class="summary_line savings">
+                  <span>Savings @ 12%</span>
+                  <span>- $100</span>
+                </div>
+                <div class="summary_line total">
+                  <span>Total</span>
+                  <span class="total_value">$400</span>
+                </div>
+              </div>
+
+              <!-- Buttons -->
+              <div class="cart_buttons">
+                <button class="btn btn_checkout">Go to checkout</button>
+                <button class="btn btn_keep">Keep shopping</button>
+              </div>
+
             </div>
           </div>
         </div>
       </div>
     </div>
+
 
   </section>
 
@@ -299,6 +335,7 @@
       duration: 1000,
     });
   </script>
+  
 </body>
 
 </html>
