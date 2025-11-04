@@ -847,6 +847,12 @@
 }
 
 /* Catalogue */
+.products_search{
+    background-image: url(../media/cata_her.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
 
 .cat_head {
   padding: 40px 0px;
