@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Terms & Conditions Section</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f9fafb;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    
+
+    /* Custom radio button */
+    .radio-groupp {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 16px;
+      width: 100%;
+      margin-bottom: 0px;
+    }
+
+    .agree-box {
+      appearance: none;
+      -webkit-appearance: none;
+      width: 24px;
+height: 24px;
+flex-shrink: 0;
+      border:1px solid #5A3384;
+      border-radius: 50%;
+      outline: none;
+      cursor: pointer;
+      position: relative;
+      transition: all 0.2s ease;
+    }
+
+    .agree-box:checked {
+      border-color:#5A3384;
+      background-color:#5A3384;
+    }
+
+    .agree-box:checked::after {
+      content: "";
+      position: absolute;
+      margin:6px 8px 8px 6px;
+      width:10px;
+      height:10px;
+      background: white;
+      border-radius: 50%;
+    }
+
+   .agree-text{
+    margin: 0px;
+      color: var(--Core-Secondary-Purple, #5A3384);
+font-family: "IBM Plex Sans";
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+text-decoration-style: solid;
+text-decoration-skip-ink: none;
+text-decoration-thickness: auto;
+text-underline-offset: auto;
+text-underline-position: from-font;
+    }
+
+    
+  </style>
+</head>
+<body>
+  <div class="radio-groupp">
+      <input type="radio" id="agree" name="terms" class="agree-box">
+      <p class="agree-text">I have read and agree to the <a href="#">Terms of Use</a>. </p>
+  </div>
+</body>
+</html>
