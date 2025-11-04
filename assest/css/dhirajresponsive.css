@@ -370,6 +370,234 @@
     align-items: center;
     background-color: var(--Base-Off-Black, #0f0f0f);
   }
+
+
+
+/* MODAL */
+    .forget_content2 {
+        height: 610px;
+    }
+
+    .added_cart_modal {
+        border-radius: var(--Edge-bev, 16px) var(--Edge-bev, 16px) 0 0;
+        background: var(--Sky-Sky-dark, #D5F3FC);
+        padding: 0px 24px;
+    }
+
+    .summary_row span {
+        color: var(--Base-Off-Black, #0F0F0F);
+        font-family: "Poppins";
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 150%;
+    }
+
+    .summary_rowsaving span {
+        color: var(--Base-Success-Green, #47B147);
+        font-family: "Poppins";
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 150%;
+    }
+
+    .summary_rowtotal span {
+        color: var(--Base-Off-Black, #0F0F0F);
+        font-family: "Poppins";
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 150%;
+    }
+
+
+    .cart_wrapper {
+        display: flex;
+        flex-direction: column;
+        margin-top: 50px;
+    }
+
+    .cart_items {
+        display: flex;
+        padding: 16px 5px;
+        align-items: flex-start;
+        gap: 8px;
+        align-self: stretch;
+        flex-direction: column;
+    }
+
+    .cart_item {
+        display: flex;
+        padding: 16px 12px;
+        align-items: center;
+        gap: 8px;
+
+    }
+
+
+    .cart_name {
+        color: var(--Base-Off-Black, #0F0F0F);
+        font-family: "Poppins";
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%;
+        margin-bottom: 0px;
+    }
+
+    .cart_price {
+        margin-left: auto;
+        color: var(--Base-Off-Black, #0F0F0F);
+        font-family: "Poppins";
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 150%;
+    }
+
+    .cart_remove {
+        width: 20px;
+        height: 20px;
+        color: #323232;
+        cursor: pointer;
+    }
+
+    .cart_buttons {
+        display: flex;
+        justify-content: center;
+        gap: 24px;
+        flex-direction: column-reverse;
+    }
+
+    /* Catalogue */
+
+    .cat_head {
+        padding: 40px 0px;
+        background-image: url(../media/cat_hero.jpeg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 365px;
+    }
+
+    .cat_text {
+        color: var(--Core-purple-titles, #3B2C53);
+        text-align: center;
+        font-family: "Josephine Cosy Bold";
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 100%;
+        letter-spacing: -2px;
+        margin-top: 95px;
+    }
+
+    .search-container {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        width: 100%;
+        max-width: 1170px;
+        margin: auto;
+        flex-direction: column;
+    }
+
+    .filter-btn {
+        width: 100%;
+    }
+
+    .sort-btn {
+        width: 100%;
+        justify-content: space-between;
+
+    }
+
+    .btn_bx {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        flex-direction: column-reverse;
+        width: 100%;
+    }
+
+    .card {
+    width: 327px;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.3s 
+ease;
+    position: relative;
+    border: none;
+}
+.outer_card{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.product_row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-self: stretch;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.card-img {
+    object-fit: cover;
+    height: 358px;
+}
+
+.card-content{
+    max-width: 311px;
+    left: 7px;
+}
+
+.main_prod_box {
+    width: 100%;
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    align-self: stretch;
+}
+
+.pagination{
+    max-width: 327px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0px;
+}
+
+.products_search{
+    padding-bottom: 40px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
 
 @media only screen and (min-device-width: 1200px) and (max-device-width: 1348px) {
