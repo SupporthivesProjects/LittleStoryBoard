@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Little Story Box</title>
+  <link rel="stylesheet" href="./assest/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="./assest/css/owl.carousel.min.css" />
+  <link rel="stylesheet" href="./assest/css/owl.theme.default.css" />
+  <link rel="stylesheet" href="./assest/css/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="./assest/css/aos.css" />
+  <link rel="stylesheet" href="./assest/css/mainStyle.css" />
+  <link rel="stylesheet" href="./assest/css/mainResponsive.css" />
+  <link rel="stylesheet" href="./assest/css/dhirajstyle.css" />
+  <link rel="stylesheet" href="./assest/css/dhirajresponsive.css" />
+  <style>
+    .header {
+      background: #fff;
+    }
+
+    .header .nav-link {
+      color: #5a3384;
+    }
+
+    .hearbalence p {
+      color: #5a3384;
+    }
+
+    /* smooth fade-in */
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(-10px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* --- The Looping Animation Keyframes --- */
+    @keyframes gentleSway {
+      0% {
+        /* Start position: 2 pixels left of center */
+        transform: translateX(-2px);
+      }
+
+      100% {
+        /* End position: 2 pixels right of center */
+        transform: translateX(2px);
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header class="header fixed-top header-white">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div>
+          <a class="navbar-brand" href="#">
+            <img src="./assest/media/Brand-light.svg" class="img-fluid" />
+          </a>
+        </div>
+        <div class="hearbalence-toggle-menu">
+          <div class="hearbalence">
+            <p>Balance 3,410</p>
+          </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <img class="navbar-toggler-icon-mo img-fluid" src="./assest/media/menu.svg" />
+          </button>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Explore</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Create</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">How it works</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link btn btn-yellow" href="#">Login/Register</a>
+            </li>
+            <li class="nav-item">
+              <div class="d-lg-none d-md-none d-block">
+                <div class="mobile-nav-menu">
+                  <a class="nav-link" href="#" style="color: #ffce3c">Logout</a>
+                  <button class="btn btn-yellow">
+                    Balance: <span>2,800</span>
+                  </button>
+                  <div>
+                    <ul>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Terms</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Cookie Policy</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Privacy policy</a>
+                      </li>
+                    </ul>
+                    <div class="copy-header">
+                      <img src="./assest/media/Mastercard.svg" alt="" class="img-fluid" />
+                      <p>© 2025 Littlestorybox. All rights reserved.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+
+  <section class="my_libb">
+    <div class="container position-relative">
+      <img src="./assest/media/cat.gif" alt="" class="cattt d-lg-block d-md-block d-none">
+      <h4 class="cat_text_ml d-lg-block d-md-block d-none">My Library</h4>
+      <h4 class="cat_text_ml d-block d-lg-none d-md-none">Library</h4>
+      <div class=" d-none d-lg-block d-md-block">
+        <a href="#" class="loghu">Logout</a>
+
+      </div>
+      <img src="./assest/media/owl.gif" alt="" class="owlll d-lg-block d-md-block d-none">
+
+    </div>
+  </section>
+
+  <section class="products_search">
+    <div class="search_box">
+      <div class="container">
+        <div class="search-container">
+          <div class="search-box">
+            <input type="text" placeholder="Search products">
+            <button class="search-btn">
+              <img src="./assest/media/brand_ico.jpeg" alt="search icon">
+            </button>
+          </div>
+          <div class="btn_bx">
+            <div class="filter-container">
+              <button class="filter-btn" onclick="toggleFilter()">Filter</button>
+
+              <div class="filter-panel" id="filterPanel">
+                <div class="filter-section">
+                  <div>
+                    <h3>Age</h3>
+                    <label><input type="checkbox"> 1–2 years (11)</label>
+                    <label><input type="checkbox" checked> 3–5 years (3)</label>
+                    <label><input type="checkbox"> 6–8 years (5)</label>
+                    <label><input type="checkbox"> 9–12 years (89)</label>
+                    <label><input type="checkbox"> teens (25)</label>
+                  </div>
+
+                  <div>
+                    <h3>Story type</h3>
+                    <label><input type="checkbox" checked> Adventure (3)</label>
+                    <label><input type="checkbox"> Bedtime (5)</label>
+                    <label><input type="checkbox"> Educational (89)</label>
+                    <label><input type="checkbox"> Funny (25)</label>
+                  </div>
+
+                  <div>
+                    <h3>Themes</h3>
+                    <label><input type="checkbox" checked> Friendship (3)</label>
+                    <label><input type="checkbox"> Magic (5)</label>
+                    <label><input type="checkbox"> Animals (89)</label>
+                    <label><input type="checkbox"> Space (25)</label>
+                    <label><input type="checkbox"> Heroes (25)</label>
+                  </div>
+
+                  <div>
+                    <h3>Narration</h3>
+                    <label><input type="checkbox" checked> Child voice (3)</label>
+                    <label><input type="checkbox"> Parent voice (5)</label>
+                    <label><input type="checkbox"> Character voice (89)</label>
+                    <label><input type="checkbox"> Neutral voice (25)</label>
+                  </div>
+
+                  <div>
+                    <h3>Style</h3>
+                    <label><input type="checkbox" checked> Cartoon (33)</label>
+                    <label><input type="checkbox"> Watercolor (26)</label>
+                    <label><input type="checkbox"> 3D (16)</label>
+                    <label><input type="checkbox"> Sketch (7)</label>
+                    <label><input type="checkbox"> Realistic (3)</label>
+                  </div>
+
+                  <div class="filter-footer">
+                    <button class="close-filter">Close filter</button>
+                    <button class="apply-btn">Apply</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="dropdown">
+              <button class="sort-btn" onclick="toggleDropdown()">
+                <p>Sort by <span class="bolddy">Price</span></p>
+                <img src="./assest/media/drop_dwn.png" class="drop_icoo" alt="">
+              </button>
+
+              <div class="dropdown-menu" id="dropdownMenu">
+                <a href="#">High – Low</a>
+                <a href="#">Low – High</a>
+                <a href="#">Logout</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <h4 class="textt_pup">Showing 18 - 27 of 273 Results</h4>
+      </div>
+    </div>
+    <div class="container px-0">
+      <div class="main_prod_box">
+        <div class="product_row">
+          <div class="outer_card">
+            <div class="card">
+              <img src="./assest/media/BookCover.jpeg" alt="The Dragon's Quest"
+                class="card-img d-lg-block d-md-block d-none">
+              <img src="./assest/media/BookCover_mob.jpeg" alt="The Dragon's Quest"
+                class="card-img d-block d-lg-none d-md-none">
+
+              <div class="card-content">
+                <h3>The Dragon’s Quest</h3>
+                <a href="#" class="card-link">Find out more</a>
+              </div>
+            </div>
+          </div>
+          <div class="outer_card">
+            <div class="card">
+              <img src="./assest/media/BookCover.jpeg" alt="The Dragon's Quest" class="card-img">
+              <div class="card-content">
+                <h3>The Dragon’s Quest</h3>
+                <a href="#" class="card-link">Find out more</a>
+              </div>
+            </div>
+          </div>
+          <div class="outer_card">
+            <div class="card">
+              <img src="./assest/media/BookCover.jpeg" alt="The Dragon's Quest" class="card-img">
+              <div class="card-content">
+                <h3>The Dragon’s Quest</h3>
+                <a href="#" class="card-link">Find out more</a>
+              </div>
+            </div>
+          </div>
+          <div class="outer_card">
+            <div class="card">
+              <img src="./assest/media/BookCover.jpeg" alt="The Dragon's Quest" class="card-img">
+              <div class="card-content">
+                <h3>The Dragon’s Quest</h3>
+                <a href="#" class="card-link">Find out more</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="product_row">
+          <div class="outer_card">
+            <div class="card">
+              <img src="./assest/media/BookCover.jpeg" alt="The Dragon's Quest" class="card-img">
+              <div class="card-content">
+                <h3>The Dragon’s Quest</h3>
+                <a href="#" class="card-link">Find out more</a>
+              </div>
+            </div>
+          </div>
+          <div class="outer_card">
+            <div class="card">
+              <img src="./assest/media/BookCover.jpeg" alt="The Dragon's Quest" class="card-img">
+              <div class="card-content">
+                <h3>The Dragon’s Quest</h3>
+                <a href="#" class="card-link">Find out more</a>
+              </div>
+            </div>
+          </div>
+          <div class="outer_card">
+            <div class="card">
+              <img src="./assest/media/BookCover.jpeg" alt="The Dragon's Quest" class="card-img">
+              <div class="card-content">
+                <h3>The Dragon’s Quest</h3>
+                <a href="#" class="card-link">Find out more</a>
+              </div>
+            </div>
+          </div>
+          <div class="outer_card">
+            <div class="card">
+              <img src="./assest/media/BookCover.jpeg" alt="The Dragon's Quest" class="card-img">
+              <div class="card-content">
+                <h3>The Dragon’s Quest</h3>
+                <a href="#" class="card-link">Find out more</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="product_row">
+          <div class="outer_card">
+            <div class="card">
+              <img src="./assest/media/BookCover.jpeg" alt="The Dragon's Quest" class="card-img">
+              <div class="card-content">
+                <h3>The Dragon’s Quest</h3>
+                <a href="#" class="card-link">Find out more</a>
+              </div>
+            </div>
+          </div>
+          <div class="outer_card">
+            <div class="card">
+              <img src="./assest/media/BookCover.jpeg" alt="The Dragon's Quest" class="card-img">
+              <div class="card-content">
+                <h3>The Dragon’s Quest</h3>
+                <a href="#" class="card-link">Find out more</a>
+              </div>
+            </div>
+          </div>
+          <div class="outer_card">
+            <div class="card">
+              <img src="./assest/media/BookCover.jpeg" alt="The Dragon's Quest" class="card-img">
+              <div class="card-content">
+                <h3>The Dragon’s Quest</h3>
+                <a href="#" class="card-link">Find out more</a>
+              </div>
+            </div>
+          </div>
+          <div class="outer_card">
+            <div class="card">
+              <img src="./assest/media/BookCover.jpeg" alt="The Dragon's Quest" class="card-img">
+              <div class="card-content">
+                <h3>The Dragon’s Quest</h3>
+                <a href="#" class="card-link">Find out more</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+
+
+    <div class="pagination">
+      <button class="nav-btn"><img src="./assest/media/prev_arr.jpeg" alt=""></button>
+      <div class="page-number">1</div>
+      <div class="page-number">2</div>
+      <div class="page-number active">3</div>
+      <div class="page-number">4</div>
+      <div class="page-number">5</div>
+      <button class="nav-btn"><img src="./assest/media/nxt_arr.jpeg" alt=""></button>
+    </div>
+  </section>
+
+  <section class="last d-lg-block d-md-block d-none">
+
+  </section>
+
+  <footer class="footer">
+    <div class="enjoy-bg d-lg-block d-md-block d-none">
+      <div class="col">
+        <div class="container">
+          <div class="enjoy-div">
+            <div class="enjoy-btn">
+              <h6>
+                To enjoy the ultimate experience, give our web app a try!
+              </h6>
+              <a class="btn btn-yellow">Scan QR code</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bg-footer-menu">
+      <div class="container">
+        <div class="col">
+          <div class="row">
+            <div class="col-lg-4 col-md-12 col-sm-12 col-12">
+              <div class="footer-brand-logo">
+                <img src="./assest/media/footer-logo.svg" alt="" class="img-fluid" />
+              </div>
+              <div class="footer-copy-p">
+                <p>© 2025 Littlestorybox. All rights reserved.</p>
+              </div>
+              <div class="footer-master-card">
+                <img src="./assest/media/Mastercard.svg" alt="" class="img-fluid" />
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-12 col-sm-12 col-12"></div>
+            <div class="col-lg-4 col-md-12 col-sm-12 col-12">
+              <div class="footer-link">
+                <div class="menu-link">
+                  <ul>
+                    <h6>Links</h6>
+                    <li>
+                      <a href="#">Explore</a>
+                    </li>
+                    <li>
+                      <a href="#">create</a>
+                    </li>
+                    <li>
+                      <a href="#">Pricing</a>
+                    </li>
+                  </ul>
+                  <ul>
+                    <li>
+                      <a href="#">About us</a>
+                    </li>
+                    <li>
+                      <a href="#">How it works</a>
+                    </li>
+                    <li>
+                      <a href="#">Contact us</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="legal-menu">
+                  <ul>
+                    <h6>Policies</h6>
+                    <li>
+                      <a href="#">Terms & conditions</a>
+                    </li>
+                    <li>
+                      <a href="#">Cookie Policy</a>
+                    </li>
+                    <li>
+                      <a href="#">Privacy policy</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="enjoy-bg d-lg-none d-md-none d-block">
+      <div class="col">
+        <div class="container">
+          <div class="enjoy-div">
+            <div class="enjoy-btn">
+              <p>
+                maecenas augue nulla libero potenti nec. Molestie quis eu
+                faucibus lectus id laoreet. Id diam ac amet.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="./assest/js/jquery.min.js"></script>
+  <script src="./assest/js/owl.carousel.js"></script>
+  <script src="./assest/js/popper.min.js"></script>
+  <script src="./assest/js/bootstrap.bundle.min.js"></script>
+  <script src="./assest/js/swiper-bundle.min.js"></script>
+  <script src="./assest/js/aos.js"></script>
+  <script src="./assest/js/appmain.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+    });
+  </script>
+
+  <script>
+    function toggleDropdown() {
+      document.getElementById("dropdownMenu").classList.toggle("show");
+    }
+
+    // Close dropdown when clicking outside
+    window.onclick = function (event) {
+      if (!event.target.closest('.dropdown')) {
+        document.getElementById("dropdownMenu").classList.remove("show");
+      }
+    }
+
+
+
+  </script>
+
+  <!-- DROPDOWN WITH ICON ROTATE -->
+
+  <script>
+    function toggleDropdown() {
+      const menu = document.getElementById("dropdownMenu");
+      const icon = document.querySelector(".drop_icoo");
+
+      menu.classList.toggle("show");
+      icon.classList.toggle("rotate");
+    }
+
+    // Close dropdown when clicking outside
+    window.onclick = function (event) {
+      if (!event.target.closest('.dropdown')) {
+        document.getElementById("dropdownMenu").classList.remove("show");
+        document.querySelector(".drop_icoo").classList.remove("rotate");
+      }
+    }
+  </script>
+
+  <!-- Filter Options -->
+  <script>
+    function toggleFilter() {
+      const filter = document.getElementById("filterPanel");
+      filter.classList.toggle("show-filter");
+    }
+
+    // close filter when clicking outside
+    window.onclick = function (event) {
+      if (!event.target.closest('.filter-container')) {
+        document.getElementById("filterPanel").classList.remove("show-filter");
+      }
+    }
+  </script>
+
+
+
+
+</body>
+
+</html>

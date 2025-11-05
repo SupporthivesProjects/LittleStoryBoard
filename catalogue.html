@@ -26,6 +26,19 @@
     .hearbalence p {
       color: #5a3384;
     }
+
+    /* smooth fade-in */
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(-10px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
   </style>
 </head>
 
@@ -122,14 +135,74 @@
             </button>
           </div>
           <div class="btn_bx">
-            <button class="filter-btn">Filter</button>
-            <button class="sort-btn">
-              <p>
-                Sort by <span class="bolddy">
-                  Price
-                </span>
-              </p><img src="./assest/media/drop_dwn.png" class="drop_icoo" alt="">
-            </button>
+            <div class="filter-container">
+              <button class="filter-btn" onclick="toggleFilter()">Filter</button>
+
+              <div class="filter-panel" id="filterPanel">
+                <div class="filter-section">
+                  <div>
+                    <h3>Age</h3>
+                    <label><input type="checkbox"> 1–2 years (11)</label>
+                    <label><input type="checkbox" checked> 3–5 years (3)</label>
+                    <label><input type="checkbox"> 6–8 years (5)</label>
+                    <label><input type="checkbox"> 9–12 years (89)</label>
+                    <label><input type="checkbox"> teens (25)</label>
+                  </div>
+
+                  <div>
+                    <h3>Story type</h3>
+                    <label><input type="checkbox" checked> Adventure (3)</label>
+                    <label><input type="checkbox"> Bedtime (5)</label>
+                    <label><input type="checkbox"> Educational (89)</label>
+                    <label><input type="checkbox"> Funny (25)</label>
+                  </div>
+
+                  <div>
+                    <h3>Themes</h3>
+                    <label><input type="checkbox" checked> Friendship (3)</label>
+                    <label><input type="checkbox"> Magic (5)</label>
+                    <label><input type="checkbox"> Animals (89)</label>
+                    <label><input type="checkbox"> Space (25)</label>
+                    <label><input type="checkbox"> Heroes (25)</label>
+                  </div>
+
+                  <div>
+                    <h3>Narration</h3>
+                    <label><input type="checkbox" checked> Child voice (3)</label>
+                    <label><input type="checkbox"> Parent voice (5)</label>
+                    <label><input type="checkbox"> Character voice (89)</label>
+                    <label><input type="checkbox"> Neutral voice (25)</label>
+                  </div>
+
+                  <div>
+                    <h3>Style</h3>
+                    <label><input type="checkbox" checked> Cartoon (33)</label>
+                    <label><input type="checkbox"> Watercolor (26)</label>
+                    <label><input type="checkbox"> 3D (16)</label>
+                    <label><input type="checkbox"> Sketch (7)</label>
+                    <label><input type="checkbox"> Realistic (3)</label>
+                  </div>
+
+                  <div class="filter-footer">
+                    <button class="close-filter">Close filter</button>
+                    <button class="apply-btn">Apply</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="dropdown">
+              <button class="sort-btn" onclick="toggleDropdown()">
+                <p>Sort by <span class="bolddy">Price</span></p>
+                <img src="./assest/media/drop_dwn.png" class="drop_icoo" alt="">
+              </button>
+
+              <div class="dropdown-menu" id="dropdownMenu">
+                <a href="#">High – Low</a>
+                <a href="#">Low – High</a>
+                <a href="#">Logout</a>
+              </div>
+            </div>
           </div>
 
         </div>
@@ -141,8 +214,10 @@
         <div class="product_row">
           <div class="outer_card">
             <div class="card">
-              <img src="./assest/media/BookCover.jpeg" alt="The Dragon's Quest" class="card-img d-lg-block d-md-block d-none">
-                            <img src="./assest/media/BookCover_mob.jpeg" alt="The Dragon's Quest" class="card-img d-block d-lg-none d-md-none">
+              <img src="./assest/media/BookCover.jpeg" alt="The Dragon's Quest"
+                class="card-img d-lg-block d-md-block d-none">
+              <img src="./assest/media/BookCover_mob.jpeg" alt="The Dragon's Quest"
+                class="card-img d-block d-lg-none d-md-none">
 
               <div class="card-content">
                 <h3>The Dragon’s Quest</h3>
@@ -379,6 +454,61 @@
       duration: 1000,
     });
   </script>
+
+  <script>
+    function toggleDropdown() {
+      document.getElementById("dropdownMenu").classList.toggle("show");
+    }
+
+    // Close dropdown when clicking outside
+    window.onclick = function (event) {
+      if (!event.target.closest('.dropdown')) {
+        document.getElementById("dropdownMenu").classList.remove("show");
+      }
+    }
+
+
+
+  </script>
+
+  <!-- DROPDOWN WITH ICON ROTATE -->
+
+  <script>
+    function toggleDropdown() {
+      const menu = document.getElementById("dropdownMenu");
+      const icon = document.querySelector(".drop_icoo");
+
+      menu.classList.toggle("show");
+      icon.classList.toggle("rotate");
+    }
+
+    // Close dropdown when clicking outside
+    window.onclick = function (event) {
+      if (!event.target.closest('.dropdown')) {
+        document.getElementById("dropdownMenu").classList.remove("show");
+        document.querySelector(".drop_icoo").classList.remove("rotate");
+      }
+    }
+  </script>
+
+  <!-- Filter Options -->
+  <script>
+    function toggleFilter() {
+      const filter = document.getElementById("filterPanel");
+      filter.classList.toggle("show-filter");
+    }
+
+    // close filter when clicking outside
+    window.onclick = function (event) {
+      if (!event.target.closest('.filter-container')) {
+        document.getElementById("filterPanel").classList.remove("show-filter");
+      }
+    }
+  </script>
+
+
+
+
 </body>
 
 </html>
