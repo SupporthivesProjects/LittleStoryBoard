@@ -1,4 +1,5 @@
 @media only screen and (max-device-width: 600px) {
+
   /* How It Works */
   .how_works {
     background-image: url("../media/module_mob_1.png");
@@ -739,6 +740,7 @@
     max-width: 100%;
     justify-content: space-between;
   }
+
   .ml-filter-container {
     width: 100%;
   }
@@ -757,6 +759,210 @@
     z-index: 10;
     width: 100%;
   }
+
+
+  /* Pricing */
+
+  .carousel-control-next-icon {
+    background-image: url(../media/nxt_arr.png);
+  }
+
+  .carousel-control-prev-icon {
+    background-image: url(../media/prev_arr.png)
+  }
+
+  .price_title {
+    color: var(--Core-Off-White, #FAFAFA);
+    text-align: center;
+    font-family: "Josephine Cosy Bold";
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+    /* 40px */
+    letter-spacing: -2px;
+    margin-bottom: 0px;
+  }
+
+  .pricing {
+    background-image: url(../media/pricing_mob1.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 995px;
+    padding-top: 100px;
+  }
+
+  .top_ptice_box {
+    display: flex;
+    width: 100%;
+    max-width: 327px;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 45px;
+  }
+
+  .pack {
+    margin-top: 8px;
+    color: var(--Grayscale-White, #FFF);
+    text-align: center;
+    font-family: "Josephine Cosy";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+    /* 24px */
+    letter-spacing: -1.44px;
+  }
+
+  .pack_title {
+    color: #FBAE00;
+    text-align: center;
+    font-family: "Josephine Cosy Bold";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+    /* 38.4px */
+    letter-spacing: -1.6px;
+  }
+
+  .mid_text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    align-self: stretch;
+  }
+
+
+  .box2_drag {
+    display: flex;
+    width: 300px;
+    padding: 24px;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    border-radius: 40px;
+    background: linear-gradient(180deg, rgba(90, 51, 132, 0.00) 0%, #5A3384 100%);
+  }
+
+.drag_1{
+  width: 101.539px;
+height: 120px;
+}
+
+
+.btn_box{
+  display: flex;
+justify-content: center;
+align-items: center;
+gap: 27px;
+align-self: stretch;
+flex-direction: row;
+}
+
+.price_box_2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 0px;
+    width: 232px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.pricing_row {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    width: 100%;
+    max-width: 342px;
+}
+
+.pricing_2_title{
+color: var(--Core-White, #FFF);
+text-align: center;
+font-family: "Josephine Cosy Bold";
+font-size: 32px;
+font-style: normal;
+font-weight: 400;
+line-height: 120%; /* 38.4px */
+letter-spacing: -1.6px;
+padding: 0px 37px;
+}
+
+.rockss{
+  position: absolute;
+  top: 0;
+}
+
+.pricing_2 {
+background: #251D32;
+height: 100%;
+padding-bottom: 32px;
+
+}
+
+
+.costum_box {
+    display: flex;
+    width: 327px;
+    padding: 24px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    border-radius: 16px;
+    background: var(--Core-purple-titles, #3B2C53);
+}
+.input_bxx {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    align-self: stretch;
+    flex-direction: column;
+}
+
+.ml-input {
+    display: flex;
+    padding: 12px 24px;
+    align-items: center;
+    gap: 8px;
+    flex: 1 0 0;
+    border-radius: 100px;
+    border: 1px solid var(--Core-purple-titles, #3B2C53);
+    background: var(--Core-Purple-dark, #251D32);
+    width: 279px;
+}
+
+.btn-add2{
+  width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
 
 @media only screen and (min-device-width: 1200px) and (max-device-width: 1348px) {
@@ -788,8 +994,7 @@
   }
 }
 
-@media only screen and (min-device-width: 1349px) and (max-device-width: 1439px) {
-}
+@media only screen and (min-device-width: 1349px) and (max-device-width: 1439px) {}
 
 @media only screen and (min-device-width: 1440px) and (max-device-width: 1499px) {
   .inner_cont_box {
@@ -821,5 +1026,4 @@
   }
 }
 
-@media only screen and (min-device-width: 1800px) and (max-device-width: 1919px) {
-}
+@media only screen and (min-device-width: 1800px) and (max-device-width: 1919px) {}
