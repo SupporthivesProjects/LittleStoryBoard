@@ -853,7 +853,7 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-color: #FAFAFA;
+  background-color: #fafafa;
 }
 
 .cat_head {
@@ -878,8 +878,6 @@
   margin-bottom: 0px;
   margin-top: 153px;
 }
-
-
 
 .search-container {
   display: flex;
@@ -1002,7 +1000,6 @@
   height: 32px;
   margin-top: -4px;
   transition: transform 0.3s ease;
-
 }
 
 .rotate {
@@ -1032,8 +1029,6 @@
   transition: all 0.3s ease;
   width: 118px;
 }
-
-
 
 .product_row {
   display: flex;
@@ -1067,14 +1062,7 @@
   position: relative;
   border: none;
   background-color: transparent;
-/* Crucial: Apply the animation */
-  animation: gentleSway 5s ease-in-out infinite alternate;
-  
-  /* Required for performance and smooth starting point */
-  transform: translateZ(0);
 }
-
-
 
 .card:hover {
   transform: translateY(-5px);
@@ -1183,7 +1171,7 @@
 }
 
 .last {
-  background-image: url(../media/section\ clouds.png);
+  background-image: url(../media/sec_btm_cld.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -1199,7 +1187,6 @@
   padding-bottom: 0px;
 }
 
-
 /* Dropdown */
 .dropdown {
   position: relative;
@@ -1211,7 +1198,7 @@
   position: absolute;
   top: 110%;
   left: 0;
-  background-color: #FFD33B;
+  background-color: #ffd33b;
   border-radius: 20px;
   min-width: 186px;
   box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
@@ -1222,7 +1209,7 @@
   padding: 10px 15px;
   display: block;
   text-decoration: none;
-  color: var(--Core-Secondary-Purple, #5A3384);
+  color: var(--Core-Secondary-Purple, #5a3384);
   font-family: "Poppins";
   font-size: 15px;
   font-style: normal;
@@ -1236,7 +1223,6 @@
   border-radius: 15px;
 }
 
-
 /* Filter Search */
 .filter-container {
   position: relative;
@@ -1248,8 +1234,8 @@
   position: absolute;
   top: 120%;
   border-radius: 8px;
-  border: 1px solid var(--Base-04, #F2F2F2);
-  background: var(--Core-White, #FFF);
+  border: 1px solid var(--Base-04, #f2f2f2);
+  background: var(--Core-White, #fff);
   padding: 32px;
   z-index: 100;
   left: -258px;
@@ -1265,7 +1251,7 @@
 }
 
 .filter-section h3 {
-  color: var(--Core-purple-titles, #3B2C53);
+  color: var(--Core-purple-titles, #3b2c53);
   font-family: "Josephine Cosy Bold";
   font-size: 32px;
   font-style: normal;
@@ -1277,7 +1263,7 @@
 }
 
 .filter-section label {
-  color: var(--Core-purple-titles, #3B2C53);
+  color: var(--Core-purple-titles, #3b2c53);
 
   /* P/Standard */
   font-family: "Quicksand";
@@ -1303,7 +1289,7 @@
   -moz-appearance: none;
   width: 22px;
   height: 22px;
-  border: 1px solid #BDBDBD;
+  border: 1px solid #bdbdbd;
   border-radius: 4px;
   display: inline-block;
   vertical-align: middle;
@@ -1312,14 +1298,13 @@
   margin-right: 8px;
   transition: all 0.2s ease;
   border-radius: 0px;
-
 }
 
 /* When checked: green background + tick */
 .filter-section input[type="checkbox"]:checked {
-  background-color: #49D949;
+  background-color: #49d949;
   /* bright green */
-  border-color: #49D949;
+  border-color: #49d949;
   border-radius: 0px;
 }
 
@@ -1342,9 +1327,9 @@
 }
 
 /* Optional: make text bolder when checked */
-.filter-section input[type="checkbox"]:checked+label,
+.filter-section input[type="checkbox"]:checked + label,
 .filter-section label:has(input:checked) {
-  color: var(--Core-purple-titles, #3B2C53);
+  color: var(--Core-purple-titles, #3b2c53);
 
   /* P/Button */
   font-family: "Poppins";
@@ -1360,7 +1345,6 @@
   display: none;
 }
 
-
 /* MY Libraray */
 
 .my_libb {
@@ -1373,7 +1357,7 @@
 }
 
 .loghu {
-  color: var(--Core-Secondary-Purple, #5A3384);
+  color: var(--Core-Secondary-Purple, #5a3384);
   font-family: "Quicksand";
   font-size: 16px;
   font-style: normal;
@@ -1390,18 +1374,18 @@
   justify-content: center;
 }
 
-.cattt{
+.cattt {
   position: absolute;
   width: 334px;
-    right: 154px;
-    bottom: -191px;
+  right: 154px;
+  bottom: -191px;
 }
 
 .owlll {
-    position: absolute;
-    width: 251px;
-    left: 208px;
-    bottom: -133px;
+  position: absolute;
+  width: 251px;
+  left: 208px;
+  bottom: -133px;
 }
 
 .cat_text_ml {
@@ -1418,3 +1402,69 @@
   margin-top: 153px;
 }
 
+.ml-filter-container {
+  position: relative;
+}
+
+.ml-filter-btn {
+  border-radius: 100px;
+  background: var(--Core-yellow, #ffce3c);
+  border: none;
+  border-radius: 30px;
+  padding: 16px 12px 16px 24px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: all 0.3s ease;
+  max-width: 130px;
+}
+
+.ml-filter-btn span {
+  color: var(--Core-Secondary-Purple, #5a3384);
+  font-family: "Poppins";
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%;
+}
+
+.ml-filter-btn:hover {
+  background-color: #ffca1e;
+}
+
+.ml-arrow {
+  font-size: 16px;
+  transition: transform 0.3s ease;
+}
+
+.ml-filter-menu {
+  position: absolute;
+  top: 65px;
+  left: 0;
+  background-color: #ffd93d;
+  border-radius: 25px;
+  padding: 15px 25px;
+  display: none;
+  flex-direction: column;
+  gap: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+}
+
+.ml-filter-menu p {
+  color: var(--Core-Secondary-Purple, #5a3384);
+  font-family: "Poppins";
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%; /* 22.5px */
+  cursor: pointer;
+}
+
+.ml-filter-menu p:hover {
+  text-decoration: underline;
+}
