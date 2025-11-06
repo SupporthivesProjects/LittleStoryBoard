@@ -1,0 +1,854 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Little Story Box</title>
+    <link rel="stylesheet" href="./assest/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assest/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./assest/css/owl.theme.default.css">
+    <link rel="stylesheet" href="./assest/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./assest/css/aos.css">
+    <link rel="stylesheet" href="./assest/css/mainStyle.css">
+    <link rel="stylesheet" href="./assest/css/mainResponsive.css">
+    <link rel="stylesheet" href="./assest/css/rahul.css">
+    <style>
+        .header{
+            background: #251D32;
+        }
+        .header .nav-link{
+            color:#5A3384
+        }
+        
+        .hearbalence p{
+            color: #5A3384;
+        }
+        .header::after{
+            background: url(./assest/media/brown_cloud.svg) no-repeat !important;
+        }
+        .pp-section::after{
+            display: none;
+        }
+        @media only screen and (max-width: 600px) {
+        .header::after{
+            background: url(./assest/media/mobbrown_cloud.svg) no-repeat !important;
+        }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header fixed-top header-white">
+       <div class="container">
+         <nav class="navbar navbar-expand-lg navbar-light">
+            <div>
+                <a class="navbar-brand" href="#">
+                    <img src="./assest/media/Brand-light.svg" class="img-fluid">
+                </a>
+            </div>
+            <div class="hearbalence-toggle-menu">
+                <div class="hearbalence">
+                   <p>Balance 3,410</p>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <img class="navbar-toggler-icon-mo img-fluid" src="./assest/media/menu.svg">
+                </button>
+                </div>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Explore</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Create</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="#">About us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="#">How it works</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="#">Pricing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="#">Contact</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link btn btn-yellow" href="#">Login/Register</a>
+                    </li>
+                    <li class="nav-item">
+                      <div class="d-lg-none d-md-none d-block">
+                         <div class="mobile-nav-menu">
+                           <a class="nav-link" href="#" style="color: #FFCE3C;">Logout</a>
+                           <button class="btn btn-yellow">Balance: <span>2,800</span></button>
+                           <div>
+                                <ul>
+                                    <li class="nav-item">
+                                        <a class="nav-link " href="#">Terms</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Cookie Policy</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link " href="#">Privacy policy</a>
+                                    </li>
+                                </ul>
+                                <div class="copy-header">
+                                    <img src="./assest/media/Mastercard.svg" alt="" class="img-fluid">
+                                    <p>© 2025 Littlestorybox. All rights reserved.</p>
+                                </div>
+                           </div>
+                         </div>
+                      </div>
+                    </li>
+
+                </ul>
+            </div>
+        </nav>
+       </div>
+    </header>
+    <!-- Section 1 Start -->
+    <section class="story_section">
+        <div class="story-page" id="storyPage">
+                <h1 class="age_title">Create your story</h1>
+            <div class="prog_imgbar">
+                <img class="progress_img" src="./assest/media/progress_line.svg">
+            </div>
+            <div class="progressbar_main">
+                <div class="progress-bar progress_bar">
+                    <div class="step" onclick="showTab(1)">
+                        <img id="diamond1" src="./assest/media/diamond-glow.png" alt="">
+                        <p id="title1">Make Your Hero</p>
+                    </div>
+                    <div class="step" onclick="showTab(2)">
+                        <img id="diamond2" src="./assest/media/diamond-normal.svg" alt="">
+                        <p id="title2">Build Your World</p>
+                    </div>
+                    <div class="step" onclick="showTab(3)">
+                        <img id="diamond3" src="./assest/media/diamond-normal.svg" alt="">
+                        <p id="title3">Choose Your Style</p>
+                    </div>
+                    <div class="step" onclick="showTab(4)">
+                        <img id="diamond4" src="./assest/media/diamond-normal.svg" alt="">
+                        <p id="title4">Select A Voice</p>
+                    </div>
+                </div>
+            </div>
+          
+            <!-- Tabs -->
+             <!-- Tab 1 -->
+            <div class="tab-content tab_content" id="tab1">
+                <div class="tab_c1">
+                    <img class="char_ani1" src="./assest/media/char_ani1.svg">
+                    <img class="char_ani2" src="./assest/media/char_ani2.svg">
+                    <input type="text" class="form-control story_textbox" id="char_name" placeholder="Enter character name">
+                    <div class="char_textareamain">
+                        <div class="char_textareatop">
+                            <p class="textarea_label">What do they look like?<img src="./assest/media/question_icon.svg"></p>
+                            <p class="textarea_textcount">0/300</p>
+                        </div>
+                        <textarea class="form-control story_textarea" id="char_area" rows="3" maxlength="300" placeholder="Enter details about your character such as: species, size, clothing and any other physical details. The more the better!"></textarea>
+                    </div>
+                    <div class="char_btnbar">
+                        <button type="button" class="btn char_btn1">Back</button>
+                        <button type="button" class="btn char_btn2 next-btn">Next</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Tab 2 -->
+            <div class="tab-content tab_content" id="tab2">
+                <div class="tab_c2">
+                    <img class="world_ani1" src="./assest/media/world_ani1.svg">
+                    <img class="world_ani2" src="./assest/media/world_ani2.svg">
+                    <div class="tab2_contbar">
+                        <div class="char_textareatop">
+                          <p class="textarea_label">
+                            Setting<img src="./assest/media/question_icon.svg">
+                          </p>
+                          <p class="textarea_textcount">0/400</p>
+                        </div>
+                        <div class="setting-options">
+                            <label class="option">
+                              <input type="checkbox" name="setting" value="setting1">
+                              <span>🏰 Fairy tale</span>
+                            </label>
+                            <label class="option">
+                              <input type="checkbox" name="setting" value="setting2">
+                              <span>🚀 Outer space</span>
+                            </label>
+                            <label class="option">
+                              <input type="checkbox" name="setting" value="setting3">
+                              <span>🌲 Enchanted forest</span>
+                            </label>
+                            <label class="option">
+                              <input type="checkbox" name="setting" value="settig4">
+                              <span>🎪 Circus</span>
+                            </label>
+                            <label class="option">
+                              <input type="checkbox" name="setting" value="setting5">
+                              <span>🏝 Desert island</span>
+                            </label>
+                            <label class="option">
+                              <input type="checkbox" name="setting" value="setting6">
+                              <span>🏙 Cityscape</span>
+                            </label>
+                            <label class="option">
+                              <input type="checkbox" name="setting" value="setting7">
+                              <span>🏞 Nature</span>
+                            </label>
+                            <label class="option">
+                              <input type="checkbox" name="setting" value="setting8">
+                              <span>🌆 Urban</span>
+                            </label>
+                            <label class="option">
+                              <input type="checkbox" name="setting" value="setting9">
+                              <span>🏖 Beach</span>
+                            </label>
+                        </div>
+                        <textarea class="form-control story_textarea" rows="3" maxlength="400" placeholder="Enter a settings description."></textarea>
+                    </div>
+                    <div class="tab2_contbar">
+                    <div class="char_textareatop">
+                        <p class="textarea_label">
+                        Plot<img src="./assest/media/question_icon.svg">
+                        </p>
+                        <p class="textarea_textcount">0/400</p>
+                    </div>
+                    <div class="setting-options">
+                        <label class="option">
+                            <input type="checkbox" name="setting" value="setting1">
+                            <span>🤪 Silly adventure</span>
+                        </label>
+                        <label class="option">
+                            <input type="checkbox" name="setting" value="setting2">
+                            <span>✨ Magical find</span>
+                        </label>
+                        <label class="option">
+                            <input type="checkbox" name="setting" value="setting3">
+                            <span>🏁 Epic race</span>
+                        </label>
+                        <label class="option">
+                            <input type="checkbox" name="setting" value="settig4">
+                            <span>🦸 Rescue mission</span>
+                        </label>
+                        <label class="option">
+                            <input type="checkbox" name="setting" value="setting5">
+                            <span>🕵️ Big mystery</span>
+                        </label>
+                        <label class="option">
+                            <input type="checkbox" name="setting" value="setting6">
+                            <span>🤖 Robot world</span>
+                        </label>
+                        <label class="option">
+                            <input type="checkbox" name="setting" value="setting7">
+                            <span>🌳 Forest adventure</span>
+                        </label>
+                        <label class="option">
+                            <input type="checkbox" name="setting" value="setting8">
+                            <span>🏰 Castle quest</span>
+                        </label>
+                    </div>
+                    <textarea class="form-control story_textarea" rows="3" maxlength="400" placeholder="Enter your plot."></textarea>
+                    </div>
+                    <div class="tab2_contbar">
+                    <div class="char_textareatop">
+                        <p class="textarea_label">
+                        Theme<img src="./assest/media/question_icon.svg">
+                        </p>
+                        <p class="textarea_textcount">0/400</p>
+                    </div>
+                    <div class="setting-options">
+                        <label class="option">
+                            <input type="checkbox" name="setting" value="setting1">
+                            <span>😂 Funny</span>
+                        </label>
+                        <label class="option">
+                            <input type="checkbox" name="setting" value="setting2">
+                            <span>🦸 Heroes</span>
+                        </label>
+                        <label class="option">
+                            <input type="checkbox" name="setting" value="settig4">
+                            <span>🌌 Space</span>
+                        </label>
+                        <label class="option">
+                            <input type="checkbox" name="setting" value="setting5">
+                            <span>🐾 Animals</span>
+                        </label>
+                        <label class="option">
+                            <input type="checkbox" name="setting" value="setting6">
+                            <span>🧙 Magic</span>
+                        </label>
+                        <label class="option">
+                            <input type="checkbox" name="setting" value="setting7">
+                            <span>🤗 Friendship</span>
+                        </label>
+                        <label class="option">
+                            <input type="checkbox" name="setting" value="setting8">
+                            <span>🌍 Exploration</span>
+                        </label>
+                        <label class="option">
+                            <input type="checkbox" name="setting" value="setting9">
+                            <span>🐉 Dragon adventure</span>
+                        </label>
+                        <label class="option">
+                            <input type="checkbox" name="setting" value="setting3">
+                            <span>🏖️ Beach vacation</span>
+                        </label>
+                    </div>
+                    <textarea class="form-control story_textarea" rows="3" maxlength="400" placeholder="And now the theme."></textarea>
+                    </div>
+                    <div class="char_btnbar">
+                        <button type="button" class="btn char_btn1 back-btn">Back</button>
+                        <button type="button" class="btn char_btn2 next-btn">Next</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Tab 3 -->
+            <div class="tab-content tab_content" id="tab3">
+                <div class="tab_c3">
+                    <div class="style_top">
+                        <img class="tab3_ani" src="./assest/media/style_ani.svg">
+                        <div class="tab3top_card">
+                            <p class="textarea_label">Tone<img src="./assest/media/question_icon.svg">
+                            </p>
+                            <div class="setting-options tab3_options">
+                                <label class="option">
+                                <input type="checkbox" name="setting" value="setting1">
+                                <span>😀 Playful</span>
+                                </label>
+                                <label class="option">
+                                <input type="checkbox" name="setting" value="setting2">
+                                <span>❤️ Heartwarming</span>
+                                </label>
+                                <label class="option">
+                                <input type="checkbox" name="setting" value="setting3">
+                                <span>😀 Happy</span>
+                                </label>
+                                <label class="option">
+                                <input type="checkbox" name="setting" value="settig4">
+                                <span>😂 Funny</span>
+                                </label>
+                                <label class="option">
+                                <input type="checkbox" name="setting" value="setting5">
+                                <span>🤔 Serious</span>
+                                </label>
+                                <label class="option">
+                                <input type="checkbox" name="setting" value="setting6">
+                                <span>🌟 Exciting</span>
+                                </label>
+                                <label class="option">
+                                <input type="checkbox" name="setting" value="setting7">
+                                <span>😴 Calm</span>
+                                </label>
+                                <label class="option">
+                                <input type="checkbox" name="setting" value="setting8">
+                                <span>😱 Scary</span>
+                                </label>
+                                <label class="option">
+                                <input type="checkbox" name="setting" value="setting9">
+                                <span>😢 Sad</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="tab3top_card">
+                            <p class="textarea_label">Length of story<img src="./assest/media/question_icon.svg">
+                            </p>
+                            <div class="setting-options tab3_options">
+                                <label class="option">
+                                <input type="checkbox" name="setting" value="setting1">
+                                <span>⚡ short</span>
+                                </label>
+                                <label class="option">
+                                <input type="checkbox" name="setting" value="setting2">
+                                <span>📖 Standard</span>
+                                </label>
+                                <label class="option">
+                                <input type="checkbox" name="setting" value="setting3">
+                                <span>📚 Long</span>
+                                </label>
+                                <label class="option">
+                                <input type="checkbox" name="setting" value="settig4">
+                                <span>🏰 Epic</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="style_midouter">
+                        <div class="style_mid">
+                            <p class="textarea_label">Visual Image style<img src="./assest/media/question_icon.svg">
+                            </p>
+                            <div class="cards-container">
+                                <div class="card-item selected">
+                                <img src="./assest/media/style1.png" alt="Image 1">
+                                <p class="card-title">Character 1</p>
+                                </div>
+                                <div class="card-item">
+                                <img src="./assest/media/style2.png" alt="Image 2">
+                                <p class="card-title">Character 2</p>
+                                </div>
+                                <div class="card-item">
+                                <img src="./assest/media/style3.png" alt="Image 3">
+                                <p class="card-title">Character 3</p>
+                                </div>
+                                <div class="card-item">
+                                <img src="./assest/media/style4.png" alt="Image 4">
+                                <p class="card-title">Character 4</p>
+                                </div>
+                                <div class="card-item">
+                                <img src="./assest/media/style5.png" alt="Image 5">
+                                <p class="card-title">Character 5</p>
+                                </div>
+                                <div class="card-item">
+                                <img src="./assest/media/style6.png" alt="Image 6">
+                                <p class="card-title">Character 6</p>
+                                </div>
+                                <div class="card-item">
+                                <img src="./assest/media/style7.png" alt="Image 7">
+                                <p class="card-title">Character 7</p>
+                                </div>
+                                <div class="card-item">
+                                <img src="./assest/media/style8.png" alt="Image 8">
+                                <p class="card-title">Character 8</p>
+                                </div>
+                                <div class="card-item">
+                                <img src="./assest/media/style9.png" alt="Image 9">
+                                <p class="card-title">Character 9</p>
+                                </div>
+                                <div class="card-item">
+                                <img src="./assest/media/style10.png" alt="Image 10">
+                                <p class="card-title">Character 10</p>
+                                </div>
+                                <div class="card-item">
+                                <img src="./assest/media/style11.png" alt="Image 11">
+                                <p class="card-title">Character 11</p>
+                                </div>
+                                <div class="card-item">
+                                <img src="./assest/media/style12.png" alt="Image 12">
+                                <p class="card-title">Character 12</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="style_bottom">
+                        <div class="char_btnbar">
+                            <button type="button" class="btn char_btn1 back-btn">Back</button>
+                            <button type="button" class="btn char_btn2 next-btn">Next</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Tab 4 -->
+            <div class="tab-content tab_content" id="tab4">
+                <div class="tab_c4">
+                    <img class="voice_ani1" src="./assest/media/voice_ani1.svg">
+                    <div class="tab3top_card">
+                        <p class="textarea_label">Length of story<img src="./assest/media/question_icon.svg">
+                        </p>
+                        <div class="setting-options tab3_options">
+                            <label class="option">
+                            <input type="checkbox" name="setting" value="setting1">
+                            <span>🇬🇧 English</span>
+                            </label>
+                            <label class="option">
+                            <input type="checkbox" name="setting" value="setting2">
+                            <span>🇨🇳 Mandarin Chinese</span>
+                            </label>
+                            <label class="option">
+                            <input type="checkbox" name="setting" value="setting3">
+                            <span>🇫🇷 French</span>
+                            </label>
+                            <label class="option">
+                            <input type="checkbox" name="setting" value="settig4">
+                            <span>🇪🇸 Spanish</span>
+                            </label>
+                            <label class="option">
+                            <input type="checkbox" name="setting" value="settig4">
+                            <span>🇮🇳 Hindi</span>
+                            </label>
+                        </div>
+                        <div class="custom-dropdown drop_btn2 other-dropdown">
+                            <button class="dropdown-btn">
+                              <span class="dropdown-text">Other</span>
+                              <img src="./assest/media/age_dropicon.svg" alt="Dropdown" class="dropdown-icon">
+                            </button>
+                            <ul class="dropdown-list">
+                              <li>🇮🇳 Hindi</li>
+                              <li>🇪🇸 Spanish</li>
+                              <li>🇫🇷 French</li>
+                              <li>🇨🇳 Mandarin Chinese</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="tab4_mid">
+                        <p class="textarea_label">Length of story<img src="./assest/media/question_icon.svg">
+                        </p>
+                        <div class="speaker_main">
+                            <div class="custom-dropdown lang-dropdown">
+                                <button class="dropdown-btn">
+                                  <span class="dropdown-text">English (US)</span>
+                                  <img src="./assest/media/age_dropicon.svg" alt="Dropdown" class="dropdown-icon">
+                                </button>
+                                <ul class="dropdown-list">
+                                  <li data-value="en-US">English (US)</li>
+                                  <li data-value="hi-IN">Hindi (India)</li>
+                                  <li data-value="fr-FR">French (France)</li>
+                                  <li data-value="es-ES">Spanish (Spain)</li>
+                                  <li data-value="de-DE">German (Germany)</li>
+                                </ul>
+                            </div>
+                            <button class="speaker-btn speaker_btn" id="speakBtn"><img src="./assest/media/speaker.svg" alt="Speak">
+                            </button>
+                          </div>
+                    </div>
+                    <div class="char_btnbar">
+                        <button type="button" class="btn char_btn1 back-btn">Back</button>
+                        <button type="button" class="btn char_btn2 next-btn">Create book (-100 tokens)</button>
+                    </div>
+                </div>
+            </div>
+          </div>          
+    </section>
+    <!-- Section 1 End -->
+
+    <footer class="footer">
+        <div class="bg-footer-menu">
+           <div class="container">
+                 <div class="col">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-12 col-sm-12 col-12">
+                            <div class="footer-brand-logo">
+                                <img src="./assest/media/footer-logo.svg" alt="" class="img-fluid">
+                            </div>
+                            <div class="footer-copy-p">
+                                <p>© 2025 Littlestorybox. All rights reserved.</p>
+                            </div>
+                            <div class="footer-master-card">
+                                <img src="./assest/media/Mastercard.svg" alt="" class="img-fluid">
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-12 col-sm-12 col-12">
+
+                        </div>
+                        <div class="col-lg-4 col-md-12 col-sm-12 col-12">
+                            <div class="footer-link">
+                                <div class="menu-link">
+                                    <ul>
+                                        <h6>Links</h6>
+                                        <li>
+                                            <a href="#">Explore</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">create</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Pricing</a>
+                                        </li>
+                                    </ul>
+                                    <ul>
+                                        <li>
+                                            <a href="#">About us</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">How it works</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Contact us</a>
+                                        </li>
+                                    </ul> 
+                                </div>
+                                <div class="legal-menu">
+                                    <ul>
+                                        <h6>Policies</h6>
+                                        <li>
+                                            <a href="#">Terms & conditions</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Cookie Policy</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Privacy policy</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+           </div>
+        </div>
+        <div class="enjoy-bg d-lg-none d-md-none d-block">
+            <div class="col">
+                <div class="container">
+                    <div class="enjoy-div">
+                        <div class="enjoy-btn">
+                            <p>maecenas augue nulla libero potenti nec. Molestie quis eu faucibus lectus id laoreet. Id diam ac amet.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="./assest/js/jquery.min.js"></script>
+    <script src="./assest/js/owl.carousel.js"></script>
+    <script src="./assest/js/popper.min.js"></script>
+    <script src="./assest/js/bootstrap.bundle.min.js"></script>
+    <script src="./assest/js/swiper-bundle.min.js"></script>
+    <script src="./assest/js/aos.js"></script>
+    <script src="./assest/js/appmain.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000
+        });
+    </script>
+    <!-- Background Change and progress bar -->
+    <!-- Background Change, Progress Bar & Scroll-to-Center -->
+    <script>
+        const totalTabs = 4;
+        let currentTab = 1;
+    
+        function showTab(tabNumber) {
+        // Prevent invalid numbers
+        if (tabNumber < 1 || tabNumber > totalTabs) return;
+    
+        // Update current tab
+        currentTab = tabNumber;
+    
+        // Hide all tabs
+        document.querySelectorAll('.tab-content').forEach(tab => tab.style.display = 'none');
+        document.getElementById(`tab${tabNumber}`).style.display = 'block';
+    
+        // Update background
+        const page = document.getElementById('storyPage');
+        if (page) {
+            page.className = 'story-page bg-' + tabNumber;
+        }
+    
+        // Update diamonds and titles
+        for (let i = 1; i <= totalTabs; i++) {
+            const diamond = document.getElementById(`diamond${i}`);
+            const title = document.getElementById(`title${i}`);
+    
+            if (!diamond || !title) continue; // Safety check
+    
+            diamond.classList.remove("glow-effect");
+    
+            if (i < tabNumber) {
+            diamond.src = "./assest/media/diamond-yellow.svg";
+            title.classList.add("completed-title");
+            } else if (i === tabNumber) {
+            diamond.src = "./assest/media/diamond-glow.png";
+            diamond.classList.add("glow-effect");
+            title.classList.remove("completed-title");
+            } else {
+            diamond.src = "./assest/media/diamond-normal.svg";
+            title.classList.remove("completed-title");
+            }
+        }
+    
+        // 🔹 Scroll active step to center (for mobile view)
+        scrollActiveStepToCenter(tabNumber);
+        // 🔹 Scroll page to top smoothly whenever tab changes
+        window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+        });
+        }
+    
+        // Function to smoothly center the active step in scroll area
+        function scrollActiveStepToCenter(tabNumber) {
+        const progressBar = document.querySelector('.progressbar_main');
+        const activeStep = document.querySelector(`#diamond${tabNumber}`).closest('.step');
+    
+        if (progressBar && activeStep) {
+            const stepRect = activeStep.getBoundingClientRect();
+            const containerRect = progressBar.getBoundingClientRect();
+            const scrollLeft = progressBar.scrollLeft + (stepRect.left - containerRect.left) - (containerRect.width / 2) + (stepRect.width / 2);
+    
+            progressBar.scrollTo({
+            left: scrollLeft,
+            behavior: 'smooth'
+            });
+        }
+        }
+    
+        // ✅ Add next/back button functionality
+        document.addEventListener("DOMContentLoaded", () => {
+        document.querySelectorAll(".next-btn").forEach(btn => {
+            btn.addEventListener("click", () => {
+            if (currentTab < totalTabs) {
+                showTab(currentTab + 1);
+            }
+            });
+        });
+    
+        document.querySelectorAll(".back-btn").forEach(btn => {
+            btn.addEventListener("click", () => {
+            if (currentTab > 1) {
+                showTab(currentTab - 1);
+            }
+            });
+        });
+    
+        // Show first tab initially
+        showTab(1);
+        });
+    </script>
+  
+      
+    <!-- Text Count -->
+    <script>
+        // Select all textareas with the same class
+        document.querySelectorAll(".story_textarea").forEach((textarea) => {
+          // Find the counter element within the same section
+          const counter = textarea.closest("div").querySelector(".textarea_textcount");
+          const maxChars = parseInt(textarea.getAttribute("maxlength"), 10);
+      
+          // Update count whenever user types
+          textarea.addEventListener("input", () => {
+            const currentLength = textarea.value.length;
+            counter.textContent = `${currentLength}/${maxChars}`;
+      
+            // Color logic for near limit
+            counter.style.color = currentLength >= maxChars
+              ? "#ff4444"
+              : "var(--Core-Off-White, #FAFAFA)";
+          });
+      
+          // Ensure correct count when switching tabs (in case text already entered)
+          const updateOnTabShow = () => {
+            const currentLength = textarea.value.length;
+            counter.textContent = `${currentLength}/${maxChars}`;
+          };
+      
+          // Observe visibility change (if using tab switching)
+          const observer = new MutationObserver(updateOnTabShow);
+          observer.observe(textarea, { attributes: true, attributeFilter: ["style", "class"] });
+        });
+    </script>
+
+    <!-- JavaScript for Card selection effect -->
+    <script>
+    window.addEventListener('load', () => {
+        const container = document.querySelector('.cards-container');
+        const cards = document.querySelectorAll('.card-item');
+    
+        // Force scroll to very beginning on page load
+        container.scrollTo({ left: 0, behavior: 'instant' });
+    
+        // Card click logic
+        cards.forEach(card => {
+        card.addEventListener('click', () => {
+            // Remove old selection
+            cards.forEach(c => c.classList.remove('selected'));
+            // Mark new selected
+            card.classList.add('selected');
+    
+            // Smooth scroll that card into view (center)
+            card.scrollIntoView({
+            behavior: 'smooth',
+            inline: 'center',
+            block: 'nearest'
+            });
+        });
+        });
+    });
+    </script>
+    <!-- Dropdown JavaScript -->
+    <script>
+        document.querySelectorAll('.custom-dropdown').forEach(dropdown => {
+          const button = dropdown.querySelector('.dropdown-btn');
+          const list = dropdown.querySelector('.dropdown-list');
+          const selectedText = dropdown.querySelector('.dropdown-text');
+      
+          // Toggle only this dropdown
+          button.addEventListener('click', e => {
+            e.stopPropagation();
+      
+            // Close other dropdowns
+            document.querySelectorAll('.custom-dropdown').forEach(d => {
+              if (d !== dropdown) {
+                d.classList.remove('open');
+                d.querySelector('.dropdown-list').style.display = 'none';
+              }
+            });
+      
+            // Toggle this one
+            const isOpen = dropdown.classList.toggle('open');
+            list.style.display = isOpen ? 'block' : 'none';
+          });
+      
+          // Handle item selection
+          list.querySelectorAll('li').forEach(item => {
+            item.addEventListener('click', e => {
+              e.stopPropagation();
+      
+              list.querySelectorAll('li').forEach(li => li.classList.remove('selected'));
+              item.classList.add('selected');
+      
+              // Update text in current dropdown only
+              selectedText.textContent = item.textContent;
+      
+              // Save selected value for language dropdown only
+              if (dropdown.classList.contains('lang-dropdown')) {
+                button.setAttribute('data-value', item.getAttribute('data-value'));
+              }
+      
+              dropdown.classList.remove('open');
+              list.style.display = 'none';
+            });
+          });
+        });
+      
+        // Close all dropdowns when clicking outside
+        window.addEventListener('click', e => {
+          if (!e.target.closest('.custom-dropdown')) {
+            document.querySelectorAll('.custom-dropdown').forEach(d => {
+              d.classList.remove('open');
+              d.querySelector('.dropdown-list').style.display = 'none';
+            });
+          }
+        });
+      </script>           
+        
+    <!-- Voice JavaScript -->
+    <script>
+        const speakBtn = document.getElementById("speakBtn");
+        const dropdownItems = document.querySelectorAll(".dropdown-list li");
+        const dropdownBtn = document.querySelector(".dropdown-btn");
+        const selectedText = document.querySelector(".age_droptext");
+      
+        // Update language on dropdown click
+        dropdownItems.forEach(item => {
+          item.addEventListener("click", () => {
+            const langValue = item.getAttribute("data-value");
+            const langName = item.textContent;
+            dropdownBtn.setAttribute("data-value", langValue);
+            selectedText.textContent = langName;
+          });
+        });
+      
+        // Speak the text written in JS
+        speakBtn.addEventListener("click", () => {
+          const lang = dropdownBtn.getAttribute("data-value") || "en-US"; // Default language
+          const text = "Welcome to Little Story Box!"; // 👈 Change this text anytime
+      
+          // Create speech synthesis
+          const utterance = new SpeechSynthesisUtterance(text);
+          utterance.lang = lang;
+          utterance.rate = 0.8; // speed
+          utterance.pitch = 1; // tone
+      
+          // Stop ongoing speech
+          speechSynthesis.cancel();
+      
+          // Speak
+          speechSynthesis.speak(utterance);
+        });
+    </script>
+
+           
+</body>
+
+</html>
