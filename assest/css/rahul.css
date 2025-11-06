@@ -813,7 +813,6 @@
   justify-content: center;
   align-items: center;
   gap: 8px;
-  flex: 1 0 0;
   color: var(--Core-Secondary-Purple, #5A3384);
   font-family: Poppins;
   font-size: 15px;
@@ -855,7 +854,7 @@
 
 /* Dashboard Start */
 .dashboard_s1{
-  padding: 145px 0px 0px 0px;
+  padding: 147px 0px 0px 0px;
   background-image: url(../media/dashboard_s1bg.png);
   background-repeat: no-repeat;
   background-position: center center;
@@ -871,6 +870,7 @@
 .dashboard_s1titlebar{
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 16px;
   padding-top: 60px;
 }
@@ -897,6 +897,263 @@
 .dashboard_c2{
   width: 1256px;
   margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.dashboard_logoutbtn{
+  color: var(--Core-Secondary-Purple, #5A3384);
+  font-family: Quicksand;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 180%;
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  text-decoration-skip-ink: auto;
+  text-decoration-thickness: auto;
+  text-underline-offset: auto;
+  text-underline-position: from-font;
+  margin: 0px;
+  padding: 0px;
+}
+.dashboard_top{
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+}
+.dashboard_topcard{
+  padding: 48px 0px 0px 0px;
+  width: 100%;
+  position: relative;
+}
+.dashboard_card1icon{
+  position: absolute;
+  top: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+
+}
+.dashboard_card{
+  display: flex;
+  padding: 40px 24px 24px 24px;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  align-self: stretch;
+  border-radius: 24px;
+  background: var(--Sky-Sky-light, #E5F9FF);
+}
+.dash_cardtitle{
+  color: var(--Core-purple-titles, #3B2C53);
+  text-align: center;
+  font-family: "Josephine Cosy Bold";
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%;
+  letter-spacing: -2px;
+  margin: 0px;
+}
+.dash_cardsubtitle{
+  color: var(--Core-purple-body, #6A5681);
+  text-align: center;
+  font-family: Quicksand;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 180%;
+  margin: 0px;
+}
+.dashboard_mid{
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+}
+.dash_midleft{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.dash_midright{
+  width: 100%;
+  max-width: 604px;
+  min-width: 604px;
+  display: flex;
+  padding: 40px;
+  flex-direction: column;
+  gap: 32px;
+  align-self: stretch;
+  border-radius: 8px;
+  background: var(--Sky-Sky-light, #E5F9FF);
+}
+.dash_midrighttop{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.dash_midrighttitle{
+  color: var(--Core-purple-titles, #3B2C53);
+  font-family: "Josephine Cosy Bold";
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%;
+  letter-spacing: -2px;
+  margin: 0px;
+}
+.dash_midrightbottom {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  width: 100%;
+}
+
+.dash_libcard {
+  cursor: pointer;
+  padding-bottom: 42px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+.dash_libbtn{
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  border-radius: 100px;
+  border: 1px solid var(--Base-04, #F2F2F2);
+  background: var(--Core-White, #FFF);
+  padding: 16px 0px;
+  justify-content: center;
+  align-items: center;
+  align-self: stretch;
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 95%;
+  transition: all 0.3s ease;
+}
+.dash_libbtntitle{
+  color: var(--Charcoal, #242323);
+  text-align: center;
+  font-family: Poppins;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%;
+  margin: 0px;
+}
+.dash_libbtnreadmore{
+  color: var(--Core-Secondary-Purple, #5A3384);
+  text-align: center;
+  font-family: Quicksand;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 180%;
+  margin: 0px;
+}
+.dash_libcard:hover img{
+  width: 95%;
+}
+.dash_libcard:hover .dash_libbtn{
+  width: 100%;
+}
+.dash_midleftop{
+  display: flex;
+  padding: 40px;
+  justify-content: space-between;
+  align-items: center;
+  align-self: stretch;
+  border-radius: 8px;
+  background: var(--Sky-Sky-light, #E5F9FF);
+}
+.balance_titlebar{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 16px;
+}
+.balance_title{
+  color: var(--Core-purple-titles, #3B2C53);
+  font-family: "Josephine Cosy Bold";
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%;
+  letter-spacing: -2px;
+  margin: 0px;
+}
+.balance_subtitle{
+  color: var(--Core-purple-titles, #3B2C53);
+  leading-trim: both;
+  text-edge: cap;
+  font-family: Poppins;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+  margin: 0px;
+}
+.dash_midlefmid{
+  display: flex;
+  padding: 40px;
+  flex-direction: column;
+  gap: 32px;
+  align-self: stretch;
+  border-radius: 8px;
+  background: var(--Sky-Sky-light, #E5F9FF);
+}
+.dash_midleftmiddle{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.dash_textboxbar{
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-self: stretch;
+}
+.dash_textbox{
+  display: flex;
+  height: 56px;
+  padding: 12px 24px;
+  align-items: center;
+  gap: 8px;
+  align-self: stretch;
+  border-radius: 100px;
+  background: var(--Core-White, #FFF);
+  color: var(--Core-purple-titles, #3B2C53);
+  border: none;
+  font-family: Quicksand;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 180%;
+}
+.dash_textbox::placeholder{
+  color: var(--Core-purple-titles, #3B2C53);
+  font-family: Quicksand;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 180%;
+}
+.form-control:focus{
+  border: none;
+  box-shadow: none;
+}
+.dash_textline{
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
 }
 /* Dashboard End */
 
