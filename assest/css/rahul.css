@@ -748,6 +748,109 @@
   top: 170px;
   right: -540px;
 }
+.story_mcontent{
+  padding: 148px 24px 61px 24px;
+  width: 343px;
+  margin: auto;
+  background: url(../media/story_modalbg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.story_mbody{
+  padding: 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.story_mtitlebar{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  align-self: stretch;
+}
+.story_mtitle{
+  color: var(--Core-purple-titles, #3B2C53);
+  text-align: center;
+  font-family: "Josephine Cosy Bold";
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%;
+  letter-spacing: -2px;
+  margin: 0px;
+}
+.story_msubtitle{
+  color: var(--Core-Secondary-Purple, #5A3384);
+  text-align: center;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 160%;
+  margin: 0px;
+}
+.story_msubtitlebold{
+  color: var(--Core-Secondary-Purple, #5A3384);
+  text-align: center;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 160%;
+  margin: 0px;
+}
+.story_mbtnbar{
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+}
+.smodal_btn1{
+  display: flex;
+  height: 56px;
+  padding: 16px 40px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  flex: 1 0 0;
+  color: var(--Core-Secondary-Purple, #5A3384);
+  font-family: Poppins;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%;
+  border-radius: 100px;
+  background: var(--Core-yellow, #FFCE3C);
+}
+.smodal_btn1:hover{
+  color: var(--Core-Secondary-Purple, #5A3384);
+  border: 2px solid var(--Core-Secondary-yellow-dark, #E3AA00);
+  background: var(--Core-yellow, #FFCE3C);
+}
+.smodal_btn2{
+  display: flex;
+  height: 56px;
+  padding: 16px 40px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  flex: 1 0 0;
+  color: var(--Core-yellow, #FFCE3C);
+  text-align: center;
+  font-family: Poppins;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%;
+  border-radius: 100px;
+  background: var(--Core-purple-titles, #3B2C53);
+}
+.smodal_btn2:hover{
+  color: var(--Core-yellow, #FFCE3C);
+  border: 2px solid var(--Core-Purple-dark, #251D32);
+  background: var(--Core-Secondary-Purple, #5A3384);
+}
 /* Story End */
 
 

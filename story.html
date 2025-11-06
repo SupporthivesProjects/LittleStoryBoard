@@ -382,51 +382,51 @@
                             <div class="cards-container">
                                 <div class="card-item selected">
                                 <img src="./assest/media/style1.png" alt="Image 1">
-                                <p class="card-title">Character 1</p>
+                                <p class="card-title">3D cartoon</p>
                                 </div>
                                 <div class="card-item">
                                 <img src="./assest/media/style2.png" alt="Image 2">
-                                <p class="card-title">Character 2</p>
+                                <p class="card-title">Watercolor</p>
                                 </div>
                                 <div class="card-item">
                                 <img src="./assest/media/style3.png" alt="Image 3">
-                                <p class="card-title">Character 3</p>
+                                <p class="card-title">Comic book</p>
                                 </div>
                                 <div class="card-item">
                                 <img src="./assest/media/style4.png" alt="Image 4">
-                                <p class="card-title">Character 4</p>
+                                <p class="card-title">Photorealistic</p>
                                 </div>
                                 <div class="card-item">
                                 <img src="./assest/media/style5.png" alt="Image 5">
-                                <p class="card-title">Character 5</p>
+                                <p class="card-title">Sketch</p>
                                 </div>
                                 <div class="card-item">
                                 <img src="./assest/media/style6.png" alt="Image 6">
-                                <p class="card-title">Character 6</p>
+                                <p class="card-title">Oil painting</p>
                                 </div>
                                 <div class="card-item">
                                 <img src="./assest/media/style7.png" alt="Image 7">
-                                <p class="card-title">Character 7</p>
+                                <p class="card-title">Flat color</p>
                                 </div>
                                 <div class="card-item">
                                 <img src="./assest/media/style8.png" alt="Image 8">
-                                <p class="card-title">Character 8</p>
+                                <p class="card-title">Pixel Art</p>
                                 </div>
                                 <div class="card-item">
                                 <img src="./assest/media/style9.png" alt="Image 9">
-                                <p class="card-title">Character 9</p>
+                                <p class="card-title">Crayon color</p>
                                 </div>
                                 <div class="card-item">
                                 <img src="./assest/media/style10.png" alt="Image 10">
-                                <p class="card-title">Character 10</p>
+                                <p class="card-title">Vintage illustration</p>
                                 </div>
                                 <div class="card-item">
                                 <img src="./assest/media/style11.png" alt="Image 11">
-                                <p class="card-title">Character 11</p>
+                                <p class="card-title">paper cutout</p>
                                 </div>
                                 <div class="card-item">
                                 <img src="./assest/media/style12.png" alt="Image 12">
-                                <p class="card-title">Character 12</p>
+                                <p class="card-title">Embroidery</p>
                                 </div>
                             </div>
                         </div>
@@ -504,13 +504,31 @@
                     </div>
                     <div class="char_btnbar">
                         <button type="button" class="btn char_btn1 back-btn">Back</button>
-                        <button type="button" class="btn char_btn2 next-btn">Create book (-100 tokens)</button>
+                        <button type="button" class="btn char_btn2"  data-bs-toggle="modal" data-bs-target="#exampleModal">Create book (-100 tokens)</button>
                     </div>
                 </div>
             </div>
           </div>          
     </section>
     <!-- Section 1 End -->
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content story_mcontent">
+                <div class="modal-body story_mbody">
+                    <div class="story_mtitlebar">
+                        <h3 class="story_mtitle">Confirm token transaction</h3>
+                        <p class="story_msubtitle">Creating your storybook costs <span class="story_msubtitlebold">100 tokens.</span>Confirm to continue your adventure!</p>
+                    </div>
+                    <div class="story_mbtnbar">
+                        <button type="button" class="btn smodal_btn1 w-100"data-bs-dismiss="modal" aria-label="Close">Back</button>
+                        <button type="button" class="btn smodal_btn2 w-100">Confirm</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <footer class="footer">
         <div class="bg-footer-menu">
@@ -812,42 +830,41 @@
         });
       </script>           
         
-    <!-- Voice JavaScript -->
-    <script>
-        const speakBtn = document.getElementById("speakBtn");
-        const dropdownItems = document.querySelectorAll(".dropdown-list li");
-        const dropdownBtn = document.querySelector(".dropdown-btn");
-        const selectedText = document.querySelector(".age_droptext");
-      
-        // Update language on dropdown click
-        dropdownItems.forEach(item => {
-          item.addEventListener("click", () => {
-            const langValue = item.getAttribute("data-value");
-            const langName = item.textContent;
-            dropdownBtn.setAttribute("data-value", langValue);
-            selectedText.textContent = langName;
-          });
-        });
-      
-        // Speak the text written in JS
-        speakBtn.addEventListener("click", () => {
-          const lang = dropdownBtn.getAttribute("data-value") || "en-US"; // Default language
-          const text = "Welcome to Little Story Box!"; // 👈 Change this text anytime
-      
-          // Create speech synthesis
-          const utterance = new SpeechSynthesisUtterance(text);
-          utterance.lang = lang;
-          utterance.rate = 0.8; // speed
-          utterance.pitch = 1; // tone
-      
-          // Stop ongoing speech
-          speechSynthesis.cancel();
-      
-          // Speak
-          speechSynthesis.speak(utterance);
-        });
-    </script>
-
+        <!-- Voice JavaScript -->
+        <script>
+            const speakBtn = document.getElementById("speakBtn");
+            const dropdownItems = document.querySelectorAll(".dropdown-list li");
+            const dropdownBtn = document.querySelector(".dropdown-btn");
+            const selectedText = document.querySelector(".age_droptext");
+        
+            // Update language on dropdown click
+            dropdownItems.forEach(item => {
+            item.addEventListener("click", () => {
+                const langValue = item.getAttribute("data-value");
+                const langName = item.textContent;
+                dropdownBtn.setAttribute("data-value", langValue);
+                selectedText.textContent = langName;
+            });
+            });
+        
+            // Speak the text written in JS
+            speakBtn.addEventListener("click", () => {
+            const lang = dropdownBtn.getAttribute("data-value") || "en-US"; // Default language
+            const text = "Welcome to Little Story Box!"; // 👈 Change this text anytime
+        
+            // Create speech synthesis
+            const utterance = new SpeechSynthesisUtterance(text);
+            utterance.lang = lang;
+            utterance.rate = 0.8; // speed
+            utterance.pitch = 1; // tone
+        
+            // Stop ongoing speech
+            speechSynthesis.cancel();
+        
+            // Speak
+            speechSynthesis.speak(utterance);
+            });
+        </script>
            
 </body>
 
