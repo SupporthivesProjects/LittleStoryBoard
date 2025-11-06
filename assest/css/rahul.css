@@ -1091,13 +1091,11 @@
 }
 .balance_subtitle{
   color: var(--Core-purple-titles, #3B2C53);
-  leading-trim: both;
-  text-edge: cap;
   font-family: Poppins;
   font-size: 20px;
   font-style: normal;
   font-weight: 500;
-  line-height: 150%;
+  line-height: 70%;
   margin: 0px;
 }
 .dash_midlefmid{
