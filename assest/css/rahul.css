@@ -853,6 +853,53 @@
 }
 /* Story End */
 
+/* Dashboard Start */
+.dashboard_s1{
+  padding: 145px 0px 0px 0px;
+  background-image: url(../media/dashboard_s1bg.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+.dashboard_c1{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  max-width: 1260px;
+  margin: auto;
+}
+.dashboard_s1titlebar{
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding-top: 60px;
+}
+.dashboard_s1title{
+  color: var(--Core-purple-titles, #3B2C53);
+  font-family: "Josephine Cosy Bold";
+  font-size: 80px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%;
+  letter-spacing: -4px;
+  margin: 0px;
+}
+.dashboard_ani1{
+  height: 280px;
+  margin-top: 32px;
+}
+.dashboard_ani2{
+  height: 369px;
+}
+.dashboard_s2{
+  padding: 40px 0px 64px 0px;
+}
+.dashboard_c2{
+  width: 1256px;
+  margin: auto;
+}
+/* Dashboard End */
+
 
 
 
@@ -888,9 +935,6 @@
   }
 }
 @media only screen and (max-width: 600px) {
-
-
-
   .progressbar_main {
     overflow-x: auto;
     scroll-behavior: smooth;
@@ -1110,6 +1154,11 @@
       display: none;
     }
     /* Story End */
+
+    /* Dashboard Start */
+
+    /* Dashboard End */
+
 }
 
 @media only screen and (min-width: 900px) and (max-width:999px) {
@@ -1164,6 +1213,18 @@
     right: -156px;
     height: 150px;
   }
+  .dashboard_c1{
+    width: 800px;
+  }
+  .dashboard_s1title{
+    font-size: 48px;
+  }
+  .dashboard_ani1{
+    height: 250px;
+  }
+  .dashboard_ani2{
+    height: 320px;
+  }
 }
 @media only screen and (min-width: 1000px) and (max-width:1099px) {
   .age_section{
@@ -1211,6 +1272,18 @@
     right: -200px;
     height: 180px;
   }
+  .dashboard_c1{
+    width: 900px;
+  }
+  .dashboard_s1title{
+    font-size: 48px;
+  }
+  .dashboard_ani1{
+    height: 250px;
+  }
+  .dashboard_ani2{
+    height: 320px;
+  }
 }
 @media only screen and (min-width: 1100px) and (max-width:1199px) {
   .age_section{
@@ -1252,6 +1325,12 @@
     right: -250px;
     height: 230px;
   }
+  .dashboard_c1{
+    width: 1000px;
+  }
+  .dashboard_s1title{
+    font-size: 64px;
+  }
 }
 @media only screen and (min-width: 1200px) and (max-width:1348px) {
   .age_section{
@@ -1292,6 +1371,12 @@
   }
   .tab_c4{
     width: 580px;
+  }
+  .dashboard_c1{
+    width: 1100px;
+  }
+  .dashboard_s1title{
+    font-size: 64px;
   }
 }
 
