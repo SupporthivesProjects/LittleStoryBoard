@@ -181,6 +181,59 @@
     }
 }
 @media screen and (max-width: 600px) {
+    .book-left, .book-right{
+        display: none;
+    }
+    .framer-s61to5{
+        display: none;
+    }
+    .home-banner-main::after {
+        display: none;
+    }
+    
+    .home-content h1 {
+        color: var(--Grayscale-White, #FFF);
+        text-align: center;
+        font-family: "Josephine Cosy Bold";
+        font-size: 40px;
+        margin-bottom:8px;
+    }
+    .home-content {
+        width: 755px;
+        max-width: 100%;
+        margin: auto;
+        left: 0px;
+        right: 0px;
+        position: absolute;
+        padding: 0px 21px;
+        top: 27px;
+    }
+    .home-content p {
+        color: var(--Core-yellow, #FFCE3C);
+        text-align: center;
+        leading-trim: both;
+        text-edge: cap;
+        font-family: 'Quicksand';
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 157%;
+        margin-bottom: 24px;
+    }
+    .home-banner-main{
+        background: url(../media/hero-mo.png) no-repeat;
+        background-position: center center;
+        background-size: cover;
+        height: 596px;
+        top: -.5rem;
+        padding-top: 8rem;
+    }
+    .home-element{
+       margin-top: 10rem;
+    }
+    .framer-s61to5{
+        height: 70vh;
+    }
     .how-it-works-section::after {
         content: '';
         background: url(../media/how-its-works-mo.png) no-repeat;

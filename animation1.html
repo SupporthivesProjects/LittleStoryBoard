@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Full-Width Framer-like Wave (with Images)</title>
+<style>
+
+
+section {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+
+/* full-width layered wrapper */
+.framer-s61to5 {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* each wave layer */
+.framer-s61to5 img {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 1;
+  will-change: transform;
+  pointer-events: none;
+}
+</style>
+</head>
+<body>
+
+<section>
+  <div class="framer-s61to5" data-framer-name="waves">
+    <!-- LAYER 3 — light blue -->
+    <img 
+      data-framer-name="layer 3" 
+      src="./assest/media/layer-back.png" 
+      alt="Layer 3 background" 
+    >
+
+    <!-- LAYER 2 — darker mid-layer -->
+    <img 
+      data-framer-name="layer 2" 
+       src="./assest/media/layer-mid.png" 
+      alt="Layer 2 wave" 
+    >
+
+    <!-- LAYER 1 — gradient base -->
+    <img 
+      data-framer-name="layer 1" 
+      src="./assest/media/layer-top.png" 
+      alt="Layer 1 base" 
+    >
+  </div>
+</section>
+
+<script>
+// Animate translateY from 0–9px smoothly (Framer-like precision)
+const layers = document.querySelectorAll('.framer-s61to5 img');
+let t = 0;
+
+function animate() {
+  t += 0.02;
+  layers.forEach((layer, i) => {
+    const offset = Math.abs(Math.sin(t + i)) * 12; // Move 0–9px
+    layer.style.transform = `translateY(${offset.toFixed(5)}px)`;
+  });
+  requestAnimationFrame(animate);
+}
+
+animate();
+</script>
+
+</body>
+</html>

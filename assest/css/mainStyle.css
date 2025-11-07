@@ -207,7 +207,88 @@ header{
     height: 40px;
   }
 /* ---------------------------homepage---------------- */
+.home-banner-main {
+  width: 100vw;
+  height: 1033px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  top: 4rem;
+  padding-top: 13rem;
+}
+.home-banner-main::after {
+    content: "";
+    background: url(../media/sky.png) no-repeat;
+    background-size: cover;
+    background-position: center center;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: -40px;
+    width: 100%;
+    height: 223px;
+}
 
+/* full-width layered wrapper */
+.framer-s61to5 {
+  position: absolute;
+  width: 100vw;
+  height: 112vh;
+  overflow: hidden;
+  top: 0px;
+}
+
+/* each wave layer */
+.framer-s61to5 img {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 1;
+  will-change: transform;
+  pointer-events: none;
+  margin-bottom: 4rem;
+}
+.home-content h1{
+  color: var(--Grayscale-White, #FFF);
+  text-align: center;
+  font-family: "Josephine Cosy Bold";
+  font-size: 80px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%; /* 80px */
+  letter-spacing: -4px;
+  margin-bottom: 32px;
+}
+.home-content p{
+    color: var(--Core-yellow, #FFCE3C);
+    text-align: center;
+    leading-trim: both;
+    text-edge: cap;
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+    margin-bottom: 32px;
+}
+.home-content{
+  width: 762px;
+  max-width: 100%;
+  margin: auto;
+  left: 0px;
+  right: 0px;
+  position: absolute;
+  padding: 0px 40px;
+  top: 0px;
+}
+.home-content .btn{
+    width: 179px;
+    padding: 16px 40px;
+    margin: auto;
+}
 .how-it-works-title h2{
     color: var(--Core-purple-titles, #3B2C53);
     text-align: center;
@@ -705,100 +786,214 @@ header{
   background-size: cover;
   background-position: center center;
   position: relative;
-  height: 901px;
+  /* height: 901px; */
 }
+
+/* ----------------------------sldier-------------------- */
 .main-book-slider{
     position: relative;
     width: 1276px;
     max-width: 100%;
     margin: auto;
     height: 736px;
+    background: url(../media/graphic-book.png) no-repeat;
+    background-position: center center;
+    background-size: cover;
 }
-/* ----------------------------sldier-------------------- */
-.bookWrapper {
-  margin: auto;
-	width: 600px;
-	height: 500px;
+.book-section {
+  /* height: 100vh; */
+  width: 98%;
+  padding: 5px 0 40px;
+  text-align: center;
+}
+.book-section > .container {
+  /* height: 717px; */
+  width: 1231px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 2%;
+  margin-bottom: 30px;
+  perspective: 2000px;
+}
+.back img, .front img{
+    width: 100%;
+    height: 727px;
+}
+.container > .right {
+  position: absolute;
+  height: 100%;
+  width: 50%;
+  transition: 0.7s ease-in-out;
+  transform-style: preserve-3d;
+}
+.book-section > .container > .right {
+  right: 0;
+  transform-origin: left;
+  border-radius: 10px 0 0 10px;
+}
+.right > figure.front,
+.right > figure.back {
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-size: 200%;
+  background-repeat: no-repeat;
+  backface-visibility: hidden;
+  background-color: white;
+  overflow: hidden;
+}
+.right figure.back {
+  background-color: transparent;
+}
+.right > figure.front {
+    background-position: right;
+    border-radius: 0 57px 68px 0;
+    /* box-shadow: 2px 2px 15px -2px rgba(0, 0, 0, 0.2); */
+    clip-path: polygon(1% 15%, 2% 2%, 15% 2%, 85% 1%, 100% 2%, 100% 15%, 100% 85%, 100% 100%, 80% 100%, 21% 100%, 50% 99%, 10% 85%);
+}
+.right > figure.back {
+  background-position: left;
+  border-radius: 48px 0 0 37px;
+  /* box-shadow: -2px 2px 15px -2px rgba(0, 0, 0, 0.2); */
+  transform: rotateY(180deg);
+  padding-left: 22px;
+}
+.fron-content p{
+  color: var(--Core-purple-titles, #3B2C53);
+  font-family: Poppins;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%; /* 30px */
+  text-align: left;
+}
+.fron-content{
+  padding: 104px 100px 64px 72px;
+}
+.flip {
+  transform: rotateY(-180deg);
+}
+.flip::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  border-radius: 0 10px 10px 0;
+  background-color: transparent;
+}
+.book-section > button {
+  border: 0px solid #ef9f00;
+  background-color: transparent;
+  color: #ef9f00;
+  padding: 0px 0px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 10px;
+  transition: 0.3s ease-in-out;
+}
+.btn-page-count p {
+    color: rgba(0, 0, 0, 0.7);
+    font-family: calibri;
+    font-size: 24px;
+    color: var(--Core-Secondary-Purple, #5A3384);
+    font-family: Quicksand;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 180%;
+    margin-bottom: 0px;
+}
+.btn-page-count button{
+  border: 0px;
+}
+.btn-page-count{
+    display: flex;
+    gap: 15px;
+    width: 200px;
+    margin: auto;
+    max-width: 100%;
 }
 
-.bookBg {
-	position: relative;
-	background-color: #000;
-	width: 100%;
-	height: 100%;
-	border-radius: 10px;
+.book-section > button:focus,
+.book-section > button:active {
+  outline: none;
+}
+.book-section > p {
+  color: rgba(0, 0, 0, 0.7);
+  font-family: calibri;
+  font-size: 24px;
+}
+.book-section > p > a {
+  text-decoration: none;
+  color: #ef9f00;
+}
+.front#cover,.back#back-cover {
+  background-color: #ffcb63;
+  font-family: calibri;
+  text-align: left;
+  padding: 0 30px;
+}
+.front#cover h1 {
+  color: #fff;
+}
+.front#cover p {
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 14px;
+}
+#cover{
+    background-color: transparent !important;
+    font-family: calibri;
+    text-align: left;
+    padding: 0 0px !important;
+    clip-path: none !important;
+    border-radius: 0 42px 42px 0 !important;
+}
+.book-section .play-btn{
+    border-radius: 100px;
+    background: var(--Core-yellow, #FFCE3C);
+    display: flex;
+    height: 56px;
+    padding: 8px 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    color: var(--Core-Secondary-Purple, #5A3384);
+    font-family: Poppins;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%;
+}
+.btn-page-count button {
+    border: 0px;
+    background: transparent;
+}
+.btn-page-count-play{
+    display: flex;
+    justify-content: center;
+    width: 508px;
+    max-width: 100%;
+    margin: auto;
+    float: right;
+    align-items: center;
+    position: absolute;
+    right: 80px;
+    bottom: 6rem;
+}
+.create-backgrpound-book .btn-download{
+    width: 167px;
+    padding: 16px 24px;
+    margin: auto;
+    margin-top: 40px;
 }
 
-.pageBg {
-	position: absolute;
-	left: 50%;
-	top: 50%;
-	background-color: #999;
-	width: calc(100% - 20px);
-	height: calc(100% - 20px);
-	border-radius: 0px;
-}
-
-.pageWrapper {
-	position: absolute;
-	width: 50%;
-	height: 100%;
-	float: left;
-	-webkit-font-smoothing: antialiased;
-}
-
-.page {
-	position: absolute;
-	width: 100%;
-	height: 100%;
-}
-
-.pageFace {
-	position: absolute;
-	top: 0;
-	width: 100%;
-	height: 100%;
-	overflow: hidden;
-	text-align: center;
-}
-
-.front {
-	background: linear-gradient(to right, #d9d9d9 0%, #f9f9f9 3%, #ffffff 8%, #ffffff 100%);
-}
-
-.back {
-	background: linear-gradient(to right, #ffffff 0%, #ffffff 92%, #f9f9f9 97%, #d9d9d9 100%);
-}
-
-.pageFoldRight {
-	position: absolute;
-	width: 0px;
-	height: 0px;
-	top: 0;
-	right: 0;
-	border-left-width: 1px;
-	border-left-color: #DDDDDD;
-	border-left-style: solid;
-	border-bottom-width: 1px;
-	border-bottom-color: #DDDDDD;
-	border-bottom-style: solid;
-	box-shadow: -5px 5px 10px #dddddd;
-}
-
-.pageFoldLeft {
-	position: absolute;
-	width: 0px;
-	height: 0px;
-	top: 0;
-	left: 0;
-	border-right-width: 1px;
-	border-right-color: #DDDDDD;
-	border-right-style: solid;
-	border-bottom-width: 1px;
-	border-bottom-color: #DDDDDD;
-	border-bottom-style: solid;
-	box-shadow: 5px 5px 10px #dddddd;
-}
 /* ---------------------------contactpage---------------- */
 .contactmain{
   background:#D5F3FC;
@@ -1059,8 +1254,40 @@ header{
 .modal-dialog-scan-main svg{
   margin: 32px 0px;
 }
-
-
+.main-book-slider-mo .genrate-card{
+  padding: 32px 24px;
+}
+.main-book-slider-mo .card{
+  border: 0px;
+  background: transparent;
+}
+.main-book-slider-mo  .card p{
+    color: var(--Core-purple-titles, #3B2C53);
+    font-family: Quicksand;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 180%;
+    text-align: left !important;
+}
+.main-book-slider-mo p{
+    color: var(--Core-Secondary-Purple, #5A3384);
+    font-family: Quicksand;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 180%;
+    text-align: center;
+}
+.owl-theme .owl-nav .disabled {
+    opacity: 1;
+}
+.main-book-slider-mo .btn-download {
+    width: 167px;
+    padding: 16px 24px;
+    margin: auto;
+    margin-top: 11px !important; 
+}
 /* ---------------------pp-------------------------------- */
 .error-section{
     padding:156px 0px;
@@ -1327,6 +1554,68 @@ header{
   .enjoy-btn h6 {
     font-size: 20px;
   }
+
+   .framer-s61to5 {
+      position: absolute;
+      width: 100vw;
+      height: 90vh;
+      overflow: hidden;
+      top: 0px;
+    }
+    .home-content h1 {
+      color: var(--Grayscale-White, #FFF);
+      text-align: center;
+      font-family: "Josephine Cosy Bold";
+      font-size: 60px;
+    }
+    .home-banner-main {
+      width: 100vw;
+      height: 798px;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      top: 4rem;
+      padding-top: 8rem;
+      margin-bottom: 6rem;
+    }
+    .book-left{
+      width: 462px;
+      height: 775px;
+      position: absolute;
+      left: -8rem;
+      top: -7rem;
+      display: none;
+    }
+    .book-right{
+      width: 462px;
+      height: 775px;
+      position: absolute;
+      right: -8rem;
+      top: -7rem;
+      display: none;
+    }
+    .home-element{
+      width: 672px;
+      height: 531px;
+      margin: auto;
+      position: absolute;
+      left: 0px;
+      right: 0px;
+      bottom: -11rem;
+    }
+    .home-content {
+        width: 762px;
+        max-width: 100%;
+        margin: auto;
+        left: 0px;
+        right: 0px;
+        position: absolute;
+        padding: 1px 113px;
+        top: 0px;
+    }
+
+
+
 }
 @media only screen and (min-width: 900px) and (max-width: 999px)  {
    .navbar-expand-lg .navbar-nav {
@@ -1339,7 +1628,7 @@ header{
     .how-it-works-card-content h5 {
       font-size: 35px;
     }
-     .explore-hero-section {
+    .explore-hero-section {
       height: 750px;
       margin-bottom: -1px;
     }
@@ -1366,6 +1655,64 @@ header{
     .home-package-main {
       height: 1126px;
     } 
+
+     .framer-s61to5 {
+      position: absolute;
+      width: 100vw;
+      height: 90vh;
+      overflow: hidden;
+      top: 0px;
+    }
+    .home-content h1 {
+      color: var(--Grayscale-White, #FFF);
+      text-align: center;
+      font-family: "Josephine Cosy Bold";
+      font-size: 60px;
+    }
+    .home-banner-main {
+      width: 100vw;
+      height: 798px;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      top: 4rem;
+      padding-top: 8rem;
+      margin-bottom: 6rem;
+    }
+    .book-left{
+      width: 462px;
+      height: 775px;
+      position: absolute;
+      left: -8rem;
+      top: -7rem;
+    }
+    .book-right{
+      width: 462px;
+      height: 775px;
+      position: absolute;
+      right: -8rem;
+      top: -7rem;
+    }
+    .home-element{
+      width: 672px;
+      height: 531px;
+      margin: auto;
+      position: absolute;
+      left: 0px;
+      right: 0px;
+      bottom: -11rem;
+    }
+    .home-content {
+        width: 762px;
+        max-width: 100%;
+        margin: auto;
+        left: 0px;
+        right: 0px;
+        position: absolute;
+        padding: 1px 113px;
+        top: 0px;
+    }
+
     .contacus-section .scientist-animat {
       position: absolute;
       width: 212px;
@@ -1419,6 +1766,63 @@ header{
     .home-package-main {
       height: 1126px;
     } 
+
+    .framer-s61to5 {
+      position: absolute;
+      width: 100vw;
+      height: 90vh;
+      overflow: hidden;
+      top: 0px;
+    }
+    .home-content h1 {
+      color: var(--Grayscale-White, #FFF);
+      text-align: center;
+      font-family: "Josephine Cosy Bold";
+      font-size: 60px;
+    }
+    .home-banner-main {
+      width: 100vw;
+      height: 798px;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      top: 4rem;
+      padding-top: 8rem;
+      margin-bottom: 6rem;
+    }
+    .book-left{
+      width: 529px;
+      height: 851px;
+      position: absolute;
+      left: -11rem;
+      top: -7rem;
+    }
+    .book-right{
+      width: 529px;
+      height: 851px;
+      position: absolute;
+      right: -11rem;
+      top: -7rem;
+    }
+    .home-element{
+      width: 672px;
+      height: 531px;
+      margin: auto;
+      position: absolute;
+      left: 0px;
+      right: 0px;
+      bottom: -11rem;
+    }
+    .home-content {
+        width: 762px;
+        max-width: 100%;
+        margin: auto;
+        left: 0px;
+        right: 0px;
+        position: absolute;
+        padding: 1px 113px;
+        top: 0px;
+    }
     .contacus-section .scientist-animat {
       position: absolute;
       width: 193px;
@@ -1432,7 +1836,66 @@ header{
         height: 240px;
         left: 0rem;
         top: 52px;
-    } 
+    }
+    .main-book-slider {
+        position: relative;
+        width: 1159px;
+        max-width: 100%;
+        margin: auto;
+        height: 648px;
+        background: url(../media/graphic-book.png) no-repeat;
+        background-position: center center;
+        background-size: 1006px;
+    }
+    .back img {
+       width: 92%;
+        height: 569px;
+        max-width: 100%;
+        margin: auto;
+        float: right;
+    }
+    .front img {
+        width: 98%;
+        height: 569px;
+        max-width: 100%;
+        margin: auto;
+        float: right;
+    }
+    .front, .back{
+        height: 671px !important;
+    }
+    .book-section {
+      /* height: 100vh; */
+      width: 98%;
+      padding: 39px 0 40px;
+      text-align: center;
+  }
+    .right > figure.front {
+        background-position: right;
+        border-radius: 0 57px 42px 0;
+        /* box-shadow: 2px 2px 15px -2px rgba(0, 0, 0, 0.2); */
+        clip-path: polygon(2% 15%, 2% 2%, 15% 0%, 90% 1%, 100% 2%, 100% 15%, 100% 85%, 100% 100%, 80% 100%, 21% 100%, 2% 99%, 2% 85%);
+        height: 562px !important;
+        width: 97%;
+    }
+    .fron-content {
+        padding: 62px 56px 81px 62px;
+    }
+    .btn-page-count-play {
+        display: flex;
+        justify-content: center;
+        width: 412px;
+        max-width: 100%;
+        margin: auto;
+        float: right;
+        align-items: center;
+        position: absolute;
+        right: 55px;
+        bottom: 5rem;
+    }
+    .create-backgrpound-book {
+        height: 834px;
+    }
 
       
 }
@@ -1467,6 +1930,55 @@ header{
     .home-package-main {
       height: 1126px;
     } 
+
+    .framer-s61to5 {
+      position: absolute;
+      width: 100vw;
+      height: 90vh;
+      overflow: hidden;
+      top: 0px;
+    }
+    .home-content h1 {
+      color: var(--Grayscale-White, #FFF);
+      text-align: center;
+      font-family: "Josephine Cosy Bold";
+      font-size: 76px;
+    }
+    .home-banner-main {
+      width: 100vw;
+      height: 798px;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      top: 4rem;
+      padding-top: 8rem;
+      margin-bottom: 6rem;
+    }
+    .book-left{
+      width: 529px;
+      height: 851px;
+      position: absolute;
+      left: -11rem;
+      top: -7rem;
+    }
+    .book-right{
+      width: 529px;
+      height: 851px;
+      position: absolute;
+      right: -11rem;
+      top: -7rem;
+    }
+    .home-element{
+      width: 672px;
+      height: 531px;
+      margin: auto;
+      position: absolute;
+      left: 0px;
+      right: 0px;
+      bottom: -11rem;
+    }
+
+
     .contacus-section .scientist-animat {
       position: absolute;
       width: 212px;
@@ -1481,6 +1993,62 @@ header{
       left: 0rem;
       top: 43px;
     }  
+    .main-book-slider {
+        position: relative;
+        width: 1159px;
+        max-width: 100%;
+        margin: auto;
+        height: 648px;
+        background: url(../media/graphic-book.png) no-repeat;
+        background-position: center center;
+        background-size: 1076px;
+    }
+    .back img {
+       width: 92%;
+        height: 604px;
+        max-width: 100%;
+        margin: auto;
+        float: right;
+    }
+    .front img {
+        width: 98%;
+        height: 604px;
+        max-width: 100%;
+        margin: auto;
+        float: right;
+    }
+    .front, .back{
+        height: 671px !important;
+    }
+    .book-section {
+      /* height: 100vh; */
+      width: 98%;
+      padding: 17px 0 40px;
+      text-align: center;
+  }
+    .right > figure.front {
+        background-position: right;
+        border-radius: 0 57px 42px 0;
+        /* box-shadow: 2px 2px 15px -2px rgba(0, 0, 0, 0.2); */
+        clip-path: polygon(2% 15%, 2% 2%, 15% 0%, 90% 1%, 100% 2%, 100% 15%, 100% 85%, 100% 100%, 80% 100%, 21% 100%, 2% 99%, 2% 85%);
+        height: 605px !important;
+        width: 97%;
+    }
+    .fron-content {
+        padding: 97px 66px 64px 72px;
+    }
+    .btn-page-count-play {
+      display: flex;
+      justify-content: center;
+      width: 446px;
+      max-width: 100%;
+      margin: auto;
+      float: right;
+      align-items: center;
+      position: absolute;
+      right: 80px;
+      bottom: 4rem;
+  }
 }
 @media only screen and (min-width: 1200px) and (max-width: 1290px)  {
    .navbar-expand-lg .navbar-nav {
@@ -1520,6 +2088,47 @@ header{
     .home-package-main {
       height: 1126px;
     } 
+    .framer-s61to5 {
+      position: absolute;
+      width: 100vw;
+      height: 90vh;
+      overflow: hidden;
+      top: 0px;
+    }
+    .home-banner-main {
+      width: 100vw;
+      height: 900px;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      top: 4rem;
+      padding-top: 13rem;
+      margin-bottom: 7rem;
+    }
+    .book-left{
+      width: 529px;
+      height: 851px;
+      position: absolute;
+      left: -11rem;
+      top: -7rem;
+    }
+    .book-right{
+      width: 529px;
+      height: 851px;
+      position: absolute;
+      right: -11rem;
+      top: -7rem;
+    }
+    .home-element{
+      width: 672px;
+      height: 531px;
+      margin: auto;
+      position: absolute;
+      left: 0px;
+      right: 0px;
+      bottom: -11rem;
+    }
+
     .contacus-section .owl-animat {
       position: absolute;
       width: 274px;
@@ -1527,8 +2136,77 @@ header{
       left: 1rem;
       top: 43px;
     }
+    .main-book-slider {
+        position: relative;
+        width: 1220px;
+        max-width: 100%;
+        margin: auto;
+        height: 681px;
+        background: url(../media/graphic-book.png) no-repeat;
+        background-position: center center;
+        background-size: 1180px;
+    }
+    .back img, .front img {
+        width: 97%;
+        height: 663px;
+        max-width: 100%;
+        margin: auto;
+        float: right;
+    }
+    .front, .back{
+        height: 671px !important;
+    }
+    .right > figure.front {
+        background-position: right;
+        border-radius: 0 57px 68px 0;
+        /* box-shadow: 2px 2px 15px -2px rgba(0, 0, 0, 0.2); */
+        clip-path: polygon(2% 15%, 2% 2%, 15% 0%, 90% 1%, 100% 2%, 100% 15%, 100% 85%, 100% 100%, 80% 100%, 21% 100%, 2% 99%, 2% 85%);
+        height: 655px !important;
+        width: 97%;
+    }
 }
 @media only screen and (min-width: 1300px) and (max-width: 1390px)  {
+  .framer-s61to5 {
+    position: absolute;
+    width: 100vw;
+    height: 90vh;
+    overflow: hidden;
+    top: 0px;
+  }
+  .home-banner-main {
+    width: 100vw;
+    height: 900px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    top: 4rem;
+    padding-top: 13rem;
+    margin-bottom: 7rem;
+  }
+  .book-left{
+    width: 579px;
+    height: 851px;
+    position: absolute;
+    left: -11rem;
+    top: -7rem;
+  }
+  .book-right{
+    width: 579px;
+    height: 851px;
+    position: absolute;
+    right: -11rem;
+    top: -7rem;
+  }
+  .home-element{
+    width: 672px;
+    height: 531px;
+    margin: auto;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    bottom: -11rem;
+  }
+
    .navbar-expand-lg .navbar-nav {
       gap: 20px;
       align-items: center;
@@ -1594,8 +2272,77 @@ header{
       left: 0rem;
       top: 31px;
     }
+    .main-book-slider {
+        position: relative;
+        width: 1220px;
+        max-width: 100%;
+        margin: auto;
+        height: 681px;
+        background: url(../media/graphic-book.png) no-repeat;
+        background-position: center center;
+        background-size: 1180px;
+    }
+    .back img, .front img {
+        width: 97%;
+        height: 663px;
+        max-width: 100%;
+        margin: auto;
+        float: right;
+    }
+    .front, .back{
+        height: 671px !important;
+    }
+    .right > figure.front {
+        background-position: right;
+        border-radius: 0 57px 68px 0;
+        /* box-shadow: 2px 2px 15px -2px rgba(0, 0, 0, 0.2); */
+        clip-path: polygon(2% 15%, 2% 2%, 15% 0%, 90% 1%, 100% 2%, 100% 15%, 100% 85%, 100% 100%, 80% 100%, 21% 100%, 2% 99%, 2% 85%);
+        height: 655px !important;
+        width: 97%;
+    }
 }
 @media only screen and (min-width: 1400px) and (max-width: 1490px)  {
+  .framer-s61to5 {
+    position: absolute;
+    width: 100vw;
+    height: 90vh;
+    overflow: hidden;
+    top: 0px;
+  }
+  .home-banner-main {
+    width: 100vw;
+    height: 900px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    top: 4rem;
+    padding-top: 13rem;
+    margin-bottom: 7rem;
+  }
+  .book-left{
+    width: 579px;
+    height: 851px;
+    position: absolute;
+    left: -11rem;
+    top: -7rem;
+  }
+  .book-right{
+    width: 579px;
+    height: 851px;
+    position: absolute;
+    right: -11rem;
+    top: -7rem;
+  }
+  .home-element{
+    width: 672px;
+    height: 531px;
+    margin: auto;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    bottom: -11rem;
+  }
+
   .home-package-main {
       height: 1118px;
       display: flex;
@@ -1661,4 +2408,317 @@ header{
     left: 0px;
     transform: translate(17px, -16px) rotate(6deg);
   }
+  .framer-s61to5 {
+    position: absolute;
+    width: 100vw;
+    height: 99vh;
+    overflow: hidden;
+    top: 0px;
+  }
+  .home-banner-main {
+    width: 100vw;
+    height: 1033px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    top: 4rem;
+    padding-top: 13rem;
+    margin-bottom: 7rem;
+  }
+  .book-left{
+    width: 579px;
+    height: 851px;
+    position: absolute;
+    left: -11rem;
+    top: 11px;
+  }
+  .book-right{
+    width: 579px;
+    height: 851px;
+    position: absolute;
+    right: -11rem;
+    top: -2rem;
+  }
+  .home-element{
+    width: 672px;
+    height: 531px;
+    margin: auto;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    bottom: -11rem;
+  }
+
+}
+
+@media only screen and (min-width: 1400px) and (max-width: 2550px)  {
+  .book-section > .container {
+    height: 717px; 
+  }
+}
+@media only screen and (min-width: 1600px) and (max-width: 1690px)  {
+  .framer-s61to5 {
+    position: absolute;
+    width: 100vw;
+    height: 99vh;
+    overflow: hidden;
+    top: 0px;
+  }
+  .home-banner-main {
+    width: 100vw;
+    height: 1033px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    top: 4rem;
+    padding-top: 13rem;
+    margin-bottom: 7rem;
+  }
+  .book-left{
+    width: 579px;
+    height: 851px;
+    position: absolute;
+    left: -11rem;
+    top: 11px;
+  }
+  .book-right{
+    width: 579px;
+    height: 851px;
+    position: absolute;
+    right: -11rem;
+    top: -2rem;
+  }
+  .home-element{
+    width: 672px;
+    height: 531px;
+    margin: auto;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    bottom: -11rem;
+  }
+
+
+}
+@media only screen and (min-width: 1800px) and (max-width: 1890px)  {
+  .framer-s61to5 {
+    position: absolute;
+    width: 100vw;
+    height: 99vh;
+    overflow: hidden;
+    top: 0px;
+  }
+  .home-banner-main {
+    width: 100vw;
+    height: 1033px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    top: 4rem;
+    padding-top: 13rem;
+    margin-bottom: 7rem;
+  }
+  .book-left{
+    width: 579px;
+    height: 851px;
+    position: absolute;
+    left: -11rem;
+    top: 11px;
+  }
+  .book-right{
+    width: 579px;
+    height: 851px;
+    position: absolute;
+    right: -11rem;
+    top: -2rem;
+  }
+  .home-element{
+    width: 672px;
+    height: 531px;
+    margin: auto;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    bottom: -11rem;
+  }
+
+
+}
+@media only screen and (min-width: 1900px) and (max-width: 1920px)  {
+  .framer-s61to5 {
+    position: absolute;
+    width: 100vw;
+    height: 91vh;
+    overflow: hidden;
+    top: 0px;
+  }
+  .home-banner-main {
+    width: 100vw;
+    height: 1033px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    top: 4rem;
+    padding-top: 13rem;
+    margin-bottom: 7rem;
+  }
+  .book-left{
+    width: 579px;
+    height: 851px;
+    position: absolute;
+    left: -11rem;
+    top: 11px;
+  }
+  .book-right{
+    width: 579px;
+    height: 851px;
+    position: absolute;
+    right: -11rem;
+    top: -2rem;
+  }
+  .home-element{
+    width: 672px;
+    height: 531px;
+    margin: auto;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    bottom: -11rem;
+  }
+
+
+}
+@media only screen and (min-width: 2000px) and (max-width: 2200px)  {
+  .framer-s61to5 {
+    position: absolute;
+    width: 100vw;
+    height: 91vh;
+    overflow: hidden;
+    top: 0px;
+  }
+  .home-banner-main {
+    width: 100vw;
+    height: 1033px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    top: 4rem;
+    padding-top: 13rem;
+    margin-bottom: 7rem;
+  }
+  .book-left{
+    width: 579px;
+    height: 851px;
+    position: absolute;
+    left: -11rem;
+    top: 11px;
+  }
+  .book-right{
+    width: 579px;
+    height: 851px;
+    position: absolute;
+    right: -11rem;
+    top: -2rem;
+  }
+  .home-element{
+    width: 672px;
+    height: 531px;
+    margin: auto;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    bottom: -11rem;
+  }
+
+
+}
+
+@media only screen and (min-width: 2300px) and (max-width: 2500px)  {
+  .framer-s61to5 {
+    position: absolute;
+    width: 100vw;
+    height: 91vh;
+    overflow: hidden;
+    top: 0px;
+  }
+  .home-banner-main {
+    width: 100vw;
+    height: 1033px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    top: 4rem;
+    padding-top: 13rem;
+    margin-bottom: 7rem;
+  }
+  .book-left{
+    width: 579px;
+    height: 851px;
+    position: absolute;
+    left: -11rem;
+    top: 11px;
+  }
+  .book-right{
+    width: 579px;
+    height: 851px;
+    position: absolute;
+    right: -11rem;
+    top: -2rem;
+  }
+  .home-element{
+    width: 672px;
+    height: 531px;
+    margin: auto;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    bottom: -11rem;
+  }
+
+
+}
+@media only screen and (min-width: 100px) and (max-width: 1079px)  {
+  .main-book-slider  {
+    display: none;
+  }
+  .create-backgrpound-book .container{
+    padding: 0px 0px;
+  }
+  .btn-warp{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 10px;
+    margin-top: 32px;
+  }
+  .main-book-slider-mo .owl-nav {
+      display: flex;
+      justify-content: space-between !important;
+      gap: 24px;
+      margin-top: 32px !important;
+      padding: 0px 15px;
+  }
+  .create-backgrpound-book .btn-download {
+    width: 167px;
+    padding: 16px 24px;
+    margin: auto;
+    margin-top: 3px;
+  }
+   .create-backgrpound-book .btn {
+    width: 167px;
+    padding: 6px 19px;
+    margin: auto;
+    margin-top: 3px;
+  }
+  .main-book-slider-mo{
+    display: block !important;
+  }
+  #owlpageCount{
+    margin-top: -33px;
+  }
+  .create-backgrpound-book {
+    padding: 32px 0px;
+  }
+}
+@media only screen and (min-width: 100px) and (max-width: 1079px)  {
 }

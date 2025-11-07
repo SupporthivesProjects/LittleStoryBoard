@@ -85,9 +85,29 @@
         </nav>
        </div>
     </header>
-        <section></section>
-
-    <section></section>
+    <section class="home-banner-main">
+        <div class="framer-s61to5" data-framer-name="waves">
+            <img  data-framer-name="layer 3"  src="./assest/media/layer-back.png">
+            <img  data-framer-name="layer 2" src="./assest/media/layer-mid.png">
+            <img  data-framer-name="layer 1" src="./assest/media/layer-top.png">
+        </div>
+        <div class="container position-relative">
+            <img src="./assest/media/books-L.png" alt="" class="img-fluid book-left">
+            <img src="./assest/media/books-R.png" alt="" class="img-fluid book-right">
+            <img src="./assest/media/Hero-element.png" alt="" class="img-fluid home-element d-lg-block d-md-block d-none">
+            <img src="./assest/media/hero-element-mo.png" alt="" class="img-fluid home-element d-lg-none d-md-none d-block">
+            <div class="col">
+                 <div class="home-content">
+                    <h1>Turn imagination into a story</h1>
+                    <p>
+                        Create magical tales in seconds,<br>
+                        read aloud with AI voices.
+                    </p>
+                    <a href="#" class="btn btn-yellow">Create now</a>
+                 </div>
+            </div>
+        </div>
+    </section>
     <section class="how-it-works-section">
         <img src="./assest/media/home-ite-wroks.png" alt="" class="img-fluid bg-image d-none d-lg-block d-md-block">  
         <div class="container">
@@ -651,6 +671,22 @@
               }
             });
         });
+    </script>
+    <script>
+        // Animate translateY from 0–9px smoothly (Framer-like precision)
+        const layers = document.querySelectorAll('.framer-s61to5 img');
+        let t = 0;
+
+        function animate() {
+        t += 0.02;
+        layers.forEach((layer, i) => {
+            const offset = Math.abs(Math.sin(t + i)) * 12; // Move 0–9px
+            layer.style.transform = `translateY(${offset.toFixed(5)}px)`;
+        });
+        requestAnimationFrame(animate);
+        }
+
+        animate();
     </script>
 </body>
 
