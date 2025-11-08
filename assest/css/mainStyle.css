@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Quicksand:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -101,6 +102,14 @@ html, body{
     justify-content: center;
     align-items: center;
     gap: 8px;
+    border: 4px solid #FFCE3C;
+    transition: all .8s;
+    display: flex;
+}
+.btn-yellow:hover{
+  border-radius: 100px;
+  border: 4px solid var(--Core-Secondary-yellow-dark, #E3AA00);
+  background: var(--Core-yellow, #FFCE3C);
 }
 .bg-image {
   top: 0;
@@ -139,6 +148,7 @@ header{
     font-weight: 600;
     line-height: 150%;
     padding: 16px 40px;
+    display: flex;
 }
 .hearbalence-toggle-menu{
         display: flex;
@@ -178,7 +188,1166 @@ header{
       content: "";
       background: url(../media/white-cloude.png) no-repeat;
   }
+  .btn-purple{
+    color: var(--Core-yellow, #FFCE3C);
+    text-align: center;
+    font-family: "Josephine Cosy";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+    letter-spacing: -1.44px;
+    border-radius: 100px;
+    background: var(--Core-Secondary-Purple, #5A3384);
+    box-shadow: 0 0 100px 0 rgba(255, 223, 44, 0.50);
+    padding: 8px;
+    justify-content: center;
+    align-items: center;
+    width: 172px;
+    height: 40px;
+  }
+/* ---------------------------homepage---------------- */
+.home-banner-main {
+  width: 100vw;
+  height: 1033px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  top: 4rem;
+  padding-top: 13rem;
+}
+.home-banner-main::after {
+    content: "";
+    background: url(../media/sky.png) no-repeat;
+    background-size: cover;
+    background-position: center center;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: -40px;
+    width: 100%;
+    height: 223px;
+}
+
+/* full-width layered wrapper */
+.framer-s61to5 {
+  position: absolute;
+  width: 100vw;
+  height: 112vh;
+  overflow: hidden;
+  top: 0px;
+}
+
+/* each wave layer */
+.framer-s61to5 img {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 1;
+  will-change: transform;
+  pointer-events: none;
+  margin-bottom: 4rem;
+}
+.home-content h1{
+  color: var(--Grayscale-White, #FFF);
+  text-align: center;
+  font-family: "Josephine Cosy Bold";
+  font-size: 80px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%; /* 80px */
+  letter-spacing: -4px;
+  margin-bottom: 32px;
+}
+.home-content p{
+    color: var(--Core-yellow, #FFCE3C);
+    text-align: center;
+    leading-trim: both;
+    text-edge: cap;
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+    margin-bottom: 32px;
+}
+.home-content{
+  width: 762px;
+  max-width: 100%;
+  margin: auto;
+  left: 0px;
+  right: 0px;
+  position: absolute;
+  padding: 0px 40px;
+  top: 0px;
+}
+.home-content .btn{
+    width: 179px;
+    padding: 16px 40px;
+    margin: auto;
+}
+.how-it-works-title h2{
+    color: var(--Core-purple-titles, #3B2C53);
+    text-align: center;
+    font-family: "Josephine Cosy Bold";
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+    letter-spacing: -2.8px;
+    margin-bottom: 16px;
+}
+.how-it-works-title p{
+  color: var(--Core-purple-body, #6A5681);
+  text-align: center;
+  font-family: Quicksand;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 180%; /* 28.8px */
+}
+.how-it-works-title{
+  margin: 56px 0px;
+}
+.how-it-works-section .btn{
+    width: 199px;
+    margin: auto;
+    margin-top: 56px;
+}
+.how-it-works-card-content h5{
+  color: var(--Core-purple-titles, #3B2C53);
+  text-align: center;
+  font-family: "Josephine Cosy Bold";
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%; /* 40px */
+  letter-spacing: -2px;
+}
+.how-it-works-card-content p{
+  color: var(--Core-purple-body, #6A5681);
+  text-align: center;
+
+  /* P/Standard */
+  font-family: Quicksand;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 180%; /* 28.8px */
+}
+.how-it-works-card{
+    width: 373px;
+    margin: auto;
+    max-width: 100%;
+    border: 0px;
+    background: transparent;
+}
+.how-it-works-section {
+    background: #fff;
+    height: 633px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 78px 0px 0px;
+}
+  .module-benfite{
+      height: 764px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0px 0px;
+  }
+  .module-title-magin h2{
+    color: var(--Core-purple-titles, #3B2C53);
+    text-align: center;
+    font-family: "Josephine Cosy Bold";
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+    letter-spacing: -2.8px;
+    margin-bottom: 16px;
+  }
+  .module-title-magin .p{
+    color: var(--Core-purple-body, #6A5681);
+    text-align: center;
+    font-family: Quicksand;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 180%; /* 28.8px */
+    text-align: center;
+  }
+
+  .module-title-magin{
+    width: 684px;
+    max-width: 100%;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 48px;
+    padding-top: 60px;
+    margin-top: 80px;
+  }
+  .module-title-magin p{
+    color: var(--Core-purple-body, #6A5681);
+    text-align: center;
+    font-family: Quicksand;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 180%; /* 28.8px */
+  }
+  .module-benifite-cards-main .card{
+    position: relative;
+    border-radius: 0px; 
+    border: 0px;
+    background: transparent;
+  }
+  .module-benifite-cards-main .module-benfite-card{
+    display: flex;
+    padding: 40px 24px 24px 24px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0px;
+    align-self: stretch;
+    border-radius: 24px;
+    background: var(--Sky-Sky-light, #E5F9FF);
+    border: 0px;
+    text-align: center;
+  }
+  .module-benifite-cards-main .card h5{
+    color: var(--Core-purple-titles, #3B2C53);
+    text-align: center;
+    font-family: "Josephine Cosy Bold";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+    letter-spacing: -1.6px;
+    margin-bottom: 8px;
+    padding: 0px 36px;
+  }
+  .module-benifite-cards-main .card img {
+    position: absolute;
+    top: -36px;
+    width: 72px;
+    height: 72px;
+    margin: auto;
+    max-width: 100%;
+    left: 0px;
+    right: 0px;
+  }
+  .module-benifite-cards-main .card p{
+    color: var(--Core-purple-body, #6A5681);
+    text-align: center;
+    font-family: Quicksand;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 180%; /* 28.8px */
+    margin-bottom: 0px;
+  }
+  
+  .module-benifite-cards-main{
+    margin-top: 24px;
+  }
+  .module-title-magin-main{
+    margin-bottom: 88px;
+    padding-top: 45px;
+  }
+  .app-expirence{
+    height: 750px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding: 0px;
+  }
+  .app-expirence-content h1{
+    color: var(--Core-purple-titles, #3B2C53);
+    font-family: "Josephine Cosy Bold";
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+    letter-spacing: -2.8px;
+    margin-bottom: 16px;
+  }
+  .app-expirence-content p{
+    color: var(--Core-purple-body, #6A5681);
+    font-family: Quicksand;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 180%; /* 28.8px */
+    margin-bottom: 24px;
+  }
+  .app-expirence-content{
+    width: 566px;
+    max-width: 100%;
+  }
+  .create-own-hero-section{
+    height: 750px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+  .create-own-hero-content h1{
+    color: var(--Core-purple-titles, #3B2C53);
+    font-family: "Josephine Cosy Bold";
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+    letter-spacing: -2.8px;
+    margin-bottom: 16px;
+  }
+  .create-own-hero-content{
+    width: 566px;
+    max-width: 100%;
+  }
+  .create-own-hero-content p{
+    color: var(--Core-purple-body, #6A5681);
+    font-family: Quicksand;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 180%;
+    margin-bottom: 24px;
+  }
+  .create-own-hero-img{
+    text-align: center;
+  }
+  .app-expirence-content h1{
+    color: var(--Core-purple-titles, #3B2C53);
+    font-family: "Josephine Cosy Bold";
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%; /* 56px */
+    letter-spacing: -2.8px;
+  }
+  .create-own-hero-content .btn{
+    width: 184px;
+    max-width: 100%;
+  }
+  .app-expirence-content .btn{
+    width: 177px;
+    max-width: 100%;  
+  }
+
+  .explore-hero-section{
+    height: 959px;
+    margin-bottom: -1px;
+  }
+  .explore-hero-content h1{
+    color: var(--Core-purple-titles, #3B2C53);
+    font-family: "Josephine Cosy Bold";
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+    letter-spacing: -2.8px;
+    margin-bottom: 16px;
+  }
+  .explore-hero-content p{
+    color: var(--Core-purple-body, #6A5681);
+    font-family: Quicksand;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 180%;
+    margin-bottom: 24px;
+  }
+  .rocket-gif {
+    position: absolute;
+    left: 0px;
+    transform: translate(67px, 35px) rotate(6deg);
+  }
+  .explore-hero-content{
+    width: 549px;
+    max-width: 100%;
+    margin: auto;
+  }
+  .explore-hero-content .btn{
+    width: 212px;
+  }
+  .home-package-main {
+    height: 1326px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .home-packages-col .card{
+    border-radius: 40px;
+    display: flex;
+    width: 366px;
+    padding: 16px 40px 40px 40px;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    text-align: center;
+    justify-content: center;
+  }
+  .home-packages-col .card-one{
+    border-radius: 40px;
+    background: linear-gradient(180deg, #251D32 0%, rgba(90, 51, 132, 0.00) 139.95%);
+    display: flex;
+    width: 366px;
+    padding: 16px 40px 40px 40px;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    text-align: center;
+    justify-content: center;
+  }
+  
+  .home-packages-col .card ima{
+    margin-bottom: 24px;
+  }
+  .home-packages-col .card .card-body{
+    padding: 0px;
+  }
+  .home-packages-col .row{
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    align-items: center;
+    margin-top: 40px;
+  }
+  .home-packages-col .card{
+    border: 0px;
+    box-shadow: none;
+    height: 604px;
+  }
+  .home-packages-col .card-one img{
+    width: 192.938px;
+    height: 170px;
+    max-width: 100%;
+  }
+  .home-packages-col .card-three img{
+    width: 163.624px; 
+    height: 170px;
+    max-width: 100%;
+  }
+  .home-packages-col .card-two img{
+    width: 200px;
+    height: 236.362px;
+    aspect-ratio: 200.00/236.36;
+    max-width: 100%;
+  }
+  .home-packages-col .card-two{
+     background: linear-gradient(180deg, rgba(90, 51, 132, 0.00) 0%, #5A3384 100%);
+     height: 734px;
+  }
+  .home-packages-col .card-three{
+      background: linear-gradient(180deg, #251D32 0%, rgba(90, 51, 132, 0.00) 139.95%);
+      
+  }
+  .home-packages-col .card h6{
+    color: var(--Grayscale-White, #FFF);
+    text-align: center;
+    font-family: "Josephine Cosy";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+    letter-spacing: -1.44px;
+    margin-bottom: 0px;
+  } 
+  .home-packages-col .card h5{
+    color: #EB6300;
+    text-align: center;
+    font-family: "Josephine Cosy Bold";
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+    letter-spacing: -2px;
+    margin: 16px 0px;
+  }
+  .home-packages-col .card-text{
+    color: var(--Base-03, #BDBDBD);
+    text-align: center;
+    font-family: Quicksand;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 180%;
+    margin-bottom: 24px;
+  }
+  .home-package-main .card-body-details p{
+    color: var(--Base-04, #F2F2F2);
+    text-align: center;
+    font-family: Quicksand;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 180%;
+    margin-bottom: 24px;
+  }
+  .home-package-main .card-body-details h6{
+    color: var(--Core-Off-White, #FAFAFA);
+    text-align: center;
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+    margin-bottom: 24px;
+  }
+  .card-body .btn{
+    height: 53px;
+    width: 100%;
+  }
+
+  .col-package-titel{
+    width: 1122px;
+    margin: auto;
+    max-width: 100%;
+    text-align: center;
+    margin-bottom: 40px;
+  } 
+  .home-package-main h2{
+    color: var(--Core-Off-White, #FAFAFA);
+    text-align: center;
+    font-family: "Josephine Cosy Bold";
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+    letter-spacing: -2.8px;
+    margin-bottom: 16px;
+  }
+  .home-package-main p{
+    color: var(--Base-03, #BDBDBD);
+    text-align: center;
+    font-family: Quicksand;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 180%;
+  }
+  .discover-btn{
+    width: 294px;
+    max-width: 100%;
+    margin: auto;
+    margin-top: 40px;
+  }
+  .card-price-addtocart{
+    display: flex;
+    flex-direction: column;
+    gap: 27px;
+    justify-content: center;
+    align-items: center;
+  }
+  .home-packages-col .card .card-price-addtocart h6{
+    color: var(--Core-Off-White, #FAFAFA);
+    text-align: center;
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+  } 
+
+/* -----------------------create-story------------------- */
+.create-story-main{
+  background: #FAFAFA ;
+}
+.create-header-section{
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
+}
+.create-header-title h2{
+    color: var(--Core-purple-titles, #3B2C53);
+    font-family: "Josephine Cosy Bold";
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+    letter-spacing: -4px;
+    text-align: center;
+    margin-bottom: 16px;
+}
+.create-header-title .btn{
+    width: 152px;
+    margin: auto;
+    max-width: 100%;
+    padding: 16px 24px;
+}
+.create-backgrpound-book{
+  background: url(../media/create-background-clouds.png) no-repeat;
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+  /* height: 901px; */
+}
+
+/* ----------------------------sldier-------------------- */
+.main-book-slider{
+    position: relative;
+    width: 1276px;
+    max-width: 100%;
+    margin: auto;
+    height: 736px;
+    background: url(../media/graphic-book.png) no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+.book-section {
+  /* height: 100vh; */
+  width: 98%;
+  padding: 5px 0 40px;
+  text-align: center;
+}
+.book-section > .container {
+  /* height: 717px; */
+  width: 1231px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 2%;
+  margin-bottom: 30px;
+  perspective: 2000px;
+}
+.back img, .front img{
+    width: 100%;
+    height: 727px;
+}
+.container > .right {
+  position: absolute;
+  height: 100%;
+  width: 50%;
+  transition: 0.7s ease-in-out;
+  transform-style: preserve-3d;
+}
+.book-section > .container > .right {
+  right: 0;
+  transform-origin: left;
+  border-radius: 10px 0 0 10px;
+}
+.right > figure.front,
+.right > figure.back {
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-size: 200%;
+  background-repeat: no-repeat;
+  backface-visibility: hidden;
+  background-color: white;
+  overflow: hidden;
+}
+.right figure.back {
+  background-color: transparent;
+}
+.right > figure.front {
+    background-position: right;
+    border-radius: 0 57px 68px 0;
+    /* box-shadow: 2px 2px 15px -2px rgba(0, 0, 0, 0.2); */
+    clip-path: polygon(1% 15%, 2% 2%, 15% 2%, 85% 1%, 100% 2%, 100% 15%, 100% 85%, 100% 100%, 80% 100%, 21% 100%, 50% 99%, 10% 85%);
+}
+.right > figure.back {
+  background-position: left;
+  border-radius: 48px 0 0 37px;
+  /* box-shadow: -2px 2px 15px -2px rgba(0, 0, 0, 0.2); */
+  transform: rotateY(180deg);
+  padding-left: 22px;
+}
+.fron-content p{
+  color: var(--Core-purple-titles, #3B2C53);
+  font-family: Poppins;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%; /* 30px */
+  text-align: left;
+}
+.fron-content{
+  padding: 104px 100px 64px 72px;
+}
+.flip {
+  transform: rotateY(-180deg);
+}
+.flip::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  border-radius: 0 10px 10px 0;
+  background-color: transparent;
+}
+.book-section > button {
+  border: 0px solid #ef9f00;
+  background-color: transparent;
+  color: #ef9f00;
+  padding: 0px 0px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 10px;
+  transition: 0.3s ease-in-out;
+}
+.btn-page-count p {
+    color: rgba(0, 0, 0, 0.7);
+    font-family: calibri;
+    font-size: 24px;
+    color: var(--Core-Secondary-Purple, #5A3384);
+    font-family: Quicksand;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 180%;
+    margin-bottom: 0px;
+}
+.btn-page-count button{
+  border: 0px;
+}
+.btn-page-count{
+    display: flex;
+    gap: 15px;
+    width: 200px;
+    margin: auto;
+    max-width: 100%;
+}
+
+.book-section > button:focus,
+.book-section > button:active {
+  outline: none;
+}
+.book-section > p {
+  color: rgba(0, 0, 0, 0.7);
+  font-family: calibri;
+  font-size: 24px;
+}
+.book-section > p > a {
+  text-decoration: none;
+  color: #ef9f00;
+}
+.front#cover,.back#back-cover {
+  background-color: #ffcb63;
+  font-family: calibri;
+  text-align: left;
+  padding: 0 30px;
+}
+.front#cover h1 {
+  color: #fff;
+}
+.front#cover p {
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 14px;
+}
+#cover{
+    background-color: transparent !important;
+    font-family: calibri;
+    text-align: left;
+    padding: 0 0px !important;
+    clip-path: none !important;
+    border-radius: 0 42px 42px 0 !important;
+}
+.book-section .play-btn{
+    border-radius: 100px;
+    background: var(--Core-yellow, #FFCE3C);
+    display: flex;
+    height: 56px;
+    padding: 8px 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    color: var(--Core-Secondary-Purple, #5A3384);
+    font-family: Poppins;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%;
+}
+.btn-page-count button {
+    border: 0px;
+    background: transparent;
+}
+.btn-page-count-play{
+    display: flex;
+    justify-content: center;
+    width: 508px;
+    max-width: 100%;
+    margin: auto;
+    float: right;
+    align-items: center;
+    position: absolute;
+    right: 80px;
+    bottom: 6rem;
+}
+.create-backgrpound-book .btn-download{
+    width: 167px;
+    padding: 16px 24px;
+    margin: auto;
+    margin-top: 40px;
+}
+
+/* ---------------------------contactpage---------------- */
+.contactmain{
+  background:#D5F3FC;
+  position: relative;
+  padding-top: 200px;
+}
+.contacus-section{
+  background: url(../media/contactus-bg-main.png) no-repeat;
+  background-position: center center;
+  background-size: cover;
+  padding: 100px 0px 170px;
+}
+.contacus-section .owl-animat{
+    position: absolute;
+    width: 298px;
+    height: 351px;
+    left: 15rem;
+    top: 31px;
+}
+.contacus-section .scientist-animat{
+    position: absolute;
+    width: 298px;
+    height: 351px;
+    right: 9rem;
+    top: 15rem;
+}
+.contactmain::after{
+  content: "";
+  background: url(../media/white-section-clouds.png) no-repeat;
+  background-position: center center;
+  background-size: cover;
+  position: absolute;
+  width: 100%;
+  height: 144px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  z-index: 1;
+}
+.contactus-title{
+    display: flex;
+    padding: 40px 24px 24px 24px;
+    flex-direction: column;
+    gap: 8px;
+    align-self: stretch;
+    width: 670px;
+    max-width: 100%;
+    margin: auto;
+    text-align: center;
+    border-radius: 24px; 
+    background: var(--Sky-Sky-light, #E5F9FF);
+    position: relative;
+}
+.contactus-title h3{
+    color: var(--Core-purple-titles, #3B2C53);
+    text-align: center;
+    font-family: "Josephine Cosy Bold";
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+    letter-spacing: -2.8px;
+    margin-top: 0px;
+}
+.contactus-title p{
+    color: var(--Core-purple-body, #6A5681);
+    text-align: center;
+    font-family: Quicksand;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 180%; /* 28.8px */
+    margin-bottom: 0px;
+}
+.contactus-title img{
+    width: 72px;
+    height: 72px;
+    flex-shrink: 0;
+    margin: auto;
+    transform: translate(0px, -82px);
+    position: absolute;
+    left: 0px;
+    right: 0px;
+}
+.get-in-touch{
+  width: 670px;
+  margin: auto;
+  max-width: 100%;
+  margin-top: 40px;
+}
+.get-in-touch h4{
+  color: var(--Core-purple-titles, #3B2C53);
+  text-align: center;
+  font-family: "Josephine Cosy Bold";
+  font-size: 56px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%; /* 56px */
+  letter-spacing: -2.8px;
+  margin-bottom: 24px;
+}
+.get-in-touch .form-control{
+    border-radius: 100px;
+    background: var(--Sky-Sky-light, #E5F9FF);
+    color: var(--Core-purple-titles, #3B2C53);
+    font-family: Quicksand;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 180%;
+    display: flex;
+    height: 56px;
+    padding: 12px 24px;
+    align-items: center;
+    gap: 8px;
+    align-self: stretch;
+    margin-bottom: 24px;
+}
+.get-in-touch .form-control-text{
+    border-radius: 24px;
+    background: var(--Sky-Sky-light, #E5F9FF);
+    color: var(--Core-purple-titles, #3B2C53);
+    border: 0px;
+    font-family: Quicksand;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 180%;
+    display: flex;
+    height: 120px;
+    padding: 12px 24px;
+    align-items: center;
+    gap: 8px;
+    width: 100%;
+    align-self: stretch;
+    margin-bottom: 24px;
+}
+.get-in-touch p{
+    color: var(--Core-Secondary-Purple, #5A3384);
+    font-family: "IBM Plex Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 160%;
+    margin-bottom: 0px;
+}
+.get-in-touch a{
+    color: var(--Core-Secondary-Purple, #5A3384);
+    font-family: "IBM Plex Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 160%;
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-skip-ink: none;
+    text-decoration-thickness: auto;
+    text-underline-offset: auto;
+    text-underline-position: from-font;
+}
+.form-check {
+    margin-bottom: 24px;
+    text-align: center;
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+}
+.recapcha-btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.get-in-touch .btn{
+    width: 212px;
+}
+.form-check-input:checked {
+    background-color: #5A3384;
+    border-color: #5A3384;
+}
+/* .form-check-input:checked[type=radio] {
+  background-color:#fff ;
+}  */
+.modal-dialog-scan{
+  border-radius: var(--Edge-bev, 16px) var(--Edge-bev, 16px) 0 0;
+  background: linear-gradient(180deg, #BDEEFC 0%, #E5F9FF 100%);
+}
+.modal-dialog-scan-main{
+  border: 0px;
+  width: 343px;
+  margin: auto;
+  background: transparent;
+  position: relative;
+  padding-top: 1rem;
+}
+.modal-dialog-scan-main::after {
+  background: url(../media/modal-Sky.png) no-repeat;
+  background-size: cover;
+  background-position: center center;
+  content: "";
+  position: absolute;
+  width: 343px;
+  height: 133px;
+  top: -39px;
+  left: 0px;
+  right: 0px;
+}
+.modal-dialog-contactus {
+  background: url(../media/contactus-modal-bg.png) no-repeat;
+  background-position: center center;
+  background-size: cover;
+  width: 343px;
+  height: 426px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 0px;
+}
+.modal-dialog h2{
+    color: var(--Core-purple-titles, #3B2C53);
+    text-align: center;
+    font-family: "Josephine Cosy Bold";
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+    letter-spacing: -2px;
+}
+.modal-dialog p{
+    color: var(--Core-purple-body, #6A5681);
+    text-align: center;
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 160%;
+}
+.modal-dialog-contactus .modal-body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contactus-modal {
+    text-align: center;
+    padding: 0px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 70px;
+}
+.modal-dialog-scan p{
+  margin-bottom: 0px;
+}
+.modal-dialog-scan h6{
+  margin-bottom: 16px;
+}
+.modal-dialog-scan-main svg{
+  margin: 32px 0px;
+}
+.main-book-slider-mo .genrate-card{
+  padding: 32px 24px;
+}
+.main-book-slider-mo .card{
+  border: 0px;
+  background: transparent;
+}
+.main-book-slider-mo  .card p{
+    color: var(--Core-purple-titles, #3B2C53);
+    font-family: Quicksand;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 180%;
+    text-align: left !important;
+}
+.main-book-slider-mo p{
+    color: var(--Core-Secondary-Purple, #5A3384);
+    font-family: Quicksand;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 180%;
+    text-align: center;
+}
+.owl-theme .owl-nav .disabled {
+    opacity: 1;
+}
+.main-book-slider-mo .btn-download {
+    width: 167px;
+    padding: 16px 24px;
+    margin: auto;
+    margin-top: 11px !important; 
+}
 /* ---------------------pp-------------------------------- */
+.error-section{
+    padding:156px 0px;
+}
+.error-content h2{
+    color: var(--Core-purple-titles, #3B2C53);
+    text-align: center;
+    font-family: "Josephine Cosy Bold";
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+    letter-spacing: -4px;
+}
+.error-content p{
+    color: var(--Core-purple-body, #6A5681);
+    text-align: center;
+    font-family: Quicksand;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 180%;
+    margin-bottom: 0px;
+}
+.error-content{
+  width: 496px;
+  max-width: 100%;
+  margin: auto;
+  text-align: center;
+}
+.error-content img{
+    width: 200.451px;
+    height: 352.932px;
+    flex-shrink: 0;
+    aspect-ratio: 200.45 / 352.93;
+}
+.error-content .btn {
+    width: 306px;
+    height: 60px;
+    text-align: justify;
+    transform: translate(0px, -43px);
+    z-index: -1;
+    position: relative;
+    display: inline-block;
+}
+.error-content img{
+    transform: translate(66px, 25px);
+}
+.error-section::after {
+    content: "";
+    background: url(../media/sectionclouds.png) no-repeat;
+    background-position: center center;
+    background-size: cover;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    bottom: -1px;
+    width: 100%;
+    height: 144px;
+}
 .pp-section p{
     color: var(--Core-purple-body, #6A5681);
     font-family: Quicksand;
@@ -256,6 +1425,7 @@ header{
     display: flex;
     flex-direction: column;
     gap: 24px;
+    list-style: none;
 }
 .footer-link h6{
     color: var(--Core-yellow, #FFCE3C);
@@ -266,6 +1436,9 @@ header{
     font-weight: 400;
     line-height: 120%;
     letter-spacing: -1.6px;
+}
+.footer-link h6{
+    color: var(--Core-yellow, #FFCE3C);
 }
 .footer-link .menu-link{
     display: flex;
@@ -303,4 +1476,1249 @@ header{
   line-height: 160%; /* 22.4px */
   letter-spacing: 0.42px;
   margin: 16px 0px;
+}
+.footer-white-bg{
+  background: #fff;
+}
+.footer-white-bg .footer-link h6 {
+    color: var(--Core-yellow, #3B2C53);
+}
+.footer-white-bg .footer-link ul li a {
+    color: var(--Grayscale-25, #6A5681);
+}
+.contactmain::after {
+  display: none;
+}
+/* ------------------------manage medium device------------------------ */
+@media only screen and (min-width: 650px) and (max-width: 800px)  {
+  .header-white::after {
+      content: "";
+      background: url(../media/white-cloude.png) no-repeat;
+      top: 76px;
+  }
+  .header::after {
+    top: 76px;
+  }
+  .navbar-collapse {
+    flex-grow: 1;
+    flex-basis: 100%;
+    align-items: center;
+    margin-top: 50px;
+  }
+
+  .navbar-toggler{
+    border-radius: 8px;
+    background: var(--Core-yellow, #FFCE3C);
+    display: flex;
+    padding: 8px;
+    justify-content: center;
+    align-items: center;
+    /* border-radius: 0px; */
+  }
+  .module-benfite {
+    height: fit-content;
+    padding: 0px 0px;
+  }
+
+ .module-benifite-cards-main .module-benfite-card {
+   margin-bottom: 56px;
+  }
+  .module-title-magin-main {
+    margin-bottom: 55px;
+    padding-top: 140px;
+  }
+  .module-title-magin h2 {
+    font-size: 47px;
+  }
+  .home-packages-col .card {
+    border: 0px;
+    box-shadow: none;
+    height: 604px;
+    margin: auto;
+  } 
+  .app-expirence {
+    height: fit-content;
+  }
+  .create-own-hero-section {
+    height: 899px;
+    justify-content: center;
+    align-items: center;
+    display: flex
+  }
+  .contacus-section .owl-animat {
+    display: none !important;
+  }
+  .contacus-section .scientist-animat {
+    display: none !important;
+  }
+  .enjoy-btn h6 {
+    font-size: 20px;
+  }
+
+   .framer-s61to5 {
+      position: absolute;
+      width: 100vw;
+      height: 90vh;
+      overflow: hidden;
+      top: 0px;
+    }
+    .home-content h1 {
+      color: var(--Grayscale-White, #FFF);
+      text-align: center;
+      font-family: "Josephine Cosy Bold";
+      font-size: 60px;
+    }
+    .home-banner-main {
+      width: 100vw;
+      height: 798px;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      top: 4rem;
+      padding-top: 8rem;
+      margin-bottom: 6rem;
+    }
+    .book-left{
+      width: 462px;
+      height: 775px;
+      position: absolute;
+      left: -8rem;
+      top: -7rem;
+      display: none;
+    }
+    .book-right{
+      width: 462px;
+      height: 775px;
+      position: absolute;
+      right: -8rem;
+      top: -7rem;
+      display: none;
+    }
+    .home-element{
+      width: 672px;
+      height: 531px;
+      margin: auto;
+      position: absolute;
+      left: 0px;
+      right: 0px;
+      bottom: -11rem;
+    }
+    .home-content {
+        width: 762px;
+        max-width: 100%;
+        margin: auto;
+        left: 0px;
+        right: 0px;
+        position: absolute;
+        padding: 1px 113px;
+        top: 0px;
+    }
+
+
+
+}
+@media only screen and (min-width: 900px) and (max-width: 999px)  {
+   .navbar-expand-lg .navbar-nav {
+      gap: 10px;
+      align-items: center;
+    }
+    .header .nav-link {
+      font-size: 18px;
+    }
+    .how-it-works-card-content h5 {
+      font-size: 35px;
+    }
+    .explore-hero-section {
+      height: 750px;
+      margin-bottom: -1px;
+    }
+    .explore-hero-content h1 {
+      color: var(--Core-purple-titles, #3B2C53);
+      font-family: "Josephine Cosy Bold";
+      font-size: 35px;
+    }
+    .module-benifite-cards-main .module-benfite-card {
+      display: flex;
+      padding: 40px 13px 24px 13px;
+    }
+    .module-benifite-cards-main .card h5 {
+      font-size: 24px;
+      padding: 0px 0px;
+    }
+    .rocket-gif {
+      position: absolute;
+      left: 0px;
+      transform: translate(67px, 64px) rotate(6deg);
+      height: 425px;
+      width: 425px;
+    } 
+    .home-package-main {
+      height: 1126px;
+    } 
+
+     .framer-s61to5 {
+      position: absolute;
+      width: 100vw;
+      height: 90vh;
+      overflow: hidden;
+      top: 0px;
+    }
+    .home-content h1 {
+      color: var(--Grayscale-White, #FFF);
+      text-align: center;
+      font-family: "Josephine Cosy Bold";
+      font-size: 60px;
+    }
+    .home-banner-main {
+      width: 100vw;
+      height: 798px;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      top: 4rem;
+      padding-top: 8rem;
+      margin-bottom: 6rem;
+    }
+    .book-left{
+      width: 462px;
+      height: 775px;
+      position: absolute;
+      left: -8rem;
+      top: -7rem;
+    }
+    .book-right{
+      width: 462px;
+      height: 775px;
+      position: absolute;
+      right: -8rem;
+      top: -7rem;
+    }
+    .home-element{
+      width: 672px;
+      height: 531px;
+      margin: auto;
+      position: absolute;
+      left: 0px;
+      right: 0px;
+      bottom: -11rem;
+    }
+    .home-content {
+        width: 762px;
+        max-width: 100%;
+        margin: auto;
+        left: 0px;
+        right: 0px;
+        position: absolute;
+        padding: 1px 113px;
+        top: 0px;
+    }
+
+    .contacus-section .scientist-animat {
+      position: absolute;
+      width: 212px;
+      height: 265px;
+      right: 2rem;
+      top: 15rem;
+      display: none !important;
+    }
+    .contacus-section .owl-animat {
+      position: absolute;
+      width: 229px;
+      height: 275px;
+      left: 0rem;
+      top: 43px;
+      display: none !important;
+    } 
+    .enjoy-btn h6 {
+      font-size: 27px
+
+    }
+      
+}
+@media only screen and (min-width: 1000px) and (max-width: 1080px)  {
+   .navbar-expand-lg .navbar-nav {
+      gap: 10px;
+      align-items: center;
+    }
+    .header .nav-link {
+      font-size: 20px;
+    }
+     .explore-hero-section {
+      height: 750px;
+      margin-bottom: -1px;
+    }
+    .explore-hero-content h1 {
+      color: var(--Core-purple-titles, #3B2C53);
+      font-family: "Josephine Cosy Bold";
+      font-size: 35px;
+    }
+    .module-benifite-cards-main .card h5 {
+      font-size: 29px;
+      padding: 0px 0px;
+    }
+    .rocket-gif {
+      position: absolute;
+      left: 0px;
+      transform: translate(67px, 64px) rotate(6deg);
+      height: 425px;
+      width: 425px;
+    } 
+    .home-package-main {
+      height: 1126px;
+    } 
+
+    .framer-s61to5 {
+      position: absolute;
+      width: 100vw;
+      height: 90vh;
+      overflow: hidden;
+      top: 0px;
+    }
+    .home-content h1 {
+      color: var(--Grayscale-White, #FFF);
+      text-align: center;
+      font-family: "Josephine Cosy Bold";
+      font-size: 60px;
+    }
+    .home-banner-main {
+      width: 100vw;
+      height: 798px;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      top: 4rem;
+      padding-top: 8rem;
+      margin-bottom: 6rem;
+    }
+    .book-left{
+      width: 529px;
+      height: 851px;
+      position: absolute;
+      left: -11rem;
+      top: -7rem;
+    }
+    .book-right{
+      width: 529px;
+      height: 851px;
+      position: absolute;
+      right: -11rem;
+      top: -7rem;
+    }
+    .home-element{
+      width: 672px;
+      height: 531px;
+      margin: auto;
+      position: absolute;
+      left: 0px;
+      right: 0px;
+      bottom: -11rem;
+    }
+    .home-content {
+        width: 762px;
+        max-width: 100%;
+        margin: auto;
+        left: 0px;
+        right: 0px;
+        position: absolute;
+        padding: 1px 113px;
+        top: 0px;
+    }
+    .contacus-section .scientist-animat {
+      position: absolute;
+      width: 193px;
+      height: 237px;
+      right: 2rem;
+      top: 15rem;
+    }
+    .contacus-section .owl-animat {
+        position: absolute;
+        width: 172px;
+        height: 240px;
+        left: 0rem;
+        top: 52px;
+    }
+    .main-book-slider {
+        position: relative;
+        width: 1159px;
+        max-width: 100%;
+        margin: auto;
+        height: 648px;
+        background: url(../media/graphic-book.png) no-repeat;
+        background-position: center center;
+        background-size: 1006px;
+    }
+    .back img {
+       width: 92%;
+        height: 569px;
+        max-width: 100%;
+        margin: auto;
+        float: right;
+    }
+    .front img {
+        width: 98%;
+        height: 569px;
+        max-width: 100%;
+        margin: auto;
+        float: right;
+    }
+    .front, .back{
+        height: 671px !important;
+    }
+    .book-section {
+      /* height: 100vh; */
+      width: 98%;
+      padding: 39px 0 40px;
+      text-align: center;
+  }
+    .right > figure.front {
+        background-position: right;
+        border-radius: 0 57px 42px 0;
+        /* box-shadow: 2px 2px 15px -2px rgba(0, 0, 0, 0.2); */
+        clip-path: polygon(2% 15%, 2% 2%, 15% 0%, 90% 1%, 100% 2%, 100% 15%, 100% 85%, 100% 100%, 80% 100%, 21% 100%, 2% 99%, 2% 85%);
+        height: 562px !important;
+        width: 97%;
+    }
+    .fron-content {
+        padding: 62px 56px 81px 62px;
+    }
+    .btn-page-count-play {
+        display: flex;
+        justify-content: center;
+        width: 412px;
+        max-width: 100%;
+        margin: auto;
+        float: right;
+        align-items: center;
+        position: absolute;
+        right: 55px;
+        bottom: 5rem;
+    }
+    .create-backgrpound-book {
+        height: 834px;
+    }
+
+      
+}
+ @media only screen and (min-width: 1090px) and (max-width: 1190px)  {
+   .navbar-expand-lg .navbar-nav {
+      gap: 10px;
+      align-items: center;
+    }
+    .header .nav-link {
+      font-size: 20px;
+    } 
+     .explore-hero-section {
+      height: 840px;
+      margin-bottom: -1px;
+    }
+    .explore-hero-content h1 {
+      color: var(--Core-purple-titles, #3B2C53);
+      font-family: "Josephine Cosy Bold";
+      font-size: 40px;
+    }
+    .module-benifite-cards-main .card h5 {
+      font-size: 29px;
+      padding: 0px 0px;
+    }
+    .rocket-gif {
+      position: absolute;
+      left: 0px;
+      transform: translate(67px, 30px) rotate(6deg);
+      height: 525px;
+      width: 525px;
+    } 
+    .home-package-main {
+      height: 1126px;
+    } 
+
+    .framer-s61to5 {
+      position: absolute;
+      width: 100vw;
+      height: 90vh;
+      overflow: hidden;
+      top: 0px;
+    }
+    .home-content h1 {
+      color: var(--Grayscale-White, #FFF);
+      text-align: center;
+      font-family: "Josephine Cosy Bold";
+      font-size: 76px;
+    }
+    .home-banner-main {
+      width: 100vw;
+      height: 798px;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      top: 4rem;
+      padding-top: 8rem;
+      margin-bottom: 6rem;
+    }
+    .book-left{
+      width: 529px;
+      height: 851px;
+      position: absolute;
+      left: -11rem;
+      top: -7rem;
+    }
+    .book-right{
+      width: 529px;
+      height: 851px;
+      position: absolute;
+      right: -11rem;
+      top: -7rem;
+    }
+    .home-element{
+      width: 672px;
+      height: 531px;
+      margin: auto;
+      position: absolute;
+      left: 0px;
+      right: 0px;
+      bottom: -11rem;
+    }
+
+
+    .contacus-section .scientist-animat {
+      position: absolute;
+      width: 212px;
+      height: 265px;
+      right: 2rem;
+      top: 15rem;
+    }
+    .contacus-section .owl-animat {
+      position: absolute;
+      width: 229px;
+      height: 275px;
+      left: 0rem;
+      top: 43px;
+    }  
+    .main-book-slider {
+        position: relative;
+        width: 1159px;
+        max-width: 100%;
+        margin: auto;
+        height: 648px;
+        background: url(../media/graphic-book.png) no-repeat;
+        background-position: center center;
+        background-size: 1076px;
+    }
+    .back img {
+       width: 92%;
+        height: 604px;
+        max-width: 100%;
+        margin: auto;
+        float: right;
+    }
+    .front img {
+        width: 98%;
+        height: 604px;
+        max-width: 100%;
+        margin: auto;
+        float: right;
+    }
+    .front, .back{
+        height: 671px !important;
+    }
+    .book-section {
+      /* height: 100vh; */
+      width: 98%;
+      padding: 17px 0 40px;
+      text-align: center;
+  }
+    .right > figure.front {
+        background-position: right;
+        border-radius: 0 57px 42px 0;
+        /* box-shadow: 2px 2px 15px -2px rgba(0, 0, 0, 0.2); */
+        clip-path: polygon(2% 15%, 2% 2%, 15% 0%, 90% 1%, 100% 2%, 100% 15%, 100% 85%, 100% 100%, 80% 100%, 21% 100%, 2% 99%, 2% 85%);
+        height: 605px !important;
+        width: 97%;
+    }
+    .fron-content {
+        padding: 97px 66px 64px 72px;
+    }
+    .btn-page-count-play {
+      display: flex;
+      justify-content: center;
+      width: 446px;
+      max-width: 100%;
+      margin: auto;
+      float: right;
+      align-items: center;
+      position: absolute;
+      right: 80px;
+      bottom: 4rem;
+  }
+}
+@media only screen and (min-width: 1200px) and (max-width: 1290px)  {
+   .navbar-expand-lg .navbar-nav {
+      gap: 15px;
+      align-items: center;
+    }
+    .header .nav-link {
+      font-size: 22px;
+    }   
+    .contacus-section .scientist-animat {
+      position: absolute;
+      width: 284px;
+      height: 338px;
+      right: 2rem;
+      top: 15rem;
+    }
+     .explore-hero-section {
+      height: 840px;
+      margin-bottom: -1px;
+    }
+    .explore-hero-content h1 {
+      color: var(--Core-purple-titles, #3B2C53);
+      font-family: "Josephine Cosy Bold";
+      font-size: 50px;
+    }
+    .module-benifite-cards-main .card h5 {
+      font-size: 29px;
+      padding: 0px 0px;
+    }
+    .rocket-gif {
+      position: absolute;
+      left: 0px;
+      transform: translate(67px, 30px) rotate(6deg);
+      height: 525px;
+      width: 525px;
+    } 
+    .home-package-main {
+      height: 1126px;
+    } 
+    .framer-s61to5 {
+      position: absolute;
+      width: 100vw;
+      height: 90vh;
+      overflow: hidden;
+      top: 0px;
+    }
+    .home-banner-main {
+      width: 100vw;
+      height: 900px;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      top: 4rem;
+      padding-top: 13rem;
+      margin-bottom: 7rem;
+    }
+    .book-left{
+      width: 529px;
+      height: 851px;
+      position: absolute;
+      left: -11rem;
+      top: -7rem;
+    }
+    .book-right{
+      width: 529px;
+      height: 851px;
+      position: absolute;
+      right: -11rem;
+      top: -7rem;
+    }
+    .home-element{
+      width: 672px;
+      height: 531px;
+      margin: auto;
+      position: absolute;
+      left: 0px;
+      right: 0px;
+      bottom: -11rem;
+    }
+
+    .contacus-section .owl-animat {
+      position: absolute;
+      width: 274px;
+      height: 326px;
+      left: 1rem;
+      top: 43px;
+    }
+    .main-book-slider {
+        position: relative;
+        width: 1220px;
+        max-width: 100%;
+        margin: auto;
+        height: 681px;
+        background: url(../media/graphic-book.png) no-repeat;
+        background-position: center center;
+        background-size: 1180px;
+    }
+    .back img, .front img {
+        width: 97%;
+        height: 663px;
+        max-width: 100%;
+        margin: auto;
+        float: right;
+    }
+    .front, .back{
+        height: 671px !important;
+    }
+    .right > figure.front {
+        background-position: right;
+        border-radius: 0 57px 68px 0;
+        /* box-shadow: 2px 2px 15px -2px rgba(0, 0, 0, 0.2); */
+        clip-path: polygon(2% 15%, 2% 2%, 15% 0%, 90% 1%, 100% 2%, 100% 15%, 100% 85%, 100% 100%, 80% 100%, 21% 100%, 2% 99%, 2% 85%);
+        height: 655px !important;
+        width: 97%;
+    }
+}
+@media only screen and (min-width: 1300px) and (max-width: 1390px)  {
+  .framer-s61to5 {
+    position: absolute;
+    width: 100vw;
+    height: 90vh;
+    overflow: hidden;
+    top: 0px;
+  }
+  .home-banner-main {
+    width: 100vw;
+    height: 900px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    top: 4rem;
+    padding-top: 13rem;
+    margin-bottom: 7rem;
+  }
+  .book-left{
+    width: 579px;
+    height: 851px;
+    position: absolute;
+    left: -11rem;
+    top: -7rem;
+  }
+  .book-right{
+    width: 579px;
+    height: 851px;
+    position: absolute;
+    right: -11rem;
+    top: -7rem;
+  }
+  .home-element{
+    width: 672px;
+    height: 531px;
+    margin: auto;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    bottom: -11rem;
+  }
+
+   .navbar-expand-lg .navbar-nav {
+      gap: 20px;
+      align-items: center;
+    }
+    .header .nav-link {
+      font-size: 22px;
+    }   
+    .contacus-section .scientist-animat {
+      position: absolute;
+      width: 284px;
+      height: 338px;
+      right: 2rem;
+      top: 15rem;
+    }
+    .contacus-section .owl-animat {
+      position: absolute;
+      width: 274px;
+      height: 326px;
+      left: 1rem;
+      top: 43px;
+    }
+    .module-benifite-cards-main .card h5 {
+      padding: 0px 24px;
+      font-size: 26px;
+    }
+    .module-benifite-cards-main .card p {
+      color: var(--Core-purple-body, #6A5681);
+      text-align: center;
+      font-family: Quicksand;
+      font-size: 16px;
+    }
+    .explore-hero-section {
+      height: 840px;
+      margin-bottom: -1px;
+    }
+    .explore-hero-content h1 {
+      color: var(--Core-purple-titles, #3B2C53);
+      font-family: "Josephine Cosy Bold";
+      font-size: 50px;
+    }
+    .rocket-gif {
+      position: absolute;
+      left: 0px;
+      transform: translate(67px, 30px) rotate(6deg);
+      height: 525px;
+      width: 525px;
+    } 
+    .home-package-main {
+      height: 1114px;
+
+    }
+    .contacus-section .scientist-animat {
+    position: absolute;
+    width: 298px;
+    height: 351px;
+    right: 3rem;
+    top: 13rem;
+    }
+    .contacus-section .owl-animat {
+      position: absolute;
+      width: 298px;
+      height: 351px;
+      left: 0rem;
+      top: 31px;
+    }
+    .main-book-slider {
+        position: relative;
+        width: 1220px;
+        max-width: 100%;
+        margin: auto;
+        height: 681px;
+        background: url(../media/graphic-book.png) no-repeat;
+        background-position: center center;
+        background-size: 1180px;
+    }
+    .back img, .front img {
+        width: 97%;
+        height: 663px;
+        max-width: 100%;
+        margin: auto;
+        float: right;
+    }
+    .front, .back{
+        height: 671px !important;
+    }
+    .right > figure.front {
+        background-position: right;
+        border-radius: 0 57px 68px 0;
+        /* box-shadow: 2px 2px 15px -2px rgba(0, 0, 0, 0.2); */
+        clip-path: polygon(2% 15%, 2% 2%, 15% 0%, 90% 1%, 100% 2%, 100% 15%, 100% 85%, 100% 100%, 80% 100%, 21% 100%, 2% 99%, 2% 85%);
+        height: 655px !important;
+        width: 97%;
+    }
+}
+@media only screen and (min-width: 1400px) and (max-width: 1490px)  {
+  .framer-s61to5 {
+    position: absolute;
+    width: 100vw;
+    height: 90vh;
+    overflow: hidden;
+    top: 0px;
+  }
+  .home-banner-main {
+    width: 100vw;
+    height: 900px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    top: 4rem;
+    padding-top: 13rem;
+    margin-bottom: 7rem;
+  }
+  .book-left{
+    width: 579px;
+    height: 851px;
+    position: absolute;
+    left: -11rem;
+    top: -7rem;
+  }
+  .book-right{
+    width: 579px;
+    height: 851px;
+    position: absolute;
+    right: -11rem;
+    top: -7rem;
+  }
+  .home-element{
+    width: 672px;
+    height: 531px;
+    margin: auto;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    bottom: -11rem;
+  }
+
+  .home-package-main {
+      height: 1118px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  .module-benifite-cards-main .card h5 {
+      padding: 0px 24px;
+      font-size: 32px;
+  }
+  .module-benifite-cards-main .card p {
+    color: var(--Core-purple-body, #6A5681);
+    text-align: center;
+    font-family: Quicksand;
+    font-size: 15px;
+  }
+  .explore-hero-section {
+    height: 840px;
+    margin-bottom: -1px;
+  }
+  .explore-hero-content h1 {
+    color: var(--Core-purple-titles, #3B2C53);
+    font-family: "Josephine Cosy Bold";
+    font-size: 55px;
+  }
+  .rocket-gif {
+    position: absolute;
+    left: 0px;
+    transform: translate(67px, 30px) rotate(6deg);
+    height: 525px;
+    width: 525px;
+  }
+  .contacus-section .scientist-animat {
+    position: absolute;
+    width: 298px;
+    height: 351px;
+    right: 3rem;
+    top: 13rem;
+  }
+  .contacus-section .owl-animat {
+    position: absolute;
+    width: 298px;
+    height: 351px;
+    left: 0rem;
+    top: 31px;
+  }
+
+
+}
+@media only screen and (min-width: 1500px) and (max-width: 1590px)  {
+  .home-package-main {
+      height: 1160px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  .explore-hero-section {
+      height: 878px;
+      margin-bottom: -1px;
+  }
+  .rocket-gif {
+    position: absolute;
+    left: 0px;
+    transform: translate(17px, -16px) rotate(6deg);
+  }
+  .framer-s61to5 {
+    position: absolute;
+    width: 100vw;
+    height: 99vh;
+    overflow: hidden;
+    top: 0px;
+  }
+  .home-banner-main {
+    width: 100vw;
+    height: 1033px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    top: 4rem;
+    padding-top: 13rem;
+    margin-bottom: 7rem;
+  }
+  .book-left{
+    width: 579px;
+    height: 851px;
+    position: absolute;
+    left: -11rem;
+    top: 11px;
+  }
+  .book-right{
+    width: 579px;
+    height: 851px;
+    position: absolute;
+    right: -11rem;
+    top: -2rem;
+  }
+  .home-element{
+    width: 672px;
+    height: 531px;
+    margin: auto;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    bottom: -11rem;
+  }
+
+}
+
+@media only screen and (min-width: 1400px) and (max-width: 2550px)  {
+  .book-section > .container {
+    height: 717px; 
+  }
+}
+@media only screen and (min-width: 1600px) and (max-width: 1690px)  {
+  .framer-s61to5 {
+    position: absolute;
+    width: 100vw;
+    height: 99vh;
+    overflow: hidden;
+    top: 0px;
+  }
+  .home-banner-main {
+    width: 100vw;
+    height: 1033px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    top: 4rem;
+    padding-top: 13rem;
+    margin-bottom: 7rem;
+  }
+  .book-left{
+    width: 579px;
+    height: 851px;
+    position: absolute;
+    left: -11rem;
+    top: 11px;
+  }
+  .book-right{
+    width: 579px;
+    height: 851px;
+    position: absolute;
+    right: -11rem;
+    top: -2rem;
+  }
+  .home-element{
+    width: 672px;
+    height: 531px;
+    margin: auto;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    bottom: -11rem;
+  }
+
+
+}
+@media only screen and (min-width: 1800px) and (max-width: 1890px)  {
+  .framer-s61to5 {
+    position: absolute;
+    width: 100vw;
+    height: 99vh;
+    overflow: hidden;
+    top: 0px;
+  }
+  .home-banner-main {
+    width: 100vw;
+    height: 1033px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    top: 4rem;
+    padding-top: 13rem;
+    margin-bottom: 7rem;
+  }
+  .book-left{
+    width: 579px;
+    height: 851px;
+    position: absolute;
+    left: -11rem;
+    top: 11px;
+  }
+  .book-right{
+    width: 579px;
+    height: 851px;
+    position: absolute;
+    right: -11rem;
+    top: -2rem;
+  }
+  .home-element{
+    width: 672px;
+    height: 531px;
+    margin: auto;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    bottom: -11rem;
+  }
+
+
+}
+@media only screen and (min-width: 1900px) and (max-width: 1920px)  {
+  .framer-s61to5 {
+    position: absolute;
+    width: 100vw;
+    height: 91vh;
+    overflow: hidden;
+    top: 0px;
+  }
+  .home-banner-main {
+    width: 100vw;
+    height: 1033px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    top: 4rem;
+    padding-top: 13rem;
+    margin-bottom: 7rem;
+  }
+  .book-left{
+    width: 579px;
+    height: 851px;
+    position: absolute;
+    left: -11rem;
+    top: 11px;
+  }
+  .book-right{
+    width: 579px;
+    height: 851px;
+    position: absolute;
+    right: -11rem;
+    top: -2rem;
+  }
+  .home-element{
+    width: 672px;
+    height: 531px;
+    margin: auto;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    bottom: -11rem;
+  }
+
+
+}
+@media only screen and (min-width: 2000px) and (max-width: 2200px)  {
+  .framer-s61to5 {
+    position: absolute;
+    width: 100vw;
+    height: 91vh;
+    overflow: hidden;
+    top: 0px;
+  }
+  .home-banner-main {
+    width: 100vw;
+    height: 1033px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    top: 4rem;
+    padding-top: 13rem;
+    margin-bottom: 7rem;
+  }
+  .book-left{
+    width: 579px;
+    height: 851px;
+    position: absolute;
+    left: -11rem;
+    top: 11px;
+  }
+  .book-right{
+    width: 579px;
+    height: 851px;
+    position: absolute;
+    right: -11rem;
+    top: -2rem;
+  }
+  .home-element{
+    width: 672px;
+    height: 531px;
+    margin: auto;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    bottom: -11rem;
+  }
+
+
+}
+
+@media only screen and (min-width: 2300px) and (max-width: 2500px)  {
+  .framer-s61to5 {
+    position: absolute;
+    width: 100vw;
+    height: 91vh;
+    overflow: hidden;
+    top: 0px;
+  }
+  .home-banner-main {
+    width: 100vw;
+    height: 1033px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    top: 4rem;
+    padding-top: 13rem;
+    margin-bottom: 7rem;
+  }
+  .book-left{
+    width: 579px;
+    height: 851px;
+    position: absolute;
+    left: -11rem;
+    top: 11px;
+  }
+  .book-right{
+    width: 579px;
+    height: 851px;
+    position: absolute;
+    right: -11rem;
+    top: -2rem;
+  }
+  .home-element{
+    width: 672px;
+    height: 531px;
+    margin: auto;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    bottom: -11rem;
+  }
+
+
+}
+@media only screen and (min-width: 100px) and (max-width: 1079px)  {
+  .main-book-slider  {
+    display: none;
+  }
+  .create-backgrpound-book .container{
+    padding: 0px 0px;
+  }
+  .btn-warp{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 10px;
+    margin-top: 32px;
+  }
+  .main-book-slider-mo .owl-nav {
+      display: flex;
+      justify-content: space-between !important;
+      gap: 24px;
+      margin-top: 32px !important;
+      padding: 0px 15px;
+  }
+  .create-backgrpound-book .btn-download {
+    width: 167px;
+    padding: 16px 24px;
+    margin: auto;
+    margin-top: 3px;
+  }
+   .create-backgrpound-book .btn {
+    width: 167px;
+    padding: 6px 19px;
+    margin: auto;
+    margin-top: 3px;
+  }
+  .main-book-slider-mo{
+    display: block !important;
+  }
+  #owlpageCount{
+    margin-top: -33px;
+  }
+  .create-backgrpound-book {
+    padding: 32px 0px;
+  }
+}
+@media only screen and (min-width: 100px) and (max-width: 1079px)  {
 }

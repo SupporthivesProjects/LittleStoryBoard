@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Full-Width Framer-like Wave</title>
+<style>
+section {
+  margin: 0;
+  background: #fff;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+
+/* full-width wave wrapper */
+.framer-s61to5 {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* wave layers */
+.framer-s61to5 img {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 1;
+  will-change: transform;
+}
+</style>
+</head>
+<body>
+
+<section>
+<div class="framer-s61to5" data-framer-name="waves">
+  <!-- LAYER 3 — now light blue -->
+  <img data-framer-name="layer 3" alt class="framer-DzXOJ framer-6lwl0i"
+    src="data:image/svg+xml,%3Csvg viewBox='0 0 1923 1196' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M 957.204 1204.239 C 758.692 1204.239 666.688 705.759 0.072 1017.493 L 0 0 L 1920 0 L 1920.07 1017.493 C 1270.5 813.206 1155.72 1204.239 957.204 1204.239 Z' fill='%23E5F9FF'/%3E%3C/svg%3E">
+  
+  <!-- LAYER 2 — dark purple -->
+  <img data-framer-name="layer 2" alt class="framer-dCG7y framer-1a6quqg"
+    src="data:image/svg+xml,%3Csvg viewBox='0 0 1923 1177' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M 960.817 1190.27 C 762.304 1190.27 613.453 630.805 1.072 932.768 L 0 0 L 1920 0 L 1921.07 932.768 C 1262.46 738.252 1159.33 1190.27 960.817 1190.27 Z' fill='rgb(39,15,64)'/%3E%3C/svg%3E">
+  
+  <!-- LAYER 1 — gradient base -->
+  <img data-framer-name="layer 1" alt class="framer-12Zdj framer-10rksqd"
+    src="data:image/svg+xml,%3Csvg viewBox='0 0 1923 1156' xmlns='http://www.w3.org/2000/svg'%3E%3Cdefs%3E%3ClinearGradient id='grad1' x1='0.5' y1='0.1' x2='0.5' y2='0.9'%3E%3Cstop offset='0' stop-color='%23270f40'/%3E%3Cstop offset='0.5' stop-color='%23582292'/%3E%3Cstop offset='1' stop-color='%23cf7065'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cpath d='M 960.782 1165 C 762.276 1165 640.548 556.682 1.072 828.852 L 0 0 L 1919.93 0 L 1921 828.852 C 1278.683 610.048 1159.288 1165 960.782 1165 Z' fill='url(%23grad1)'/%3E%3C/svg%3E">
+</div>
+</section>
+
+<script>
+// Animate translateY from 0–9px (Framer-like precision)
+const layers = document.querySelectorAll('.framer-s61to5 img');
+let t = 0;
+
+function animate() {
+  t += 0.015;
+  layers.forEach((layer, i) => {
+    const offset = Math.abs(Math.sin(t + i)) * 9; // move 0–9px only
+    layer.style.transform = `translateY(${offset.toFixed(5)}px)`;
+  });
+  requestAnimationFrame(animate);
+}
+animate();
+</script>
+
+</body>
+</html>
