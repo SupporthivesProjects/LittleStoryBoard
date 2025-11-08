@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Little Story Box</title>
+    <link rel="stylesheet" href="./assest/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assest/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./assest/css/owl.theme.default.css">
+    <link rel="stylesheet" href="./assest/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./assest/css/aos.css">
+    <link rel="stylesheet" href="./assest/css/mainStyle.css">
+    <link rel="stylesheet" href="./assest/css/mainResponsive.css">
+    <link rel="stylesheet" href="./assest/css/rahul.css">
+    <style>
+        .header{
+            background: #FFFFFF;
+        }
+        .header .nav-link{
+            color:#5A3384
+        }
+        
+        .hearbalence p{
+            color: #5A3384;
+        }
+        .pp-section::after{
+            display: none;
+        }
+        @media only screen and (max-width: 600px) {
+            .header-white::after{
+                background: none !important;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header fixed-top header-white">
+       <div class="container">
+         <nav class="navbar navbar-expand-lg navbar-light">
+            <div>
+                <a class="navbar-brand" href="#">
+                    <img src="./assest/media/Brand-light.svg" class="img-fluid">
+                </a>
+            </div>
+            <div class="hearbalence-toggle-menu">
+                <div class="hearbalence">
+                   <p>Balance 3,410</p>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <img class="navbar-toggler-icon-mo img-fluid" src="./assest/media/menu.svg">
+                </button>
+                </div>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Explore</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Create</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="#">About us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="#">How it works</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="#">Pricing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="#">Contact</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link btn btn-yellow" href="#">Login/Register</a>
+                    </li>
+                    <li class="nav-item">
+                      <div class="d-lg-none d-md-none d-block">
+                         <div class="mobile-nav-menu">
+                           <a class="nav-link" href="#" style="color: #FFCE3C;">Logout</a>
+                           <button class="btn btn-yellow">Balance: <span>2,800</span></button>
+                           <div>
+                                <ul>
+                                    <li class="nav-item">
+                                        <a class="nav-link " href="#">Terms</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Cookie Policy</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link " href="#">Privacy policy</a>
+                                    </li>
+                                </ul>
+                                <div class="copy-header">
+                                    <img src="./assest/media/Mastercard.svg" alt="" class="img-fluid">
+                                    <p>© 2025 Littlestorybox. All rights reserved.</p>
+                                </div>
+                           </div>
+                         </div>
+                      </div>
+                    </li>
+
+                </ul>
+            </div>
+        </nav>
+       </div>
+    </header>
+    <!-- Header End -->
+
+    <!-- Section 1 Start -->
+    <section class="dashboard_s1">
+        <div class="dashboard_c1">
+            <img class="dashboard_ani1" src="./assest/media/dashboard_ani1.gif">
+            <div class="dashboard_s1titlebar">
+                <h1 class="dashboard_s1title">Hello Micheal!</h1>
+                <button type="button" class="btn dashboard_logoutbtn">Logout</button>
+            </div>
+            <img class="dashboard_ani2" src="./assest/media/dashboard_ani2.gif">
+        </div>
+    </section>
+    <!-- Section 1 End -->
+
+    <!-- Section 2 Start -->
+     <section class="dashboard_s2">
+        <div class="dashboard_c2">
+            <div class="dashboard_top">
+                <div class="dashboard_topcard">
+                    <img class="dashboard_card1icon" src="./assest/media/dashboard_card1icon.svg">
+                    <div class="dashboard_card">
+                        <h3 class="dash_cardtitle">Daily rewards</h3>
+                        <p class="dash_cardsubtitle">Login each day and earn daily<br>tokens for keeping your streak!</p>
+                        <button type="button" class="btn smodal_btn1 w-100"  data-bs-toggle="modal" data-bs-target="#exampleModal1">Claim now</button>
+                    </div>
+                </div>
+                <div class="dashboard_topcard">
+                    <img class="dashboard_card1icon" src="./assest/media/dashboard_card2icon.svg">
+                    <div class="dashboard_card">
+                        <h3 class="dash_cardtitle">Share and earn</h3>
+                        <p class="dash_cardsubtitle">Receive 100 referral tokens<br>for every friend who joins!</p>
+                        <button type="button" class="btn smodal_btn1 w-100"  data-bs-toggle="modal" data-bs-target="#exampleModal2">Share with friends</button>
+                    </div>
+                </div>
+                <div class="dashboard_topcard">
+                    <img class="dashboard_card1icon" src="./assest/media/dashboard_card3icon.svg">
+                    <div class="dashboard_card">
+                        <h3 class="dash_cardtitle">Get more stories</h3>
+                        <p class="dash_cardsubtitle">Login each day and earn daily<br>tokens for keeping your streak!</p>
+                        <button type="button" class="btn smodal_btn1 w-100">Start creation</button>
+                    </div>
+                </div>
+            </div>
+            <div class="dashboard_mid">
+                <div class="dash_midleft">
+                    <div class="dash_midleftop">
+                        <div class="balance_titlebar">
+                            <h3 class="balance_title">Balance:</h3>
+                            <p class="balance_subtitle">4,862 tokens</p>
+                        </div>
+                        <button type="button" class="btn smodal_btn1">Top up</button>
+                    </div>
+                    <div class="dash_midlefmid">
+                        <div class="dash_midleftmiddle">
+                            <h3 class="balance_title">My details</h3>
+                            <button type="button" class="btn smodal_btn1"  data-bs-toggle="modal" data-bs-target="#exampleModal3">Update details</button>
+                        </div>
+                        <div class="dash_textboxbar">
+                            <input type="text" class="form-control dash_textbox" id="" placeholder="Full name">
+                            <input type="text" class="form-control dash_textbox" id="" placeholder="Email Address">
+                            <input type="text" class="form-control dash_textbox" id="" placeholder="Address line 1">
+                            <input type="text" class="form-control dash_textbox" id="" placeholder="Address line 2">
+                            <div class="dash_textline">
+                                <input type="text" class="form-control dash_textbox" id="" placeholder="City / town">
+                                <input type="text" class="form-control dash_textbox" id="" placeholder="Zip / Postal Code">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dash_midlefmid">
+                        <div class="dash_midleftmiddle">
+                            <h3 class="balance_title">Password</h3>
+                            <button type="button" class="btn smodal_btn1"  data-bs-toggle="modal" data-bs-target="#exampleModal4">Update password</button>
+                        </div>
+                        <div class="dash_textboxbar">
+                            <input type="text" class="form-control dash_textbox" id="" placeholder="Current Password">
+                            <input type="text" class="form-control dash_textbox" id="" placeholder="New Password">
+                        </div>
+                    </div>
+                </div>
+                <div class="dash_midright">
+                    <div class="dash_midrighttop">
+                        <h3 class="dash_midrighttitle">My Library</h3>
+                        <button type="button" class="btn smodal_btn1">My library</button>
+                    </div>
+                    <div class="dash_midrightbottom">
+                        <div class="dash_libcard">
+                            <img class="img-fluid" src="./assest/media/dashlibrary_cardimg.png">
+                            <div class="dash_libbtn">
+                                <p class="dash_libbtntitle">The Dragon’s Quest</p>
+                                <p class="dash_libbtnreadmore">Read now</p>
+                            </div>
+                        </div>
+                        <div class="dash_libcard">
+                            <img class="img-fluid" src="./assest/media/dashlibrary_cardimg.png">
+                            <div class="dash_libbtn">
+                                <p class="dash_libbtntitle">The Dragon’s Quest</p>
+                                <p class="dash_libbtnreadmore">Read now</p>
+                            </div>
+                        </div>
+                        <div class="dash_libcard">
+                            <img class="img-fluid" src="./assest/media/dashlibrary_cardimg.png">
+                            <div class="dash_libbtn">
+                                <p class="dash_libbtntitle">The Dragon’s Quest</p>
+                                <p class="dash_libbtnreadmore">Read now</p>
+                            </div>
+                        </div>
+                        <div class="dash_libcard">
+                            <img class="img-fluid" src="./assest/media/dashlibrary_cardimg.png">
+                            <div class="dash_libbtn">
+                                <p class="dash_libbtntitle">The Dragon’s Quest</p>
+                                <p class="dash_libbtnreadmore">Read now</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="dashboard_bottom">
+                <h3 class="balance_title">Transaction history</h3>
+                <div class="dashboard_table w-100">
+                    <table class="table table-borderless order_desctable mb-0">
+                        <thead class="account_table_header">
+                            <tr class="align-middle">
+                                <th scope="col"><p class="success_headtext">Receipt<img src="./assest/media/dash_tabledrop.svg"></p></th>
+                                <th scope="col"><p class="success_headtext">Purchase Date<img src="./assest/media/dash_tabledrop.svg"></p></th>
+                                <th scope="col"><p class="success_headtext">Item name</p></th>
+                                <th scope="col">
+                                    <div class="dash_tbtnbar">
+                                        <p class="success_headtext">Total Amount<img src="./assest/media/dash_tabledrop.svg"></p>
+                                    </div>
+                                </th>
+                                <th scope="col"></th>
+                            </tr>
+                        </thead>
+                        <tbody class="account_table_body">
+                            <tr class="align-middle">
+                                <td><p class="success_bodytext">#401</p></td>
+                                <td><p class="success_bodytext">Jan 6, 2024</p></td>
+                                <td><p class="success_bodytext">Top up: Bronze 100</p></td>
+                                <td><p class="success_bodytext">$100.00</p></td>
+                                <td>
+                                    <div class="dash_tbtnbar">
+                                        <button type="button" class="btn view_orderbtn">Download Receipt</button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="align-middle">
+                                <td><p class="success_bodytext">#4002</p></td>
+                                <td><p class="success_bodytext">Jan 6, 2024</p></td>
+                                <td><p class="success_bodytext">Top up: Bronze 100</p></td>
+                                <td><p class="success_bodytext">$100.00</p></td>
+                                <td>
+                                    <div class="dash_tbtnbar">
+                                        <button type="button" class="btn view_orderbtn">Download Receipt</button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="align-middle">
+                                <td><p class="success_bodytext">#4003</p></td>
+                                <td><p class="success_bodytext">Jan 6, 2024</p></td>
+                                <td><p class="success_bodytext">Top up: Bronze 100</p></td>
+                                <td><p class="success_bodytext">$100.00</p></td>
+                                <td>
+                                    <div class="dash_tbtnbar">
+                                        <button type="button" class="btn view_orderbtn">Download Receipt</button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="align-middle">
+                                <td><p class="success_bodytext">#4004</p></td>
+                                <td><p class="success_bodytext">Jan 6, 2024</p></td>
+                                <td><p class="success_bodytext">Top up: Bronze 100</p></td>
+                                <td><p class="success_bodytext">$100.00</p></td>
+                                <td>
+                                    <div class="dash_tbtnbar">
+                                        <button type="button" class="btn view_orderbtn">Download Receipt</button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="align-middle">
+                                <td><p class="success_bodytext">#4005</p></td>
+                                <td><p class="success_bodytext">Jan 6, 2024</p></td>
+                                <td><p class="success_bodytext">Top up: Bronze 100</p></td>
+                                <td><p class="success_bodytext">$100.00</p></td>
+                                <td>
+                                    <div class="dash_tbtnbar">
+                                        <button type="button" class="btn view_orderbtn">Download Receipt</button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="align-middle">
+                                <td><p class="success_bodytext">#4006</p></td>
+                                <td><p class="success_bodytext">Jan 6, 2024</p></td>
+                                <td><p class="success_bodytext">Top up: Bronze 100</p></td>
+                                <td><p class="success_bodytext">$100.00</p></td>
+                                <td>
+                                    <div class="dash_tbtnbar">
+                                        <button type="button" class="btn view_orderbtn">Download Receipt</button>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="align-middle">
+                                <td><p class="success_bodytext">#4007</p></td>
+                                <td><p class="success_bodytext">Jan 6, 2024</p></td>
+                                <td><p class="success_bodytext">Top up: Bronze 100</p></td>
+                                <td><p class="success_bodytext">$100.00</p></td>
+                                <td>
+                                    <div class="dash_tbtnbar">
+                                        <button type="button" class="btn view_orderbtn">Download Receipt</button>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="pagination">
+                    <button class="page-btn"><img src="./assest/media/pagination_left.svg"></button>
+                    <button class="page-number">1</button>
+                    <button class="page-number">2</button>
+                    <button class="page-number active">3</button>
+                    <button class="page-number">4</button>
+                    <button class="page-number">5</button>
+                    <button class="page-btn"><img src="./assest/media/pagination_right.svg"></button>
+                </div>
+            </div>
+        </div>
+     </section>
+    <!-- Section 2 End -->
+
+    <!-- Mobile Start -->
+     <div class="desktop_none">
+        <div class="app-container dashapp_container">
+
+            <!-- Content Wrapper -->
+            <div class="tab-content dashtab_content active" id="tab-home">
+                <div class="dash_mobs1">
+                    <h3 class="dash_s1title">Hello Micheal!</h3>
+                </div>
+                <div class="dash_t1s2mob">
+                    <div class="dash_midleftop">
+                        <div class="balance_titlebar">
+                            <h3 class="balance_title">Balance:</h3>
+                            <p class="balance_subtitle">4,862 tokens</p>
+                        </div>
+                        <button type="button" class="btn smodal_btn1">Top up</button>
+                    </div>
+                    <div class="simple-carousel">
+                        <div class="carousel-track">
+                        <div class="carousel-card">
+                            <div class="dashboard_topcard">
+                                <img class="dashboard_card1icon" src="./assest/media/dashboard_card1icon.svg">
+                                <div class="dashboard_card">
+                                    <h3 class="dash_cardtitle">Daily rewards</h3>
+                                    <p class="dash_cardsubtitle">Login each day and earn daily<br>tokens for keeping your streak!</p>
+                                    <button type="button" class="btn smodal_btn1 w-100"  data-bs-toggle="modal" data-bs-target="#exampleModal1">Claim now</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-card">
+                            <div class="dashboard_topcard">
+                                <img class="dashboard_card1icon" src="./assest/media/dashboard_card2icon.svg">
+                                <div class="dashboard_card">
+                                    <h3 class="dash_cardtitle">Share and earn</h3>
+                                    <p class="dash_cardsubtitle">Receive 100 referral tokens<br>for every friend who joins!</p>
+                                    <button type="button" class="btn smodal_btn1 w-100"  data-bs-toggle="modal" data-bs-target="#exampleModal2">Share with friends</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-card">
+                            <div class="dashboard_topcard">
+                                <img class="dashboard_card1icon" src="./assest/media/dashboard_card3icon.svg">
+                                <div class="dashboard_card">
+                                    <h3 class="dash_cardtitle">Get more stories</h3>
+                                    <p class="dash_cardsubtitle">Login each day and earn daily<br>tokens for keeping your streak!</p>
+                                    <button type="button" class="btn smodal_btn1 w-100">Start creation</button>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                    
+                        <div class="carousel-dots">
+                        <span class="dot active"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        </div>
+                    </div>
+
+                    <div class="t2s2_storybar">
+                        <div class="dashboard_topcard">
+                            <img class="dashboard_card1icon" src="./assest/media/dashboard_card3icon.svg">
+                            <div class="dashboard_card">
+                                <h3 class="dash_cardtitle">Get more stories</h3>
+                                <p class="dash_cardsubtitle">Login each day and earn daily<br>tokens for keeping your streak!</p>
+                                <button type="button" class="btn char_btn1 back-btn">Explore catalogue</button>
+                                <button type="button" class="btn smodal_btn1 w-100">Start creation</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="t2s2_storybar">
+                        <div class="dashboard_topcard">
+                            <img class="dashboard_card1icon" src="./assest/media/dash_libicon.svg">
+                            <div class="dashboard_card">
+                                <h3 class="dash_cardtitle">Get more stories</h3>
+                                <div class="lib_mobcardbar">
+                                    <img class="img-fluid lib_mobcardimg" src="./assest/media/lib_mobcardimg.png">
+                                    <img class="img-fluid lib_mobcardimg" src="./assest/media/lib_mobcardimg.png">
+                                    <img class="img-fluid lib_mobcardimg" src="./assest/media/lib_mobcardimg.png">
+                                    <img class="img-fluid lib_mobcardimg" src="./assest/media/lib_mobcardimg.png">
+                                </div>
+                                <button type="button" class="btn smodal_btn1 w-100">Start creation</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="tab-content dashtab_content" id="tab-purchase">
+                <div class="dash_mobs1">
+                    <h3 class="dash_s1title">Purchases</h3>
+                </div>
+                <div class="dash_t4s2">
+                    <div class="dash_t4s2card">
+                        <div class="dash_t4s2cardcbar">
+                            <h4 class="dash_t4s2cardtitle">Top up: Bronze 100</h4>
+                            <div class="dash_t4s2carddbar">
+                                <p class="dash_t4s2cardsubtitle">#4001</p>
+                                <p class="dash_t4s2cardsubtitle">Jan 6, 2024</p>
+                                <p class="dash_t4s2cardsubtitle">$100</p>
+                            </div>
+                        </div>
+                        <button type="button" class="btn smodal_btn1">Download Receipt</button>
+                    </div>
+                    <div class="dash_t4s2card">
+                        <div class="dash_t4s2cardcbar">
+                            <h4 class="dash_t4s2cardtitle">Creation: The little brave fox</h4>
+                            <div class="dash_t4s2carddbar">
+                                <p class="dash_t4s2cardsubtitle">#4001</p>
+                                <p class="dash_t4s2cardsubtitle">Jan 6, 2024</p>
+                                <p class="dash_t4s2cardsubtitle">$100</p>
+                            </div>
+                        </div>
+                        <button type="button" class="btn smodal_btn1">Download Receipt</button>
+                    </div>
+                    <div class="dash_t4s2card">
+                        <div class="dash_t4s2cardcbar">
+                            <h4 class="dash_t4s2cardtitle">Purchase: Wild adventure</h4>
+                            <div class="dash_t4s2carddbar">
+                                <p class="dash_t4s2cardsubtitle">#4001</p>
+                                <p class="dash_t4s2cardsubtitle">Jan 6, 2024</p>
+                                <p class="dash_t4s2cardsubtitle">$100</p>
+                            </div>
+                        </div>
+                        <button type="button" class="btn smodal_btn1">Download Receipt</button>
+                    </div>
+                    <div class="dash_t4s2card">
+                        <div class="dash_t4s2cardcbar">
+                            <h4 class="dash_t4s2cardtitle">Top up: Custom 650</h4>
+                            <div class="dash_t4s2carddbar">
+                                <p class="dash_t4s2cardsubtitle">#4001</p>
+                                <p class="dash_t4s2cardsubtitle">Jan 6, 2024</p>
+                                <p class="dash_t4s2cardsubtitle">$100</p>
+                            </div>
+                        </div>
+                        <button type="button" class="btn smodal_btn1">Download Receipt</button>
+                    </div>
+                    <div class="pagination">
+                        <button class="page-btn"><img src="./assest/media/pagination_left.svg"></button>
+                        <button class="page-number">1</button>
+                        <button class="page-number">2</button>
+                        <button class="page-number active">3</button>
+                        <button class="page-number">4</button>
+                        <button class="page-number">5</button>
+                        <button class="page-btn"><img src="./assest/media/pagination_right.svg"></button>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="tab-content dashtab_content" id="tab-setting">
+                <div class="dash_mobs1">
+                    <h3 class="dash_s1title">Settings</h3>
+                </div>
+                <div class="dash_t5s2">
+                    <div class="dash_midlefmid">
+                        <h3 class="balance_title">My details</h3>
+                        <div class="dash_textboxbar">
+                            <input type="text" class="form-control dash_textbox" id="" placeholder="Full name">
+                            <input type="text" class="form-control dash_textbox" id="" placeholder="Email Address">
+                            <input type="text" class="form-control dash_textbox" id="" placeholder="Address line 1">
+                            <input type="text" class="form-control dash_textbox" id="" placeholder="Address line 2">
+                            <div class="dash_textline">
+                                <input type="text" class="form-control dash_textbox" id="" placeholder="City / town">
+                                <input type="text" class="form-control dash_textbox" id="" placeholder="Zip / Postal Code">
+                            </div>
+                        </div>
+                        <button type="button" class="btn smodal_btn1"  data-bs-toggle="modal" data-bs-target="#exampleModal3">Update details</button>
+                    </div>
+                    <div class="dash_midlefmid">
+                        <h3 class="balance_title">Password</h3>
+                        <div class="dash_textboxbar">
+                            <input type="text" class="form-control dash_textbox" id="" placeholder="Current Password">
+                            <input type="text" class="form-control dash_textbox" id="" placeholder="New Password">
+                        </div>
+                        <button type="button" class="btn smodal_btn1"  data-bs-toggle="modal" data-bs-target="#exampleModal4">Update password</button>
+                    </div>
+                </div>
+            </div>
+        
+            <!-- Floating Bottom Navbar -->
+            <div class="bottom-nav dashbottom_nav">
+            <button class="nav-btn dashnav_btn active" data-tab="tab-home"><img src="./assest/media/dash_mobtabbtn1.svg"></button>
+            <button class="nav-btn dashnav_btn"><img src="./assest/media/dash_mobtabbtn2.svg"></button>
+            <button class="nav-btn dashnav_btn"><img src="./assest/media/dash_mobtabbtn3.svg"></button>
+            <button class="nav-btn dashnav_btn" data-tab="tab-purchase"><img src="./assest/media/dash_mobtabbtn4.svg"></button>
+            <button class="nav-btn dashnav_btn" data-tab="tab-setting"><img src="./assest/media/dash_mobtabbtn5.svg"></button>
+            </div>
+        
+        </div>
+    </div>
+     <!-- Mobile End -->
+
+     <!-- Modal -->
+      <!-- Modal -->
+    <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content dash_mcontent">
+                <div class="modal-body story_mbody">
+                    <div class="story_mtitlebar">
+                        <h3 class="story_mtitle">Claim reward</h3>
+                        <p class="story_msubtitle">Welcome back! Click below to get your daily rewards as a loyal customer.</p>
+                    </div>
+                    <div class="story_mbtnbar">
+                        <button type="button" class="btn smodal_btn1 w-100"data-bs-dismiss="modal" aria-label="Close">Claim reward</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content dash_mcontent">
+                <div class="modal-body story_mbody">
+                    <div class="story_mtitlebar">
+                        <h3 class="story_mtitle">Share link copied!</h3>
+                        <p class="story_msubtitle">Paste this to your friends and tell them to use it on checkout for a discount! Upon their purchase, you’ll get extra tokens.</p>
+                    </div>
+                    <div class="story_mbtnbar">
+                        <button type="button" class="btn smodal_btn1 w-100"data-bs-dismiss="modal" aria-label="Close">Close</button>
+                        <button type="button" class="btn smodal_btn2 w-100">Copy&nbsp;again</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content dash_mcontent dash_m3content">
+                <div class="modal-body story_mbody">
+                    <div class="story_mtitlebar">
+                        <h3 class="story_mtitle">Details updated!</h3>
+                    </div>
+                    <div class="story_mbtnbar">
+                        <button type="button" class="btn smodal_btn1 w-100"data-bs-dismiss="modal" aria-label="Close">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content dash_mcontent">
+                <div class="modal-body story_mbody">
+                    <div class="story_mtitlebar">
+                        <h3 class="story_mtitle">password updated!</h3>
+                    </div>
+                    <div class="story_mbtnbar">
+                        <button type="button" class="btn smodal_btn1 w-100"data-bs-dismiss="modal" aria-label="Close">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer Start -->
+    <footer class="footer mobile_none">
+        <div class="bg-footer-menu">
+           <div class="container">
+                 <div class="col">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-12 col-sm-12 col-12">
+                            <div class="footer-brand-logo">
+                                <img src="./assest/media/footer-logo.svg" alt="" class="img-fluid">
+                            </div>
+                            <div class="footer-copy-p">
+                                <p>© 2025 Littlestorybox. All rights reserved.</p>
+                            </div>
+                            <div class="footer-master-card">
+                                <img src="./assest/media/Mastercard.svg" alt="" class="img-fluid">
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-12 col-sm-12 col-12">
+
+                        </div>
+                        <div class="col-lg-4 col-md-12 col-sm-12 col-12">
+                            <div class="footer-link">
+                                <div class="menu-link">
+                                    <ul>
+                                        <h6>Links</h6>
+                                        <li>
+                                            <a href="#">Explore</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">create</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Pricing</a>
+                                        </li>
+                                    </ul>
+                                    <ul>
+                                        <li>
+                                            <a href="#">About us</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">How it works</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Contact us</a>
+                                        </li>
+                                    </ul> 
+                                </div>
+                                <div class="legal-menu">
+                                    <ul>
+                                        <h6>Policies</h6>
+                                        <li>
+                                            <a href="#">Terms & conditions</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Cookie Policy</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Privacy policy</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+           </div>
+        </div>
+        <div class="enjoy-bg d-lg-none d-md-none d-block">
+            <div class="col">
+                <div class="container">
+                    <div class="enjoy-div">
+                        <div class="enjoy-btn">
+                            <p>maecenas augue nulla libero potenti nec. Molestie quis eu faucibus lectus id laoreet. Id diam ac amet.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./assest/js/jquery.min.js"></script>
+    <script src="./assest/js/owl.carousel.js"></script>
+    <script src="./assest/js/popper.min.js"></script>
+    <script src="./assest/js/bootstrap.bundle.min.js"></script>
+    <script src="./assest/js/swiper-bundle.min.js"></script>
+    <script src="./assest/js/aos.js"></script>
+    <script src="./assest/js/appmain.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000
+        });
+    </script>
+    <!--  -->
+    <script>
+        const tabButtons = document.querySelectorAll(".dashnav_btn");
+        const tabContents = document.querySelectorAll(".dashtab_content");
+      
+        tabButtons.forEach((btn) => {
+          btn.addEventListener("click", () => {
+            // Remove active class from all buttons
+            tabButtons.forEach((b) => b.classList.remove("active"));
+            // Add active class to the clicked button
+            btn.classList.add("active");
+      
+            // Hide all tab contents
+            tabContents.forEach((content) => content.classList.remove("active"));
+      
+            // Show the selected tab
+            const targetTab = btn.getAttribute("data-tab");
+            document.getElementById(targetTab).classList.add("active");
+      
+            // Scroll to top of the content when tab changes
+            document.getElementById(targetTab).scrollTo({ top: 0, behavior: "smooth" });
+          });
+        });
+      </script>
+      <!-- Track carousel mob -->
+      <script>
+        const track = document.querySelector('.carousel-track');
+        const dots = document.querySelectorAll('.dot');
+        const cards = document.querySelectorAll('.carousel-card');
+        let index = 0;
+        
+        function updateCarousel(i) {
+          const offset = i * -88; // card width (88%)
+          track.style.transform = `translateX(${offset}%)`;
+          dots.forEach(d => d.classList.remove('active'));
+          dots[i].classList.add('active');
+        }
+        
+        // Dot click
+        dots.forEach((dot, i) => {
+          dot.addEventListener('click', () => {
+            index = i;
+            updateCarousel(i);
+          });
+        });
+        
+        // Card click → go to that card
+        cards.forEach((card, i) => {
+          card.addEventListener('click', () => {
+            index = i;
+            updateCarousel(i);
+          });
+        });
+        let autoSlide = setInterval(() => {
+        index = (index + 1) % dots.length;  // move to next card, loop at end
+        updateCarousel(index);
+        }, 3000); // change every 3 seconds
+        </script>        
+      
+           
+</body>
+
+</html>
