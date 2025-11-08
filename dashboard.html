@@ -27,6 +27,11 @@
         .pp-section::after{
             display: none;
         }
+        @media only screen and (max-width: 600px) {
+            .header-white::after{
+                background: none !important;
+            }
+        }
     </style>
 </head>
 
@@ -101,10 +106,7 @@
         </nav>
        </div>
     </header>
-
-
-
-
+    <!-- Header End -->
 
     <!-- Section 1 Start -->
     <section class="dashboard_s1">
@@ -128,7 +130,7 @@
                     <div class="dashboard_card">
                         <h3 class="dash_cardtitle">Daily rewards</h3>
                         <p class="dash_cardsubtitle">Login each day and earn daily<br>tokens for keeping your streak!</p>
-                        <button type="button" class="btn smodal_btn1 w-100">Claim now</button>
+                        <button type="button" class="btn smodal_btn1 w-100"  data-bs-toggle="modal" data-bs-target="#exampleModal1">Claim now</button>
                     </div>
                 </div>
                 <div class="dashboard_topcard">
@@ -136,7 +138,7 @@
                     <div class="dashboard_card">
                         <h3 class="dash_cardtitle">Share and earn</h3>
                         <p class="dash_cardsubtitle">Receive 100 referral tokens<br>for every friend who joins!</p>
-                        <button type="button" class="btn smodal_btn1 w-100">Share with friends</button>
+                        <button type="button" class="btn smodal_btn1 w-100"  data-bs-toggle="modal" data-bs-target="#exampleModal2">Share with friends</button>
                     </div>
                 </div>
                 <div class="dashboard_topcard">
@@ -160,7 +162,7 @@
                     <div class="dash_midlefmid">
                         <div class="dash_midleftmiddle">
                             <h3 class="balance_title">My details</h3>
-                            <button type="button" class="btn smodal_btn1">Update details</button>
+                            <button type="button" class="btn smodal_btn1"  data-bs-toggle="modal" data-bs-target="#exampleModal3">Update details</button>
                         </div>
                         <div class="dash_textboxbar">
                             <input type="text" class="form-control dash_textbox" id="" placeholder="Full name">
@@ -176,7 +178,7 @@
                     <div class="dash_midlefmid">
                         <div class="dash_midleftmiddle">
                             <h3 class="balance_title">Password</h3>
-                            <button type="button" class="btn smodal_btn1">Update password</button>
+                            <button type="button" class="btn smodal_btn1"  data-bs-toggle="modal" data-bs-target="#exampleModal4">Update password</button>
                         </div>
                         <div class="dash_textboxbar">
                             <input type="text" class="form-control dash_textbox" id="" placeholder="Current Password">
@@ -319,16 +321,274 @@
                         </tbody>
                     </table>
                 </div>
+                <div class="pagination">
+                    <button class="page-btn"><img src="./assest/media/pagination_left.svg"></button>
+                    <button class="page-number">1</button>
+                    <button class="page-number">2</button>
+                    <button class="page-number active">3</button>
+                    <button class="page-number">4</button>
+                    <button class="page-number">5</button>
+                    <button class="page-btn"><img src="./assest/media/pagination_right.svg"></button>
+                </div>
             </div>
         </div>
      </section>
     <!-- Section 2 End -->
 
+    <!-- Mobile Start -->
+     <div class="desktop_none">
+        <div class="app-container dashapp_container">
 
+            <!-- Content Wrapper -->
+            <div class="tab-content dashtab_content active" id="tab-home">
+                <div class="dash_mobs1">
+                    <h3 class="dash_s1title">Hello Micheal!</h3>
+                </div>
+                <div class="dash_t1s2mob">
+                    <div class="dash_midleftop">
+                        <div class="balance_titlebar">
+                            <h3 class="balance_title">Balance:</h3>
+                            <p class="balance_subtitle">4,862 tokens</p>
+                        </div>
+                        <button type="button" class="btn smodal_btn1">Top up</button>
+                    </div>
+                    <div class="simple-carousel">
+                        <div class="carousel-track">
+                        <div class="carousel-card">
+                            <div class="dashboard_topcard">
+                                <img class="dashboard_card1icon" src="./assest/media/dashboard_card1icon.svg">
+                                <div class="dashboard_card">
+                                    <h3 class="dash_cardtitle">Daily rewards</h3>
+                                    <p class="dash_cardsubtitle">Login each day and earn daily<br>tokens for keeping your streak!</p>
+                                    <button type="button" class="btn smodal_btn1 w-100"  data-bs-toggle="modal" data-bs-target="#exampleModal1">Claim now</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-card">
+                            <div class="dashboard_topcard">
+                                <img class="dashboard_card1icon" src="./assest/media/dashboard_card2icon.svg">
+                                <div class="dashboard_card">
+                                    <h3 class="dash_cardtitle">Share and earn</h3>
+                                    <p class="dash_cardsubtitle">Receive 100 referral tokens<br>for every friend who joins!</p>
+                                    <button type="button" class="btn smodal_btn1 w-100"  data-bs-toggle="modal" data-bs-target="#exampleModal2">Share with friends</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-card">
+                            <div class="dashboard_topcard">
+                                <img class="dashboard_card1icon" src="./assest/media/dashboard_card3icon.svg">
+                                <div class="dashboard_card">
+                                    <h3 class="dash_cardtitle">Get more stories</h3>
+                                    <p class="dash_cardsubtitle">Login each day and earn daily<br>tokens for keeping your streak!</p>
+                                    <button type="button" class="btn smodal_btn1 w-100">Start creation</button>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                    
+                        <div class="carousel-dots">
+                        <span class="dot active"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        </div>
+                    </div>
 
+                    <div class="t2s2_storybar">
+                        <div class="dashboard_topcard">
+                            <img class="dashboard_card1icon" src="./assest/media/dashboard_card3icon.svg">
+                            <div class="dashboard_card">
+                                <h3 class="dash_cardtitle">Get more stories</h3>
+                                <p class="dash_cardsubtitle">Login each day and earn daily<br>tokens for keeping your streak!</p>
+                                <button type="button" class="btn char_btn1 back-btn">Explore catalogue</button>
+                                <button type="button" class="btn smodal_btn1 w-100">Start creation</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="t2s2_storybar">
+                        <div class="dashboard_topcard">
+                            <img class="dashboard_card1icon" src="./assest/media/dash_libicon.svg">
+                            <div class="dashboard_card">
+                                <h3 class="dash_cardtitle">Get more stories</h3>
+                                <div class="lib_mobcardbar">
+                                    <img class="img-fluid lib_mobcardimg" src="./assest/media/lib_mobcardimg.png">
+                                    <img class="img-fluid lib_mobcardimg" src="./assest/media/lib_mobcardimg.png">
+                                    <img class="img-fluid lib_mobcardimg" src="./assest/media/lib_mobcardimg.png">
+                                    <img class="img-fluid lib_mobcardimg" src="./assest/media/lib_mobcardimg.png">
+                                </div>
+                                <button type="button" class="btn smodal_btn1 w-100">Start creation</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="tab-content dashtab_content" id="tab-purchase">
+                <div class="dash_mobs1">
+                    <h3 class="dash_s1title">Purchases</h3>
+                </div>
+                <div class="dash_t4s2">
+                    <div class="dash_t4s2card">
+                        <div class="dash_t4s2cardcbar">
+                            <h4 class="dash_t4s2cardtitle">Top up: Bronze 100</h4>
+                            <div class="dash_t4s2carddbar">
+                                <p class="dash_t4s2cardsubtitle">#4001</p>
+                                <p class="dash_t4s2cardsubtitle">Jan 6, 2024</p>
+                                <p class="dash_t4s2cardsubtitle">$100</p>
+                            </div>
+                        </div>
+                        <button type="button" class="btn smodal_btn1">Download Receipt</button>
+                    </div>
+                    <div class="dash_t4s2card">
+                        <div class="dash_t4s2cardcbar">
+                            <h4 class="dash_t4s2cardtitle">Creation: The little brave fox</h4>
+                            <div class="dash_t4s2carddbar">
+                                <p class="dash_t4s2cardsubtitle">#4001</p>
+                                <p class="dash_t4s2cardsubtitle">Jan 6, 2024</p>
+                                <p class="dash_t4s2cardsubtitle">$100</p>
+                            </div>
+                        </div>
+                        <button type="button" class="btn smodal_btn1">Download Receipt</button>
+                    </div>
+                    <div class="dash_t4s2card">
+                        <div class="dash_t4s2cardcbar">
+                            <h4 class="dash_t4s2cardtitle">Purchase: Wild adventure</h4>
+                            <div class="dash_t4s2carddbar">
+                                <p class="dash_t4s2cardsubtitle">#4001</p>
+                                <p class="dash_t4s2cardsubtitle">Jan 6, 2024</p>
+                                <p class="dash_t4s2cardsubtitle">$100</p>
+                            </div>
+                        </div>
+                        <button type="button" class="btn smodal_btn1">Download Receipt</button>
+                    </div>
+                    <div class="dash_t4s2card">
+                        <div class="dash_t4s2cardcbar">
+                            <h4 class="dash_t4s2cardtitle">Top up: Custom 650</h4>
+                            <div class="dash_t4s2carddbar">
+                                <p class="dash_t4s2cardsubtitle">#4001</p>
+                                <p class="dash_t4s2cardsubtitle">Jan 6, 2024</p>
+                                <p class="dash_t4s2cardsubtitle">$100</p>
+                            </div>
+                        </div>
+                        <button type="button" class="btn smodal_btn1">Download Receipt</button>
+                    </div>
+                    <div class="pagination">
+                        <button class="page-btn"><img src="./assest/media/pagination_left.svg"></button>
+                        <button class="page-number">1</button>
+                        <button class="page-number">2</button>
+                        <button class="page-number active">3</button>
+                        <button class="page-number">4</button>
+                        <button class="page-number">5</button>
+                        <button class="page-btn"><img src="./assest/media/pagination_right.svg"></button>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="tab-content dashtab_content" id="tab-setting">
+                <div class="dash_mobs1">
+                    <h3 class="dash_s1title">Settings</h3>
+                </div>
+                <div class="dash_t5s2">
+                    <div class="dash_midlefmid">
+                        <h3 class="balance_title">My details</h3>
+                        <div class="dash_textboxbar">
+                            <input type="text" class="form-control dash_textbox" id="" placeholder="Full name">
+                            <input type="text" class="form-control dash_textbox" id="" placeholder="Email Address">
+                            <input type="text" class="form-control dash_textbox" id="" placeholder="Address line 1">
+                            <input type="text" class="form-control dash_textbox" id="" placeholder="Address line 2">
+                            <div class="dash_textline">
+                                <input type="text" class="form-control dash_textbox" id="" placeholder="City / town">
+                                <input type="text" class="form-control dash_textbox" id="" placeholder="Zip / Postal Code">
+                            </div>
+                        </div>
+                        <button type="button" class="btn smodal_btn1"  data-bs-toggle="modal" data-bs-target="#exampleModal3">Update details</button>
+                    </div>
+                    <div class="dash_midlefmid">
+                        <h3 class="balance_title">Password</h3>
+                        <div class="dash_textboxbar">
+                            <input type="text" class="form-control dash_textbox" id="" placeholder="Current Password">
+                            <input type="text" class="form-control dash_textbox" id="" placeholder="New Password">
+                        </div>
+                        <button type="button" class="btn smodal_btn1"  data-bs-toggle="modal" data-bs-target="#exampleModal4">Update password</button>
+                    </div>
+                </div>
+            </div>
+        
+            <!-- Floating Bottom Navbar -->
+            <div class="bottom-nav dashbottom_nav">
+            <button class="nav-btn dashnav_btn active" data-tab="tab-home"><img src="./assest/media/dash_mobtabbtn1.svg"></button>
+            <button class="nav-btn dashnav_btn"><img src="./assest/media/dash_mobtabbtn2.svg"></button>
+            <button class="nav-btn dashnav_btn"><img src="./assest/media/dash_mobtabbtn3.svg"></button>
+            <button class="nav-btn dashnav_btn" data-tab="tab-purchase"><img src="./assest/media/dash_mobtabbtn4.svg"></button>
+            <button class="nav-btn dashnav_btn" data-tab="tab-setting"><img src="./assest/media/dash_mobtabbtn5.svg"></button>
+            </div>
+        
+        </div>
+    </div>
+     <!-- Mobile End -->
 
-
-    <footer class="footer">
+     <!-- Modal -->
+      <!-- Modal -->
+    <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content dash_mcontent">
+                <div class="modal-body story_mbody">
+                    <div class="story_mtitlebar">
+                        <h3 class="story_mtitle">Claim reward</h3>
+                        <p class="story_msubtitle">Welcome back! Click below to get your daily rewards as a loyal customer.</p>
+                    </div>
+                    <div class="story_mbtnbar">
+                        <button type="button" class="btn smodal_btn1 w-100"data-bs-dismiss="modal" aria-label="Close">Claim reward</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content dash_mcontent">
+                <div class="modal-body story_mbody">
+                    <div class="story_mtitlebar">
+                        <h3 class="story_mtitle">Share link copied!</h3>
+                        <p class="story_msubtitle">Paste this to your friends and tell them to use it on checkout for a discount! Upon their purchase, you’ll get extra tokens.</p>
+                    </div>
+                    <div class="story_mbtnbar">
+                        <button type="button" class="btn smodal_btn1 w-100"data-bs-dismiss="modal" aria-label="Close">Close</button>
+                        <button type="button" class="btn smodal_btn2 w-100">Copy&nbsp;again</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content dash_mcontent dash_m3content">
+                <div class="modal-body story_mbody">
+                    <div class="story_mtitlebar">
+                        <h3 class="story_mtitle">Details updated!</h3>
+                    </div>
+                    <div class="story_mbtnbar">
+                        <button type="button" class="btn smodal_btn1 w-100"data-bs-dismiss="modal" aria-label="Close">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content dash_mcontent">
+                <div class="modal-body story_mbody">
+                    <div class="story_mtitlebar">
+                        <h3 class="story_mtitle">password updated!</h3>
+                    </div>
+                    <div class="story_mbtnbar">
+                        <button type="button" class="btn smodal_btn1 w-100"data-bs-dismiss="modal" aria-label="Close">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer Start -->
+    <footer class="footer mobile_none">
         <div class="bg-footer-menu">
            <div class="container">
                  <div class="col">
@@ -406,6 +666,7 @@
             </div>
         </div>
     </footer>
+
     <script src="./assest/js/jquery.min.js"></script>
     <script src="./assest/js/owl.carousel.js"></script>
     <script src="./assest/js/popper.min.js"></script>
@@ -418,6 +679,65 @@
             duration: 1000
         });
     </script>
+    <!--  -->
+    <script>
+        const tabButtons = document.querySelectorAll(".dashnav_btn");
+        const tabContents = document.querySelectorAll(".dashtab_content");
+      
+        tabButtons.forEach((btn) => {
+          btn.addEventListener("click", () => {
+            // Remove active class from all buttons
+            tabButtons.forEach((b) => b.classList.remove("active"));
+            // Add active class to the clicked button
+            btn.classList.add("active");
+      
+            // Hide all tab contents
+            tabContents.forEach((content) => content.classList.remove("active"));
+      
+            // Show the selected tab
+            const targetTab = btn.getAttribute("data-tab");
+            document.getElementById(targetTab).classList.add("active");
+      
+            // Scroll to top of the content when tab changes
+            document.getElementById(targetTab).scrollTo({ top: 0, behavior: "smooth" });
+          });
+        });
+      </script>
+      <!-- Track carousel mob -->
+      <script>
+        const track = document.querySelector('.carousel-track');
+        const dots = document.querySelectorAll('.dot');
+        const cards = document.querySelectorAll('.carousel-card');
+        let index = 0;
+        
+        function updateCarousel(i) {
+          const offset = i * -88; // card width (88%)
+          track.style.transform = `translateX(${offset}%)`;
+          dots.forEach(d => d.classList.remove('active'));
+          dots[i].classList.add('active');
+        }
+        
+        // Dot click
+        dots.forEach((dot, i) => {
+          dot.addEventListener('click', () => {
+            index = i;
+            updateCarousel(i);
+          });
+        });
+        
+        // Card click → go to that card
+        cards.forEach((card, i) => {
+          card.addEventListener('click', () => {
+            index = i;
+            updateCarousel(i);
+          });
+        });
+        let autoSlide = setInterval(() => {
+        index = (index + 1) % dots.length;  // move to next card, loop at end
+        updateCarousel(index);
+        }, 3000); // change every 3 seconds
+        </script>        
+      
            
 </body>
 
